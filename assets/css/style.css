@@ -239,7 +239,7 @@
 				box-shadow:  none;
 	}
 	.navbar .brand {
-		padding: 10px 30px 0px 30px;
+		padding: 15px 30px 0px 30px;
 		color:#fc5242;
 		text-shadow:none;
 		font-size:32.5px;
@@ -611,12 +611,28 @@
 
 	/* Tabbed video grid */
 
-	#video-grid-nav {
+	.nav-tabs {
+		background: none;
+		border: none;
+	}
+
+	.nav-tabs > .active > a, .nav-tabs > .active > a:hover, .nav-tabs > .active > a:focus {
+
+		border: none;
+		background: 0;
+		border: 0;
+	}
+
+	.nav > li > a {
+		display: inline-block;
+	}
+
+	.video-grid-nav {
 		list-style: none;
 		margin-left: 0;
 	}
 
-	#video-grid-nav li:after  {
+	.video-grid-nav li:after  {
 		content: "//";
 		margin: 0 5px 0 5px;
 		color: #232323;
@@ -624,27 +640,27 @@
 		position: relative;
 	}
 
-	#video-grid-nav li {
+	.video-grid-nav li {
 	  	display: inline;
 		margin-right: 0px;
 		text-transform: uppercase;
 		font-size: 12px;
 	}
 
-	#video-grid-nav li a {
+	.video-grid-nav li a {
 	  	color: #232323
 	}
 
-	#video-grid-nav li a:hover, #video-grid-nav li a:active {
+	.video-grid-nav li a:hover, .video-grid-nav li a:active {
 	  	color: #1175d2;
 	}
 
-	#video-grid .video {
+	.video-grid .video {
 		position: relative;
 		display: block;
 	}
 
-	#video-grid .video .video-overlay {
+	.video-grid .video .video-overlay {
 		width: 100%;
 		height: 100%;
 		position: absolute;
@@ -655,14 +671,14 @@
 		opacity: 0;
 	}
 
-	#video-grid .video .video-overlay:hover {
+	.video-grid .video .video-overlay:hover {
 	    opacity: 1;
 	    transition: opacity .25s ease-in-out;
 	    -moz-transition: opacity .25s ease-in-out;
 	    -webkit-transition: opacity .25s ease-in-out;
 	}
 
-	#video-grid .video .video-overlay div {
+	.video-grid .video .video-overlay div {
 		position: relative;
 		top: 30%;
 		color: #FFF;
@@ -755,3 +771,35 @@
 div.clear {
     clear:both;
 }
+
+rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
