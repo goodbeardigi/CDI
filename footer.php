@@ -10,6 +10,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.js" type="text/javascript"></script> 
 	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="assets/js/responsiveslides.js"></script>
 
 
 <script src="assets/js/jquery.parallax-1.1.3.js" type="text/javascript" ></script>
@@ -17,6 +18,8 @@
 <script src="assets/js/jquery.scrollTo.min.js" type="text/javascript" ></script>
 <!-- PAGE CUSTOM SCROLLER -->
 <script type="text/javascript" src="assets/js/jquery.nicescroll.min.js"></script>
+
+
 
 <!-- SMOOTH SECTIONS SCROLL + PARALLAX PLUGIN -->
 <script>
@@ -72,6 +75,24 @@ $(document).ready(function() {
 
     });
 });
+
+$('#search').keypress(function (e) {
+  if (e.which == 13) {
+  	input = $('#search').val();
+//set
+
+  	alert('test - ' + input);
+        window.location = "/search?=" + input;
+
+    return false;    //<---- Add this line
+
+  }
+});
+
+$('.myTab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
 
 </script>
 </body>
