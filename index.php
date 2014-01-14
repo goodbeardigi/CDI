@@ -40,6 +40,7 @@ include('header.php');
 
     
 
+      <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
 		<div class="container">
 		<div id="myCarousel" class="carousel slide">
@@ -50,14 +51,27 @@ include('header.php');
   </ol>
   <!-- Carousel items -->
   <div class="carousel-inner">
-    <div class="active item"><div class="row">
+    <div class="active item">
+    	<div class="row">
 			<div class="span12 text-left">
 				<img src="images/banner-temp.jpg" alt="" />
 			</div>
 		</div>
 	</div>
-    
-   
+    <div class="item">
+    	<div class="row">
+			<div class="span12 text-left">
+				<img src="images/banner-temp.jpg" alt="" />
+			</div>
+		</div>
+	</div>
+       <div class="item">
+    	<div class="row">
+			<div class="span12 text-left">
+				<img src="images/banner-temp.jpg" alt="" />
+			</div>
+		</div>
+	</div>
   </div>
   <!-- Carousel nav -->
   <a class="carousel-control left" href="#myCarousel" data-slide="prev"><i class="icon-chevron-left"></i></a>
@@ -70,89 +84,222 @@ include('header.php');
 <!-- / HEADER -->
 
 
-<!--  SECTION-1 -->  
 <section id="Section-1">
 	<div class="container">
-    <!-- Example row of columns -->
     <div class="row">
 		<div class="span12">
-			<ul id="video-grid-nav"> 
-				<li><a href="#" class="active">Recent videos</a></li>
-				<li><a href="#">Weeks Hottest</a></li>
-				<li><a href="#">Months Hottest</a></li>
+			<ul  id="myTab"  class="video-grid-nav nav nav-tabs"> 
+				<li><a href="#recent-videos" class="active" data-toggle="tab">Recent videos</a></li>
+				<li><a href="#weeks-hottest" data-toggle="tab">Weeks Hottest</a></li>
+				<li><a href="#months-hottest" data-toggle="tab">Months Hottest</a></li>
 			</ul>
 		</div> 
 	</div>	
-	
-	<div id="video-grid">
+	<div id="myTabContent" class="tab-content">
 
-		<div class="row-fluid">
-	        <div class="span4 video text-center box"> 
-	        	<a href="#" class="video-overlay">
-	        		<div>
-	        			<h2>Video Name</h2>
-	        			<span>Skate</span>
-	        		</div>
-	        	</a>    
-	       		<img src="images/video-temp.jpg"/>    
-	        </div>
+		<!-- recent videos tab -->
+		<div id="recent-videos" class=" tab-pane fade active in video-grid">
+			<div class="row-fluid">
+		        <div class="span4 video text-center box"> 
+		        	<a href="#" class="video-overlay">
+		        		<div>
+		        			<h2>Video Name</h2>
+		        			<span>Skate</span>
+		        		</div>
+		        	</a>    
+		       		<img src="images/video-temp.jpg"/>    
+		        </div>
 
-	        <div class="span4 video text-center box"> 
-	        	<a href="#" class="video-overlay">
-	        		<div>
-	        			<h2>Video Name</h2>
-	        			<span>Skate</span>
-	        		</div>
-	        	</a>    
-	       		<img src="images/video-temp.jpg"/>    
-	        </div>
+		        <div class="span4 video text-center box"> 
+		        	<a href="#" class="video-overlay">
+		        		<div>
+		        			<h2>Video Name</h2>
+		        			<span>Skate</span>
+		        		</div>
+		        	</a>    
+		       		<img src="images/video-temp.jpg"/>    
+		        </div>
 
-	        <div class="span4 video text-center box"> 
-	        	<a href="#" class="video-overlay">
-	        		<div>
-	        			<h2>Video Name</h2>
-	        			<span>Skate</span>
-	        		</div>
-	        	</a>    
-	       		<img src="images/video-temp.jpg"/>    
-	        </div>
+		        <div class="span4 video text-center box"> 
+		        	<a href="#" class="video-overlay">
+		        		<div>
+		        			<h2>Video Name</h2>
+		        			<span>Skate</span>
+		        		</div>
+		        	</a>    
+		       		<img src="images/video-temp.jpg"/>    
+		        </div>
+			</div>
+			<div class="row-fluid">
+		        <div class="span4 video text-center box"> 
+		        	<a href="#" class="video-overlay">
+		        		<div>
+		        			<h2>Video Name</h2>
+		        			<span>Skate</span>
+		        		</div>
+		        	</a>    
+		       		<img src="images/video-temp.jpg"/>    
+		        </div>
+
+		        <div class="span4 video text-center box"> 
+		        	<a href="#" class="video-overlay">
+		        		<div>
+		        			<h2>Video Name</h2>
+		        			<span>Skate</span>
+		        		</div>
+		        	</a>    
+		       		<img src="images/video-temp.jpg"/>    
+		        </div>
+
+		        <div class="span4 video text-center box"> 
+		        	<a href="#" class="video-overlay">
+		        		<div>
+		        			<h2>Video Name</h2>
+		        			<span>Skate</span>
+		        		</div>
+		        	</a>    
+		       		<img src="images/video-temp.jpg"/>    
+		        </div>
+		      </div>
+			</div>
 		</div>
-		<div class="row-fluid">
-	        <div class="span4 video text-center box"> 
-	        	<a href="#" class="video-overlay">
-	        		<div>
-	        			<h2>Video Name</h2>
-	        			<span>Skate</span>
-	        		</div>
-	        	</a>    
-	       		<img src="images/video-temp.jpg"/>    
-	        </div>
+		
+		<!-- weeks hottest videos tab -->
 
-	        <div class="span4 video text-center box"> 
-	        	<a href="#" class="video-overlay">
-	        		<div>
-	        			<h2>Video Name</h2>
-	        			<span>Skate</span>
-	        		</div>
-	        	</a>    
-	       		<img src="images/video-temp.jpg"/>    
-	        </div>
+		<div id="weeks-hottest" class="tab-pane fade video-grid">
+			<div class="row-fluid">
+		        <div class="span4 video text-center box"> 
+		        	<a href="#" class="video-overlay">
+		        		<div>
+		        			<h2>Video Name 2</h2>
+		        			<span>Skate</span>
+		        		</div>
+		        	</a>    
+		       		<img src="images/video-temp.jpg"/>    
+		        </div>
 
-	        <div class="span4 video text-center box"> 
-	        	<a href="#" class="video-overlay">
-	        		<div>
-	        			<h2>Video Name</h2>
-	        			<span>Skate</span>
-	        		</div>
-	        	</a>    
-	       		<img src="images/video-temp.jpg"/>    
-	        </div>
-	      </div>
-	
+		        <div class="span4 video text-center box"> 
+		        	<a href="#" class="video-overlay">
+		        		<div>
+		        			<h2>Video Name</h2>
+		        			<span>Skate</span>
+		        		</div>
+		        	</a>    
+		       		<img src="images/video-temp.jpg"/>    
+		        </div>
 
+		        <div class="span4 video text-center box"> 
+		        	<a href="#" class="video-overlay">
+		        		<div>
+		        			<h2>Video Name</h2>
+		        			<span>Skate</span>
+		        		</div>
+		        	</a>    
+		       		<img src="images/video-temp.jpg"/>    
+		        </div>
+			</div>
+			<div class="row-fluid">
+		        <div class="span4 video text-center box"> 
+		        	<a href="#" class="video-overlay">
+		        		<div>
+		        			<h2>Video Name</h2>
+		        			<span>Skate</span>
+		        		</div>
+		        	</a>    
+		       		<img src="images/video-temp.jpg"/>    
+		        </div>
 
+		        <div class="span4 video text-center box"> 
+		        	<a href="#" class="video-overlay">
+		        		<div>
+		        			<h2>Video Name</h2>
+		        			<span>Skate</span>
+		        		</div>
+		        	</a>    
+		       		<img src="images/video-temp.jpg"/>    
+		        </div>
 
+		        <div class="span4 video text-center box"> 
+		        	<a href="#" class="video-overlay">
+		        		<div>
+		        			<h2>Video Name</h2>
+		        			<span>Skate</span>
+		        		</div>
+		        	</a>    
+		       		<img src="images/video-temp.jpg"/>    
+		        </div>
+		      </div>
+			</div>
 		</div>
+
+		<!-- months hottest videos tab -->
+
+		<div id="months-hottest" class="tab-pane fade video-grid">
+			<div class="row-fluid">
+		        <div class="span4 video text-center box"> 
+		        	<a href="#" class="video-overlay">
+		        		<div>
+		        			<h2>Video Name 3</h2>
+		        			<span>Skate</span>
+		        		</div>
+		        	</a>    
+		       		<img src="images/video-temp.jpg"/>    
+		        </div>
+
+		        <div class="span4 video text-center box"> 
+		        	<a href="#" class="video-overlay">
+		        		<div>
+		        			<h2>Video Name</h2>
+		        			<span>Skate</span>
+		        		</div>
+		        	</a>    
+		       		<img src="images/video-temp.jpg"/>    
+		        </div>
+
+		        <div class="span4 video text-center box"> 
+		        	<a href="#" class="video-overlay">
+		        		<div>
+		        			<h2>Video Name</h2>
+		        			<span>Skate</span>
+		        		</div>
+		        	</a>    
+		       		<img src="images/video-temp.jpg"/>    
+		        </div>
+			</div>
+			<div class="row-fluid">
+		        <div class="span4 video text-center box"> 
+		        	<a href="#" class="video-overlay">
+		        		<div>
+		        			<h2>Video Name</h2>
+		        			<span>Skate</span>
+		        		</div>
+		        	</a>    
+		       		<img src="images/video-temp.jpg"/>    
+		        </div>
+
+		        <div class="span4 video text-center box"> 
+		        	<a href="#" class="video-overlay">
+		        		<div>
+		        			<h2>Video Name</h2>
+		        			<span>Skate</span>
+		        		</div>
+		        	</a>    
+		       		<img src="images/video-temp.jpg"/>    
+		        </div>
+
+		        <div class="span4 video text-center box"> 
+		        	<a href="#" class="video-overlay">
+		        		<div>
+		        			<h2>Video Name</h2>
+		        			<span>Skate</span>
+		        		</div>
+		        	</a>    
+		       		<img src="images/video-temp.jpg"/>    
+		        </div>
+		      </div>
+			</div>
+		</div>
+		
 	</div>
 
 	</div><!-- / CONTAINER-->
@@ -175,7 +322,7 @@ include('header.php');
 			<h2> Login with email or sign up with Facebook </h2>
 
 			<div id="login-form-container">
-				<p>LHNOF Flkjf fglkjflgfj </p>
+				<p>Some text</p>
 
 			     <form action="#" id="login-form" method="post" novalidate="">			           
 		               <input type="email" name="email" id="email-input" placeholder="info@test.com" required="required">
@@ -197,38 +344,11 @@ include('header.php');
 					<input id="sign-up"  class="button" type="submit" value="Sign Up"
 				</div>
 			</div>
-		</div>
-
-		
-<div class="row-fluid">
-<div class="span7">
-
-</div><!--/SPAN7-->
-
-<div class="span5">
-											
-</div>
+		</div>											
 </div><!-- /CONTAINER-->
 </section>
 <!-- / SECTION-3 --> 
- 
- <!-- SECTION-4 -->
-<section id="Section-4">
-<div class="container">
-   <div class="row">
-		<div class="span12 page-header text-center">	
-		</div> 
-	</div>	
-	
   
-	  
-	  <div class="row-fluid">
-	  
-	  </div>
-	</div><!-- / CONTAINER-->
-</section> 
- <!-- / SECTION-4 -->
- 
 
       
 
