@@ -79,7 +79,7 @@ include('header.php');
 			<ul id="video-grid-nav"> 
 				<li><a href="#" class="active">Recent videos</a></li>
 				<li><a href="#">Weeks Hottest</a></li>
-				<li><a href="#">Worked</a></li>
+				<li><a href="#">Months Hottest</a></li>
 			</ul>
 		</div> 
 	</div>	
