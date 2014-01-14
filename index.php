@@ -161,8 +161,7 @@ include('header.php');
 		       		<img src="images/video-temp.jpg"/>    
 		        </div>
 		      </div>
-			</div>
-		</div>
+		     </div> <!-- end tab -->
 		
 		<!-- weeks hottest videos tab -->
 
@@ -230,7 +229,7 @@ include('header.php');
 		        </div>
 		      </div>
 			</div>
-		</div>
+		
 
 		<!-- months hottest videos tab -->
 
@@ -299,9 +298,6 @@ include('header.php');
 		      </div>
 			</div>
 		</div>
-		
-	</div>
-
 	</div><!-- / CONTAINER-->
 </section>
 
