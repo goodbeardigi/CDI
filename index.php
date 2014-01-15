@@ -2,8 +2,8 @@
 <?php
 include('header.php');
 ?>
-      <!-- Main hero unit for a primary marketing message or call to action -->
-      <div class="hero-unit">
+<!-- Main hero unit for a primary marketing message or call to action -->
+<div class="hero-unit">
 		<div class="container">
 		<div id="myCarousel" class="carousel slide">
   	<ol class="carousel-indicators">
@@ -42,9 +42,6 @@ include('header.php');
 			
 		</div>
       </div>
-	</header>
-<!-- / HEADER -->
-
 
 <section id="Section-1">
 	<div class="container">
