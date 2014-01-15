@@ -1,0 +1,31 @@
+/* video page
+===========================*/
+#about-video{
+	padding-top: 0px;
+}
+#about-video .container{
+	border-top: solid 1px #1575C9;
+	border-bottom: solid 1px #1575C9;
+}
+#video-unit{
+	padding-bottom: 0px;
+	margin-bottom: 7px;
+}
+#social-share{
+	float: right;
+	text-align: center;
+	padding-top: 20px;
+}
+
+#video-title{
+	list-style: none;
+	display: block;
+	margin: 0;
+}
+#video-title li{
+	float: left;
+	margin-right: 30px;
+}
+#author{
+	margin-top: 23px;
+}
