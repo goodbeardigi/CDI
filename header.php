@@ -14,6 +14,7 @@
 <link href="assets/css/bootstrap.css" rel="stylesheet">
 <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
 <link href="assets/css/style.css" rel="stylesheet">
+<link href="assets/css/custom.css" rel="stylesheet">
 
 
 <!--[if lt IE 7]>
@@ -69,3 +70,6 @@
         <input id="search" type="text" placeholder="Search.." >
       </div>
     </div>
+
+</header>
+<!-- / HEADER -->
