@@ -46,21 +46,21 @@
           <a class="brand" href="#head-top"><img src="images/logo.jpg"/></a>
 
           <div id="user-inks">
-            <span><a href="#">Sign In</a>//</span>
-            <span><a href="#">Upload</a></span>
+            <span><a href="account.php">Sign In</a>//</span>
+            <span><a href="upload.php">Upload</a></span>
           </div>
 
           <div id="social-links">
-            <span class="icon facebook"><a href="#"><img src="images/facebook-icon.png"/></a></span>
-            <span class="icon twitter"><a href="#"><img src="images/twitter-icon.png"/></a></span>
+            <span class="icon facebook"><a href="http://www.facebook.com"><img src="images/facebook-icon.png"/></a></span>
+            <span class="icon twitter"><a href="http://www.twitter.com"><img src="images/twitter-icon.png"/></a></span>
           </div>
 
           <div class="nav-collapse collapse top-spy">
             <ul class="nav" id="topnav">
-              <li class="active"><a href="#head-top">Skate</a></li>
-              <li><a href="#Section-2">Surf</a></li>
-              <li><a href="#Section-3">Sky</a></li>
-              <li><a href="#Section-1">Snow</a></li>
+              <li class="active"><a href="category/skate">Skate</a></li>
+              <li><a href="category/surf">Surf</a></li>
+              <li><a href="category/sky">Sky</a></li>
+              <li><a href="category/snow">Snow</a></li>
               <li><a id="show-search" href="#"><img src="images/search-icon.png"></a></li>
             </ul>
           </div><!--/.nav-collapse -->
