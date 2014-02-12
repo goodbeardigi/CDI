@@ -8,7 +8,8 @@ $id=$_GET["id"];
 $result = mysqli_query($con,"SELECT * FROM videos WHERE id=$id");
 
 while($row = mysqli_fetch_array($result)){
-	$name = $row['name'];
+	$title = $row['name'];
+	$description = $row['description'];
 	$user_id = $row['user_id'];
 	$categories_id = $row['categories_id'];
 	$date_added = $row['date_added'];
@@ -33,13 +34,13 @@ while($row = mysqli_fetch_array($result)){
     	<div class="row">
 				<div class="span7">
 					<ul id="video-title">
-						<li><h3>Title</h3></li>
+						<li><h3><?php echo $title; ?></h3></li>
 						<li><h4 id="author">Author</h4></li>
 					</ul>
 						<div style="clear: both;"></div>
 
 					<h5>Date</h5>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet ultricies metus, quis mollis auLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet ultricies metus, quis mollis augue. Quisque a fermentum diam. Quisque a risus vel lore</p>
+					<p><?php echo $description; ?></p>
 				</div>
 				<div id="social-share" class="span4">
 					<img src="images/twitter-share.png">
