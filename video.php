@@ -3,6 +3,18 @@
 include 'inc/connect.php';
 include('header.php');
 
+$id=$_GET["id"];
+
+$result = mysqli_query($con,"SELECT * FROM videos");
+
+while($row = mysqli_fetch_array($result)){
+	$name = $row['name'];
+	$user_id = $row['user_id'];
+	$categories_id = $row['categories_id'];
+	$date_added = $row['date_added'];
+	$url = $row['url'];
+}
+
 ?>
 
 <!-- Main hero unit for a primary marketing message or call to action -->
@@ -10,7 +22,7 @@ include('header.php');
 		<div class="container">
 			<div class="row">
 				<video class="span12" style="background:#000" id="video" preload="auto" autobuffer="" controls="" poster="">
-				  	<source src="videos/Snowboard-short.mp4" type="video/mp4">
+				  	<source src=<?php echo '"videos/'+url+'"'; ?> type="video/mp4">
 				  	<!--<source src="movie.ogg" type="video/ogg">-->
 					Your browser does not support the video tag.
 				</video>
