@@ -14,15 +14,13 @@ while($row = mysqli_fetch_array($result)){
 	$date_added = $row['date_added'];
 	$url = $row['url'];
 }
-
 ?>
-
 <!-- Main hero unit for a primary marketing message or call to action -->
 <div class="hero-unit" id="video-unit">
 		<div class="container">
 			<div class="row">
 				<video class="span12" style="background:#000" id="video" preload="auto" autobuffer="" controls="" poster="">
-				  	<source src=<?php echo '"videos/'+url+'"'; ?> type="video/mp4">
+				  	<?php echo '<source src="videos/'.$url.'" type="video/mp4">'; ?>
 				  	<!--<source src="movie.ogg" type="video/ogg">-->
 					Your browser does not support the video tag.
 				</video>
