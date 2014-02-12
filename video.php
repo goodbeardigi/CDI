@@ -1,6 +1,6 @@
 <?php
 
-include('inc/connect.php');
+//include('inc/connect.php');
 include('header.php');
 
 $id=$_GET["id"];
@@ -50,7 +50,7 @@ while($row = mysqli_fetch_array($result)){
 				<div id="specific_buttons" class="span4 social-share">
 				  <div id="twitter" data-url="http://www.cdisports.jamescobbett.co.uk<?php echo $_SERVER['REQUEST_URI']?>" data-title="Share on Twitter"></div>
 				  <div id="facebook" data-url="http://www.cdisports.jamescobbett.co.uk<?php echo $_SERVER['REQUEST_URI']?>" data-title="Share on Facebook"></div>
-				  <div id="google" data-url="http://www.cdisports.jamescobbett.co.uk<?php echo $_SERVER['REQUEST_URI']?>" data-title="Share on Google Plus"></div>	
+				  <div id="pinterest" data-url="http://www.cdisports.jamescobbett.co.uk<?php echo $_SERVER['REQUEST_URI']?>" data-title="Share on Google Plus"></div>	
 				</div>
 		</div>
 	</div>
@@ -121,16 +121,17 @@ $('#twitter').sharrre({
 	  }
     });
 
-    $('#google').sharrre({
-	  share: {
-	    googlePlus: true
-	  },
-	  template: '<a class="box" href="#"><div class="count" href="#">{total}</div></a>',
-	  enableHover: false,
-	  enableTracking: true,
-	  click: function(api, options){
+
+
+    $('#pinterest').sharrre({
+	  share: { pinterest: true },
+	  url: document.URL,  //if you need to personalize url button
+  	  media: '',
+      description: '',
+      template: '<a class="box" href="#"><div class="count" href="#">{total}</div></a>',
+      	  click: function(api, options){
 	    api.simulateClick();
-	    api.openPopup('googlePlus');
+	    api.openPopup('pinterest');
 	  }
 	});
 </script>

@@ -33,7 +33,7 @@
 /*Share*/
 #twitter.sharrre,
 #facebook.sharrre,
-#google.sharrre
+#pinterest.sharrre
 {
   float: left;
   margin:0 10px;
@@ -42,7 +42,7 @@
 
 #twitter.sharrre a,
 #facebook.sharrre a,
-#google.sharrre a
+#pinterest.sharrre a
 {
   text-decoration: none;
   color:#555;
@@ -54,15 +54,18 @@
 #facebook.sharrre .count{
 	background: url('../../images/facebook-share.png');
 }
-#google.sharrre .count{
+#pinterest.sharrre .count{
 	background: url('../../images/pinterest-share.png');
 }
 #twitter.sharrre .count,
 #facebook.sharrre .count,
-#google.sharrre .count
+#pinterest.sharrre .count
 {
   padding-top: 72px;
   padding-bottom: 10px;
   width: 97px;
   color: #fff;
+}
+.button.pinterest{
+	display: none;
 }
