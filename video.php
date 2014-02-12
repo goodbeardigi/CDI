@@ -10,8 +10,8 @@ include('header.php');
 		<div class="container">
 			<div class="row">
 				<video class="span12" style="background:#000" id="video" preload="auto" autobuffer="" controls="" poster="">
-				  	<source src="movie.mp4" type="video/mp4">
-				  	<source src="movie.ogg" type="video/ogg">
+				  	<source src="videos/Snowboard-short.mp4" type="video/mp4">
+				  	<!--<source src="movie.ogg" type="video/ogg">-->
 					Your browser does not support the video tag.
 				</video>
 			</div>
