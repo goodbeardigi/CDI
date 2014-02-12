@@ -5,7 +5,7 @@ include('header.php');
 
 $id=$_GET["id"];
 
-$result = mysqli_query($con,"SELECT * FROM videos");
+$result = mysqli_query($con,"SELECT * FROM videos WHERE id=$id");
 
 while($row = mysqli_fetch_array($result)){
 	$name = $row['name'];
