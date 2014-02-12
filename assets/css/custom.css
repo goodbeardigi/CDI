@@ -11,7 +11,7 @@
 	padding-bottom: 0px;
 	margin-bottom: 7px;
 }
-#social-share{
+.social-share{
 	float: right;
 	text-align: center;
 	padding-top: 20px;
@@ -28,4 +28,41 @@
 }
 #author{
 	margin-top: 23px;
+}
+
+/*Share*/
+#twitter.sharrre,
+#facebook.sharrre,
+#google.sharrre
+{
+  float: left;
+  margin:0 10px;
+  text-align: center;
+}
+
+#twitter.sharrre a,
+#facebook.sharrre a,
+#google.sharrre a
+{
+  text-decoration: none;
+  color:#555;
+}
+
+#twitter.sharrre .count{
+	background: url('../../images/twitter-share.png');
+}
+#facebook.sharrre .count{
+	background: url('../../images/facebook-share.png');
+}
+#google.sharrre .count{
+	background: url('../../images/pinterest-share.png');
+}
+#twitter.sharrre .count,
+#facebook.sharrre .count,
+#google.sharrre .count
+{
+  padding-top: 72px;
+  padding-bottom: 10px;
+  width: 97px;
+  color: #fff;
 }

@@ -35,6 +35,21 @@
 <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
 
+<!-- Generic javascript/jquery files -->
+<script src="assets/js/jquery.js" type="text/javascript"></script> 
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="assets/js/responsiveslides.js"></script>
+<script type="text/javascript" src="assets/js/jquery.sharrre.min.js"></script>
+
+<!--Scroll js files -->
+<script src="assets/js/jquery.parallax-1.1.3.js" type="text/javascript" ></script>
+<script src="assets/js/jquery.localscroll-1.2.7-min.js" type="text/javascript" ></script>
+<script src="assets/js/jquery.scrollTo.min.js" type="text/javascript" ></script>
+<script type="text/javascript" src="assets/js/jquery.nicescroll.min.js"></script>
+
+<!-- Main custom script file, everyone use this -->
+<script type="text/javascript" src="assets/js/scripts.js"></script>
+
 <body data-spy="scroll" data-target=".top-spy">
 
     <!-- HEADER --> 

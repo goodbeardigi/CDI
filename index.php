@@ -60,7 +60,7 @@ include('header.php');
 		<div id="recent-videos" class=" tab-pane fade active in video-grid">
 			<div class="row-fluid">
 		        <div class="span4 video text-center box"> 
-		        	<a href="#" class="video-overlay">
+		        	<a href="/video.php?id=1" class="video-overlay">
 		        		<div>
 		        			<h2>Video Name</h2>
 		        			<span>Skate</span>
@@ -70,7 +70,7 @@ include('header.php');
 		        </div>
 
 		        <div class="span4 video text-center box"> 
-		        	<a href="#" class="video-overlay">
+		        	<a href="/video.php?id=1" class="video-overlay">
 		        		<div>
 		        			<h2>Video Name</h2>
 		        			<span>Skate</span>
@@ -80,7 +80,7 @@ include('header.php');
 		        </div>
 
 		        <div class="span4 video text-center box"> 
-		        	<a href="#" class="video-overlay">
+		        	<a href="/video.php?id=1" class="video-overlay">
 		        		<div>
 		        			<h2>Video Name</h2>
 		        			<span>Skate</span>
@@ -91,7 +91,7 @@ include('header.php');
 			</div>
 			<div class="row-fluid">
 		        <div class="span4 video text-center box"> 
-		        	<a href="#" class="video-overlay">
+		        	<a href="/video.php?id=1" class="video-overlay">
 		        		<div>
 		        			<h2>Video Name</h2>
 		        			<span>Skate</span>
@@ -101,7 +101,7 @@ include('header.php');
 		        </div>
 
 		        <div class="span4 video text-center box"> 
-		        	<a href="#" class="video-overlay">
+		        	<a href="/video.php?id=1" class="video-overlay">
 		        		<div>
 		        			<h2>Video Name</h2>
 		        			<span>Skate</span>
@@ -111,7 +111,7 @@ include('header.php');
 		        </div>
 
 		        <div class="span4 video text-center box"> 
-		        	<a href="#" class="video-overlay">
+		        	<a href="/video.php?id=1" class="video-overlay">
 		        		<div>
 		        			<h2>Video Name</h2>
 		        			<span>Skate</span>

@@ -1,6 +1,6 @@
 <?php
 
-include('inc/connect.php');
+//include('inc/connect.php');
 include('header.php');
 
 $id=$_GET["id"];
@@ -39,13 +39,18 @@ while($row = mysqli_fetch_array($result)){
 					</ul>
 						<div style="clear: both;"></div>
 
-					<h5>Date</h5>
+					<h5><?php echo $date_added; ?></h5>
 					<p><?php echo $description; ?></p>
 				</div>
-				<div id="social-share" class="span4">
+				<!--<div id="social-share" class="span4">
 					<img src="images/twitter-share.png">
 					<img src="images/facebook-share.png">
 					<img src="images/pinterest-share.png">
+				</div>-->
+				<div id="specific_buttons" class="span4 social-share">
+				  <div id="twitter" data-url="http://www.cdisports.jamescobbett.co.uk<?php echo $_SERVER['REQUEST_URI']?>" data-title="Share on Twitter"></div>
+				  <div id="facebook" data-url="http://www.cdisports.jamescobbett.co.uk<?php echo $_SERVER['REQUEST_URI']?>" data-title="Share on Facebook"></div>
+				  <div id="google" data-url="http://www.cdisports.jamescobbett.co.uk<?php echo $_SERVER['REQUEST_URI']?>" data-title="Share on Google Plus"></div>	
 				</div>
 		</div>
 	</div>
@@ -88,5 +93,46 @@ while($row = mysqli_fetch_array($result)){
 		</div>
 	</div>
 </section>
+
+<script type="text/javascript">
+
+$('#twitter').sharrre({
+      share: { twitter: true },
+      url: document.URL,
+      enableHover: false,
+      enableTracking: true,
+      template: '<a class="box" href="#"><div class="count" href="#">{total}</div></a>',
+      buttons: { twitter: {via: 'James_Cobbett'}},
+      click: function(api, options){
+	    api.simulateClick();
+	    api.openPopup('twitter');
+	  }
+    });
+
+    $('#facebook').sharrre({
+      share: { facebook: true },
+      url: document.URL,
+      enableHover: false,
+      enableTracking: true,
+      template: '<a class="box" href="#"><div class="count" href="#">{total}</div></a>',
+      click: function(api, options){
+	    api.simulateClick();
+	    api.openPopup('facebook');
+	  }
+    });
+
+    $('#google').sharrre({
+	  share: {
+	    googlePlus: true
+	  },
+	  template: '<a class="box" href="#"><div class="count" href="#">{total}</div></a>',
+	  enableHover: false,
+	  enableTracking: true,
+	  click: function(api, options){
+	    api.simulateClick();
+	    api.openPopup('googlePlus');
+	  }
+	});
+</script>
 
 <?php include('footer.php'); ?>
