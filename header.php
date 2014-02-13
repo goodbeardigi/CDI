@@ -58,7 +58,7 @@
     <div class="navbar navbar-fixed-top navbar-inverse">
       <div class="navbar-inner">
         <div class="container">
-          <a class="brand" href="#head-top"><img src="images/logo.jpg"/></a>
+          <a class="brand" href="http://cdisports.jamescobbett.co.uk"><img src="images/logo.jpg"/></a>
 
           <div id="user-inks">
             <span><a href="account.php">Sign In</a>//</span>

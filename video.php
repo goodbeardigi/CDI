@@ -2,6 +2,7 @@
 
 include('inc/connect.php');
 include('header.php');
+include('timeago.php');
 
 $id=$_GET["id"];
 
@@ -39,7 +40,7 @@ while($row = mysqli_fetch_array($result)){
 					</ul>
 						<div style="clear: both;"></div>
 
-					<h5><?php echo $date_added; ?></h5>
+					<h5><?php echo ago($date_added); ?></h5>
 					<p><?php echo $description; ?></p>
 				</div>
 				<!--<div id="social-share" class="span4">

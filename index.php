@@ -263,7 +263,7 @@ include('header.php');
 <!-- / SECTION-1 -->
 
 <!-- / SECTION-3 --> 
-<section id="Section-3">
+<!-- <section id="Section-3">
 	<div class="container">
 		<div class="row">
 			<div class="span12 page-header text-center">
@@ -301,7 +301,7 @@ include('header.php');
 			</div>
 		</div>											
 </div><!-- /CONTAINER-->
-</section>
+</section> -->
 <!-- / SECTION-3 --> 
   
 
