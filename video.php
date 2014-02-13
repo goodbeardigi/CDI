@@ -35,7 +35,7 @@ while($row = mysqli_fetch_array($result)){
     	<div class="row">
 				<div class="span7">
 					<ul id="video-title">
-						<li><h3><?php echo $title; ?></h3></li>
+						<li><h2><?php echo $title; ?></h2></li>
 						<li><h4 id="author">Author</h4></li>
 					</ul>
 						<div style="clear: both;"></div>
@@ -61,7 +61,7 @@ while($row = mysqli_fetch_array($result)){
 	<div class="container">
     	<div class="row">
 			<div class="span12">
-				RELATED VIDEOS //
+				<h3>RELATED VIDEOS //</h3>
 			</div>	
 		</div>
 	</div>
@@ -71,7 +71,7 @@ while($row = mysqli_fetch_array($result)){
 	<div class="container">
     	<div class="row">
 			<div class="span6">
-				COMMENTS //
+				<h3>COMMENTS //</h3>
 <div id="disqus_thread"></div>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -89,7 +89,7 @@ while($row = mysqli_fetch_array($result)){
     
 			</div>
 			<div class="span5">
-				THIS WEEKS HOTTEST //
+				<h3>THIS WEEKS HOTTEST //</h3>
 			<div>	
 		</div>
 	</div>

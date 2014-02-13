@@ -1,7 +1,25 @@
+h2{
+	font-size: 29.5px;
+	font-weight: 400 !important;
+	text-transform: uppercase;
+	font-style: italic;
+	color: #606060;
+}
+h4{
+	color: #393939;
+	font-size: 18px;
+	font-style: italic;
+}
 h5{
-	font-size: 14px;
+	font-size: 11px;
 	font-style: italic;
 	font-weight: 100;
+	text-transform: uppercase;
+	color: #393939;
+}
+p{
+	color: #535353;
+	font-size: 13px;
 }
 
 /* video page
