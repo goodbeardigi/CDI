@@ -2,7 +2,7 @@
 
 include('inc/connect.php');
 include('header.php');
-include('timeago.php');
+include('inc/timeago.php');
 
 $id=$_GET["id"];
 
