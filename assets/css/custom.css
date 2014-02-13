@@ -5,6 +5,11 @@ h2{
 	font-style: italic;
 	color: #606060;
 }
+h3{
+	font-size: 20.5px;
+	font-style: italic;
+	color: #606060;
+}
 h4{
 	color: #393939;
 	font-size: 18px;
@@ -35,6 +40,10 @@ p{
 	padding-bottom: 0px;
 	margin-bottom: 7px;
 }
+#date{
+	margin-top: -10px;
+}
+
 .social-share{
 	float: right;
 	text-align: center;
@@ -92,4 +101,12 @@ p{
 }
 .button.pinterest{
 	display: none;
+}
+
+#related-videos{
+	margin-top: -114px;
+}
+#disqus_thread{
+	background-color: #fff;
+	padding: 10px;
 }

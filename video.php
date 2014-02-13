@@ -40,8 +40,8 @@ while($row = mysqli_fetch_array($result)){
 					</ul>
 						<div style="clear: both;"></div>
 
-					<h5><?php echo ago($date_added); ?></h5>
-					<p><?php echo $description; ?></p>
+					<h5 id="date"><?php echo ago($date_added); ?></h5>
+					<p id="description"><?php echo $description; ?></p>
 				</div>
 				<!--<div id="social-share" class="span4">
 					<img src="images/twitter-share.png">
