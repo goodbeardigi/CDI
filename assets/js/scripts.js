@@ -35,13 +35,24 @@ jQuery('.carousel').carousel({
 
 //Show top search 
 //Slide down and fade in animations
+var i=0;
 $(document).ready(function() {
     $('#show-search').click(function(){
+      if(i == 0){
         $('#dropdown-search').animate({height: 50},800);
         $('#search').fadeIn( "fast", function() {
-		    // complete
-		  });
+		      // complete
+		    });
     	$('#search').focus();
+      i=1;
+    } else {
+        $('#dropdown-search').animate({height: 7},800);
+        $('#search').fadeOut( "fast", function() {
+          // complete
+        });
+        $('#search').focus();
+        i=0;
+    }
     });
 });
 
