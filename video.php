@@ -1,7 +1,7 @@
 <?php
 
 include('inc/connect.php');
-include('header.php');
+//include('header.php');
 
 $id=$_GET["id"];
 
