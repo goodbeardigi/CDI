@@ -21,11 +21,12 @@ include('header.php');
 			</div>
 			<div class="span12">
 				<div id="container">
-					<form class="span12" name="upload-form" id="upload-form" action="html_form_action.asp" method="get">
+					<form class="span12" name="upload-form" id="upload-form" action="html_form_action.asp" method="post">
 						<input type="text" class="span8" placeholder="Name" name="name"><br />
 						<textarea name="description" class="span8" form="upload-form">Enter description here...</textarea><br />
 						<input type="text" placeholder="Categories" class="span8" name="categories"><br />
 						<input type="hidden" name="url" value="" id="url">
+						<input id="uploadsubmit" class="button" type="submit" value="Submit" disabled="disabled">
 						<br><input type="submit" id="uploadsubmit" class="button" value="Submit" disabled="disabled">
 					</form>
 				</div>
