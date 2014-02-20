@@ -49,6 +49,9 @@
 
 <!-- Main custom script file, everyone use this -->
 <script type="text/javascript" src="assets/js/scripts.js"></script>
+<script type="text/javascript" src="assets/js/upload.js"></script>
+<!-- Including the HTML5 Uploader plugin -->
+<script src="assets/js/jquery.filedrop.js"></script>
 
 <body data-spy="scroll" data-target=".top-spy">
 
