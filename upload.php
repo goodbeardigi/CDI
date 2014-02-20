@@ -73,45 +73,14 @@ include('header.php');
 </section>
 
 <script type="text/javascript">
-
-$('#twitter').sharrre({
-      share: { twitter: true },
-      url: document.URL,
-      enableHover: false,
-      enableTracking: true,
-      template: '<a class="box" href="#"><div class="count" href="#">{total}</div></a>',
-      buttons: { twitter: {via: 'James_Cobbett'}},
-      click: function(api, options){
-	    api.simulateClick();
-	    api.openPopup('twitter');
-	  }
-    });
-
-    $('#facebook').sharrre({
-      share: { facebook: true },
-      url: document.URL,
-      enableHover: false,
-      enableTracking: true,
-      template: '<a class="box" href="#"><div class="count" href="#">{total}</div></a>',
-      click: function(api, options){
-	    api.simulateClick();
-	    api.openPopup('facebook');
-	  }
-    });
-
-
-
-    $('#pinterest').sharrre({
-	  share: { pinterest: true },
-	  url: document.URL,  //if you need to personalize url button
-  	  media: '',
-      description: '',
-      template: '<a class="box" href="#"><div class="count" href="#">{total}</div></a>',
-      	  click: function(api, options){
-	    api.simulateClick();
-	    api.openPopup('pinterest');
-	  }
-	});
+$( document ).ready(function() {
+  var form = document.getElementById('upload-form');
+  if (form.attachEvent) {
+      form.attachEvent("submit", processUploadForm);
+  } else {
+      form.addEventListener("submit", processUploadForm);
+  }
+});
 </script>
 
 <?php include('footer.php'); ?>

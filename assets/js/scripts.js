@@ -112,10 +112,3 @@ function processUploadForm(e) {
 
     return false;
 }
-
-var form = document.getElementById('upload-form');
-if (form.attachEvent) {
-    form.attachEvent("submit", processUploadForm);
-} else {
-    form.addEventListener("submit", processUploadForm);
-}
