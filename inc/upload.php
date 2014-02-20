@@ -6,12 +6,12 @@
 $demo_mode = false;
 $upload_dir = '../videos/';
 $allowed_ext = array('jpg','jpeg','png','gif', '');
-$name = "";
-$description = "";
-$user_id = "";
-$categories_id = "";
-$url = $pic['name'];
-$date_added = "";
+// $name = "";
+// $description = "";
+// $user_id = "";
+// $categories_id = "";
+// $url = $pic['name'];
+// $date_added = "";
 
 if(strtolower($_SERVER['REQUEST_METHOD']) != 'post'){
 	exit_status('Error! Wrong HTTP method!');
@@ -42,9 +42,9 @@ if(array_key_exists('pic',$_FILES) && $_FILES['pic']['error'] == 0 ){
 	
 	if(move_uploaded_file($pic['tmp_name'], $upload_dir.$pic['name'])){
 
-			mysqli_query($con,"INSERT INTO videos (name, description, user_id, categories_id, date_added, url)VALUES ('$name', '$description', '$user_id', '$categories_id', '$date_added', '$url')");
+			// mysqli_query($con,"INSERT INTO videos (name, description, user_id, categories_id, date_added, url)VALUES ('$name', '$description', '$user_id', '$categories_id', '$date_added', '$url')");
 
-			mysqli_close($con);
+			// mysqli_close($con);
 
 		exit_status('File was uploaded successfuly!');
 	}
