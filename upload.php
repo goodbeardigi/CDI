@@ -1,6 +1,6 @@
 <?php
 
-include('inc/connect.php');
+//include('inc/connect.php');
 include('header.php');
 ?>
 <!-- Main hero unit for a primary marketing message or call to action -->
@@ -16,8 +16,19 @@ include('header.php');
 	<div class="container">
     	<div class="row">
 		
-    		<div id="dropbox">
+    		<div id="dropbox" class="span12">
 				<span class="message">Drop images here to upload. <br /><i>(they will only be visible to you)</i></span>
+			</div>
+			<div class="span12">
+				<div id="container">
+					<form class="span12" name="upload-form" id="upload-form" action="html_form_action.asp" method="get">
+						<input type="text" class="span8" placeholder="Name" name="name"><br />
+						<textarea name="description" class="span8" form="upload-form">Enter description here...</textarea><br />
+						<input type="text" placeholder="Categories" class="span8" name="categories"><br />
+						<input type="hidden" name="url" value="" id="url">
+						<br><input type="submit" id="uploadsubmit" class="button" value="Submit" disabled="disabled">
+					</form>
+				</div>
 			</div>
 		</div>		
 	</div>

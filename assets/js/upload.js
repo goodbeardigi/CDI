@@ -13,6 +13,8 @@ $(function(){
     
     uploadFinished:function(i,file,response){
       $.data(file).addClass('done');
+      document.getElementById('url').value = file['name'];
+      document.getElementById("uploadsubmit").disabled = false;
       // response is the JSON object that post_file.php returns
     },
     

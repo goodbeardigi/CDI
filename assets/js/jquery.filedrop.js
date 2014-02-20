@@ -31,7 +31,7 @@
 			url: '',
 			refresh: 1000,
 			paramname: 'userfile',
-			maxfiles: 25,
+			maxfiles: 1,
 			maxfilesize: 1, // MBs
 			data: {},
 			drop: empty,

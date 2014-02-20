@@ -72,3 +72,50 @@ $('.myTab a').click(function (e) {
   e.preventDefault()
   $(this).tab('show')
 })
+
+
+//Intercept Upload form
+function processUploadForm(e) {
+    if (e.preventDefault) e.preventDefault();
+  // declaring variables to be used
+    var xhr, target, changeListener, url, data;
+
+    //setting url to the php code to add comments to the db
+    url = "http://carbon.jamescobbett.co.uk/inc/uploadform.php";
+    var form = document.getElementById("upload-form");
+    var data = new FormData(form);
+    console.log("Sending", data);
+    // create a request object
+    xhr = new XMLHttpRequest();
+
+    changeListener = function () {
+        if (xhr.readyState == 4) {
+            if (xhr.status == 200) {
+                console.log("Response", this.responseText);
+                var response = this.responseText;
+                var s = "success";
+                var message = response.indexOf("failed:");
+                console.log(message);
+                if (response != ''){              
+                }
+            }
+        }
+    };
+        // initialise a request, specifying the HTTP method
+    // to be used and the URL to be connected to.
+    xhr.onreadystatechange = changeListener;
+    xhr.open('POST', url, true);
+    //xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhr.send(data);
+
+
+
+    return false;
+}
+
+var form = document.getElementById('upload-form');
+if (form.attachEvent) {
+    form.attachEvent("submit", processUploadForm);
+} else {
+    form.addEventListener("submit", processUploadForm);
+}

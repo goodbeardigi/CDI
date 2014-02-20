@@ -1,17 +1,10 @@
 <?php
-
 // If you want to ignore the uploaded files, 
 // set $demo_mode to true;
 
 $demo_mode = false;
 $upload_dir = '../videos/';
 $allowed_ext = array('jpg','jpeg','png','gif', 'mp4');
-$name = "";
-$description = "";
-$user_id = "";
-$categories_id = "";
-$date_added = "";
-$url = $pic['name'];
 
 if(strtolower($_SERVER['REQUEST_METHOD']) != 'post'){
 	exit_status('Error! Wrong HTTP method!');
@@ -41,9 +34,6 @@ if(array_key_exists('pic',$_FILES) && $_FILES['pic']['error'] == 0 ){
 	// directory to the uploads folder:
 	
 	if(move_uploaded_file($pic['tmp_name'], $upload_dir.$pic['name'])){
-		mysqli_query($con,"INSERT INTO videos (name, description, user_id, categories_id, date_added, url) VALUES ('$name', '$description', '$user_id', '$categories_id', '$url' )");
-
-		mysqli_close($con);
 		exit_status('File was uploaded successfuly!');
 	}
 	
