@@ -81,7 +81,7 @@ function processUploadForm(e) {
     var xhr, target, changeListener, url, data;
 
     //setting url to the php code to add comments to the db
-    url = "http://carbon.jamescobbett.co.uk/inc/uploadform.php";
+    url = "http://cdisports.jamescobbett.co.uk/inc/uploadform.php";
     var form = document.getElementById("upload-form");
     var data = new FormData(form);
     console.log("Sending", data);
