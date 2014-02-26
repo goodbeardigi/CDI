@@ -83,7 +83,7 @@ require_once('inc/functions.inc.php');
 
             echo $_SESSION['username'];  ?>.
             <br>
-            <a href="includes/logout.inc.php"> Log Out</a>
+            <a href="inc/logout.inc.php"> Log Out</a>
           </div>
 
           <div id="social-links">
