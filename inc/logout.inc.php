@@ -17,17 +17,6 @@ if (check_login_status() == false) {
  
  // Destroy session 
  session_destroy(); 
+ redirect('../index.php'); 
 } 
 ?> 
-<?php
-include('header.php');
-?>
-<!DOCTYPE html PUBLIC> 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
-
-<body> 
-<p>You have successfully logged out</p>
-  
-</body> 
-</html> 
-<?php include('footer.php'); ?>
