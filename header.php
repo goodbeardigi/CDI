@@ -6,9 +6,9 @@ session_start();
 require_once('includes/functions.inc.php'); 
  
 // Check login status... if not logged in, redirect to login screen 
-if (check_login_status() == false) { 
- redirect('account.php'); 
-} 
+// if (check_login_status() == false) { 
+//  redirect('account.php'); 
+// } 
           
 ?> 
 <!DOCTYPE html>
