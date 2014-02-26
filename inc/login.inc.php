@@ -32,12 +32,13 @@ mysqli_connect_error());
  exit();  }
  
  // Escape any unsafe characters before querying database 
- $username = $mysqli->real_escape_string($_POST['username']); 
- $password = $mysqli->real_escape_string($_POST['password']); 
+ //$username = $mysqli->real_escape_string($_POST['username']); 
+ //$password = $mysqli->real_escape_string($_POST['password']); 
  
  // Construct SQL statement for query & execute 
  $sql = "SELECT * FROM users WHERE username = '" . $username . "' AND password = '" . md5($password) . "'"; 
- $result = $mysqli->query($sql); 
+ //$result = $mysqli->query($con, $sql); 
+ $result = mysqli_query($con, $sql); 
  
  // If one row is returned, username and password are valid 
  if (is_object($result) && $result->num_rows == 1) { 

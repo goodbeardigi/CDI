@@ -14,7 +14,7 @@ include('connect.php');
 
 // Get values from form 
 $username=$_POST['name'];
-$lastname=$_POST['password'];
+$password=$_POST['password'];
 
 // Insert data into mysql 
 $sql="INSERT INTO users (username, password)VALUES('$username', '$password')";
