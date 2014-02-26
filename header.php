@@ -3,7 +3,7 @@
 session_start(); 
  
 // Include required functions file 
-require_once('includes/functions.inc.php'); 
+require_once('inc/functions.inc.php'); 
  
 // Check login status... if not logged in, redirect to login screen 
 // if (check_login_status() == false) { 
