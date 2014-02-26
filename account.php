@@ -19,7 +19,7 @@ include('header.php');
 			<div id="login-form-container">
 				<p>Some text</p>
 
-			     <form id="login-form" method="post" novalidate="" action="includes/login.inc.php">			           
+			     <form id="login-form" method="post" novalidate="" action="inc/login.inc.php">			           
 		               <input type="text" name="username" id="username" placeholder="info@test.com" required="required">
 		               <input type="password" name="password" id="password" placeholder="password" required="required">
 		               <input id="submit" class="button" type="submit" value="Login">
