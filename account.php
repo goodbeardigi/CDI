@@ -36,7 +36,7 @@ include('header.php');
 
 				<div id="create-account">
 					<h3> Create an account</h3>
-					<form id="form1" name="form1" method="post" action="insert.php"> 
+					<form id="form1" name="form1" method="post" action="inc/insert.php"> 
 					<input type="text" name="name" id="name" placeholder="info@test.com" required="required"><br>
 		            <input type="password" name="password" id="password" placeholder="password" required="required"><br>
 					<input id="submit"  class="button" type="submit" value="Sign-up">
