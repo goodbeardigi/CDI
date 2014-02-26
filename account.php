@@ -19,10 +19,10 @@ include('header.php');
 			<div id="login-form-container">
 				<p>Some text</p>
 
-			     <form action="#" id="login-form" method="post" novalidate="">			           
-		               <input type="email" name="email" id="email-input" placeholder="info@test.com" required="required">
-		               <input type="password" name="password" id="password-input" placeholder="password" required="required">
-		               <input id="login-user" class="button" type="submit" value="Submit">
+			     <form id="login-form" method="post" novalidate="" action="includes/login.inc.php">			           
+		               <input type="text" name="username" id="username" placeholder="info@test.com" required="required">
+		               <input type="password" name="password" id="password" placeholder="password" required="required">
+		               <input id="submit" class="button" type="submit" value="Login">
 			     </form>
 			 </div>
 			 <div class="clear"></div>
@@ -32,11 +32,15 @@ include('header.php');
 
 				<input id="login-user-fb" class="button" type="submit" value="Connect with Facebook">
 
-				<a id="forgotdetails" href="#">Forgotting login details</a>
+				<a id="forgotdetails" href="#">Forgotten login details</a>
 
 				<div id="create-account">
 					<h3> Create an account</h3>
-					<input id="sign-up"  class="button" type="submit" value="Sign Up"
+					<form id="form1" name="form1" method="post" action="insert.php"> 
+					<input type="text" name="name" id="name" placeholder="info@test.com" required="required"><br>
+		            <input type="password" name="password" id="password" placeholder="password" required="required"><br>
+					<input id="submit"  class="button" type="submit" value="Sign-up">
+					</form>
 				</div>
 			</div>
 		</div>											

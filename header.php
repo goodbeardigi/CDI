@@ -1,4 +1,16 @@
-
+<?php 
+// Start session 
+session_start(); 
+ 
+// Include required functions file 
+require_once('includes/functions.inc.php'); 
+ 
+// Check login status... if not logged in, redirect to login screen 
+if (check_login_status() == false) { 
+ redirect('account.php'); 
+} 
+          
+?> 
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -66,6 +78,12 @@
           <div id="user-inks">
             <span><a href="account.php">Sign In</a>//</span>
             <span><a href="upload.php">Upload</a></span>
+             - You are currently logged in as
+            <?php 
+
+            echo $_SESSION['username'];  ?>.
+            <br>
+            <a href="includes/logout.inc.php"> Log Out</a>
           </div>
 
           <div id="social-links">
