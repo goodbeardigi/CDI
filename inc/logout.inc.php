@@ -9,7 +9,7 @@ require_once('functions.inc.php');
 // If logged in, unset session variable and display logged-out message 
 if (check_login_status() == false) { 
  // Redirect to 
- redirect('account.php'); 
+ redirect('../account.php'); 
 } else { 
  // Kill session variables 
  unset($_SESSION['logged_in']); 
