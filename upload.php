@@ -21,7 +21,7 @@ if(!isset($_SESSION['username'])){
 			     <form id="login-form" method="post" novalidate="" action="inc/login.inc.php">			           
 		               <input type="text" name="username" id="username" placeholder="info@test.com" required="required">
 		               <input type="password" name="password" id="password" placeholder="password" required="required">
-		               <input id="submit" class="button" type="submit" value="Login">
+		               <a href="#" onclick="login()"><input id="submit" class="button" type="submit" value="Login"></a>
 			     </form>
 			 </div>
 			 <div class="clear"></div>
