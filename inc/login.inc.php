@@ -5,7 +5,7 @@ require_once('functions.inc.php');
 include('connect.php');
  
 // Start session 
-session_start(); 
+//session_start(); 
  //echo "test";
  
 // Check if user is already logged in 
