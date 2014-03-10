@@ -149,7 +149,10 @@ input[disabled]{
 	background: #eee;
 }
 .button{
-	margin-bottom: 5px;
+	margin: 5px auto !important;
+	color: #fff !important;
+	padding: 10px 0 !important;
+	height: auto !important;
 }
 /*-------------------------
 	Dropbox Element

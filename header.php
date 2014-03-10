@@ -70,14 +70,42 @@ require_once('inc/functions.inc.php');
 
     <!-- HEADER --> 
   <header id="head-top">
-    
+    <!-- LOGIN MODAL -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+          <div id="main-form" class="text-center">
+
+      <h2>Login</h2>
+
+      <div id="login-form-container">
+
+           <form id="login-form" method="post" novalidate="" action="">                
+                   <input type="text" name="username" id="username" placeholder="info@test.com" required="required">
+                   <input type="password" name="password" id="password" placeholder="password" required="required">
+                   <a href="#" onclick="login()" class="button-form"><div class="button" id="login">Login</div></a>
+           </form>
+       </div>
+       <div class="clear"></div>
+        <span class="separator"><p>Or</p></span>
+
+        <a href="#" onclick="alert('clicked')";><input id="login-user-fb" class="button" type="submit" value="Connect with Facebook"></a>
+        <a href="account.php"><input id="login-user-fb" class="button" type="submit" value="Register an accoount"></a>
+
+        <a id="forgotdetails" href="#">Forgotten login details</a>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
     <div class="navbar navbar-fixed-top navbar-inverse">
       <div class="navbar-inner">
         <div class="container">
           <a class="brand" href="http://cdisports.jamescobbett.co.uk"><img src="images/logo.jpg"/></a>
 
           <div id="user-inks">
-            <span><a href="account.php">Sign In</a>//</span>
+            <span><a href="#" onclick="$('#loginModal').modal('show')">Sign In</a>//</span>
             <span><a href="upload.php">Upload</a></span>
             <?php 
             if(isset($_SESSION['username'])){
@@ -108,5 +136,6 @@ require_once('inc/functions.inc.php');
       </div>
     </div>
 
+</div>
 </header>
 <!-- / HEADER -->
