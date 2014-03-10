@@ -300,7 +300,7 @@ include('header.php');
 			</div>
 		</div>											
 </div><!-- /CONTAINER-->
-</section> -->
+</section> 
 <!-- / SECTION-3 --> 
   
 
