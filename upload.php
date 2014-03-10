@@ -1,8 +1,50 @@
 <?php
-
 //include('inc/connect.php');
 include('header.php');
+if(!isset($_SESSION['username'])){
+	?>
+	<script>$('#myModal').modal('show');</script>
+	<?php
+}
 ?>
+<!-- Login Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        	<div id="main-form" class="text-center">
+
+			<h2>Login to upload a video</h2>
+
+			<div id="login-form-container">
+
+			     <form id="login-form" method="post" novalidate="" action="inc/login.inc.php">			           
+		               <input type="text" name="username" id="username" placeholder="info@test.com" required="required">
+		               <input type="password" name="password" id="password" placeholder="password" required="required">
+		               <input id="submit" class="button" type="submit" value="Login">
+			     </form>
+			 </div>
+			 <div class="clear"></div>
+				<span class="separator"><p>Or</p></span>
+
+				<a href="#" onclick="alert('clicked')";><input id="login-user-fb" class="button" type="submit" value="Connect with Facebook"></a>
+				<a href="account.php"><input id="login-user-fb" class="button" type="submit" value="Register an accoount"></a>
+
+				<a id="forgotdetails" href="#">Forgotten login details</a>
+			</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<?php
+if(!isset($_SESSION['username'])){
+	?>
+	<script>$('#myModal').modal('show');</script>
+	<?php
+}
+?>
+
 <!-- Main hero unit for a primary marketing message or call to action -->
 <div class="hero-unit">
 		<div class="container">

@@ -112,3 +112,67 @@ function processUploadForm(e) {
 
     return false;
 }
+
+function login(){
+    // declaring variables to be used
+    var xhr, target, changeListener, url, data;
+
+    //setting url to the php code to add comments to the db
+    url = "http://carbon.jamescobbett.co.uk/services/login.inc.php ";
+
+      //FORM VALIDATION
+      var x=document.forms["login-form"]["username"].value;
+      if (x==null || x=="")
+      {
+          //document.getElementById("failure").innerHTML ="<div id='failureText'><img src='images/cross.png' id='cross'> <h1>Oops! You haven't eventered an email address.<h1></div>";      
+          //$('#failure').slideDown("slow");    
+          //$('#emailerror').slideDown("slow");  
+          alert('username error');
+          return false;
+      }
+      var x=document.forms["login-form"]["password"].value;
+      if (x==null || x=="")
+      {
+          //document.getElementById("failure").innerHTML ="<div id='failureText'><img src='images/cross.png' id='cross'> <h1>Oops! You haven't eventered an email address.<h1></div>";      
+          //$('#failure').slideDown("slow");    
+          //$('#emailerror').slideDown("slow");  
+          alert('password error');
+          return false;
+      }
+
+      var form = document.getElementById("login-form");
+      var data = new FormData(form);
+    
+    //var form = document.getElementById("loginForm");
+    //var data = new FormData(form);
+    //var html = document.getElementById("source").innerHTML;
+  //data = 'html='+escape(document.getElementById("source").innerHTML);
+    console.log("Sending", data);
+    // create a request object
+    xhr = new XMLHttpRequest();
+
+    changeListener = function () {
+        if (xhr.readyState == 4) {
+            if (xhr.status == 200) {
+                console.log("Response", this.responseText);
+                var response = this.responseText;
+                var s = "success";
+                var message = response.indexOf("failed:");
+                console.log(message);
+                if (message == -1){
+                  alert('logged in');
+                else {
+                    alert('failure');
+                }
+            }
+        }
+    };
+
+    // initialise a request, specifying the HTTP method
+    // to be used and the URL to be connected to.
+    xhr.onreadystatechange = changeListener;
+    xhr.open('POST', url, true);
+    //xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhr.send(data);
+    return false;
+}

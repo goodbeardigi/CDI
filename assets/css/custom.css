@@ -145,6 +145,12 @@ input[disabled]{
 	margin: 0 auto;
 	text-align: center;
 }
+.modal-body{
+	background: #eee;
+}
+.button{
+	margin-bottom: 5px;
+}
 /*-------------------------
 	Dropbox Element
 --------------------------*/

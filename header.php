@@ -64,6 +64,7 @@ require_once('inc/functions.inc.php');
 <script type="text/javascript" src="assets/js/upload.js"></script>
 <!-- Including the HTML5 Uploader plugin -->
 <script src="assets/js/jquery.filedrop.js"></script>
+<script src="assets/js/modal.js"></script>
 
 <body data-spy="scroll" data-target=".top-spy">
 
