@@ -78,10 +78,10 @@ require_once('inc/functions.inc.php');
           <div id="user-inks">
             <span><a href="account.php">Sign In</a>//</span>
             <span><a href="upload.php">Upload</a></span>
-             - You are currently logged in as
             <?php 
-
-            echo $_SESSION['username'];  ?>.
+            if(isset($_SESSION['username'])){
+              echo "Hello ".$_SESSION['username'];
+            }?>
             <br>
             <a href="inc/logout.inc.php"> Log Out</a>
           </div>
