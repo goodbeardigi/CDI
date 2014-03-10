@@ -3,12 +3,12 @@
 include('header.php');
 if(!isset($_SESSION['username'])){
 	?>
-	<script>$('#login-upload').modal('show');</script>
+	<script>$('#myModal').modal('show');</script>
 	<?php
 }
 ?>
 <!-- Login Modal -->
-<div class="modal fade" id="login-upload" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body">
