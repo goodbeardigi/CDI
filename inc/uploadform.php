@@ -3,7 +3,7 @@ include('connect.php');
 
 $name = $_POST['name'];
 $description =  $_POST['description'];
-$user_id =  "";
+$user_id =  $_POST['id'];
 $categories_id =  $_POST['categories'];
 $date_added =  "";
 $url =  $_POST['url'];
