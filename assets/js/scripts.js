@@ -160,7 +160,7 @@ function login(){
                 var message = response.indexOf("failed:");
                 console.log(message);
                 if (message == -1){
-                  alert('logged in');
+                  $('#login-upload').modal('hide');
                 } else {
                     alert('failure');
                 }
