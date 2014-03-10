@@ -4,7 +4,7 @@ require_once('config.inc.php');
 require_once('functions.inc.php'); 
  
 // Start session 
-session_start(); 
+//session_start(); 
  
 // Check if user is already logged in 
 if ($_SESSION['logged_in'] == true) { 
