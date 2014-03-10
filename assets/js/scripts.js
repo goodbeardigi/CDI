@@ -161,7 +161,7 @@ function login(){
                 console.log(message);
                 if (message == -1){
                   alert('logged in');
-                else {
+                } else {
                     alert('failure');
                 }
             }
