@@ -75,6 +75,8 @@ require_once('inc/functions.inc.php');
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
           <div id="main-form" class="text-center">
 
       <h2>Login</h2>
