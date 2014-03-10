@@ -18,10 +18,11 @@ if(!isset($_SESSION['username'])){
 
 			<div id="login-form-container">
 
-			     <form id="login-form" method="post" novalidate="" action="inc/login.inc.php">			           
+			     <form id="login-form" method="post" novalidate="" action="">			           
 		               <input type="text" name="username" id="username" placeholder="info@test.com" required="required">
 		               <input type="password" name="password" id="password" placeholder="password" required="required">
 		               <a href="#" onclick="login()"><input id="submit" class="button" type="submit" value="Login"></a>
+		               <a href="#" onclick="login()">Login</a>
 			     </form>
 			 </div>
 			 <div class="clear"></div>
