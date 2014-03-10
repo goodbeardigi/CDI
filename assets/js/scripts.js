@@ -118,7 +118,7 @@ function login(){
     var xhr, target, changeListener, url, data;
 
     //setting url to the php code to add comments to the db
-    url = "http://cdisports.jamescobbett.co.uk/services/login.inc.php ";
+    url = "http://cdisports.jamescobbett.co.uk/includes/login.inc.php ";
 
       //FORM VALIDATION
       var x=document.forms["login-form"]["username"].value;
