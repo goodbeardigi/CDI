@@ -675,6 +675,24 @@
 	color: black;
 }
 
+#vlogin-form {
+	width: 350px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+#vlogin-form input, #main-form .button  {
+	height: 38px;
+	border: 0;
+	border-radius: 0;
+	width: 300px;
+}
+
+#vlogin-form input {
+	color: black;
+}
+
 .button {
 	background: #222;
 	color: white!important;
