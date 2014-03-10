@@ -11,7 +11,7 @@ include('connect.php');
 // Check if user is already logged in 
 if ($_SESSION['logged_in'] === true) { 
  // If user is already logged in, redirect to main page 
- redirect('../index.php'); 
+ //redirect('../index.php'); 
 } else { 
 	//echo "test";
  // Make sure that user submitted a username/password and username only consists of alphanumeric chars
@@ -55,12 +55,13 @@ if ($_SESSION['logged_in'] === true) {
 	   	$_SESSION['username'] = $row['username'];
 	   	$_SESSION['id'] = $row['id'];
 	   }
-
- redirect('../index.php'); 
+	   echo "Success";
+ //redirect('../index.php'); 
  } else { 
  // If number of rows returned is not one, redirect back to login screen 
 
- redirect('../account.php'); 
+ //redirect('../account.php'); 
+ 	echo "failed";
  } 
 } 
 ?> 
