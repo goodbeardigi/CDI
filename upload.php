@@ -3,12 +3,12 @@
 include('header.php');
 if(!isset($_SESSION['username'])){
 	?>
-	<script>$('#uploadModal').modal('show');</script>
+	<script>$('#myModal').modal('show');</script>
 	<?php
 }
 ?>
 <!-- Login Modal -->
-<div class="modal fade" id="uploadModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body">
@@ -22,7 +22,7 @@ if(!isset($_SESSION['username'])){
 		               <input type="text" name="username" id="username" placeholder="info@test.com" required="required">
 		               <input type="password" name="password" id="password" placeholder="password" required="required">
 		               <a href="#" onclick="login()"><input id="submit" class="button" type="submit" value="Login"></a>
-		               <a href="#" onclick="login()"><input id="submit" class="button" type="submit" value="Login"></a>
+		               <a href="#" onclick="login()">Login</a>
 			     </form>
 			 </div>
 			 <div class="clear"></div>
