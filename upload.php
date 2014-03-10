@@ -21,7 +21,7 @@ if(!isset($_SESSION['username'])){
 			     <form id="vlogin-form" method="post" novalidate="" action="">			           
 		               <input type="text" name="username" id="username" placeholder="info@test.com" required="required">
 		               <input type="password" name="password" id="password" placeholder="password" required="required">
-		               <a href="#" onclick="login()" class="button-form"><div class="button" id="login">Login</div></a>
+		               <a href="#" onclick="loginvideo()" class="button-form"><div class="button" id="login">Login</div></a>
 			     </form>
 			 </div>
 			 <div class="clear"></div>
