@@ -161,7 +161,8 @@ function login(){
                 var message = response.indexOf("failed:");
                 console.log(message);
                 if (message == -1){
-                  $('#login-upload').modal('hide');
+                  $('#loginUpload').modal('hide');
+                  $('#myModal').modal('hide');
                 } else {
                     alert('failure');
                 }
