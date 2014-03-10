@@ -68,6 +68,7 @@ if(!isset($_SESSION['username'])){
 						<textarea name="description" class="span8" form="upload-form">Enter description here...</textarea><br />
 						<input type="text" placeholder="Categories" class="span8" name="categories"><br />
 						<input type="hidden" name="url" value="" id="url">
+						<input type="hidden" name="id" value="<?php echo $_SESSION['username'] ?>" id="id">
 						<input id="uploadsubmit" class="button" type="submit" value="Submit" disabled="disabled">
 						<br><input type="submit" id="uploadsubmit" class="button" value="Submit" disabled="disabled">
 					</form>

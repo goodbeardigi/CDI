@@ -84,7 +84,6 @@ function processUploadForm(e) {
     url = "http://cdisports.jamescobbett.co.uk/inc/uploadform.php";
     var form = document.getElementById("upload-form");
     var data = new FormData(form);
-    data.append('id', $_SESSION['id']);
     console.log("Sending", data);
     // create a request object
     xhr = new XMLHttpRequest();
