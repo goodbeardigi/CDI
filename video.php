@@ -9,7 +9,6 @@ $id=$_GET["id"];
 $result = mysqli_query($con,"SELECT videos.name, videos.description, videos.user_id, videos.categories_id, videos.date_added, videos.url, users.username, users.id FROM videos INNER JOIN users ON users.id=videos.user_id WHERE videos.id=$id");
 
 while($row = mysqli_fetch_array($result)){
-print_r($result);
 	$title = $row['name'];
 	$description = $row['description'];
 	$user_id = $row['user_id'];
