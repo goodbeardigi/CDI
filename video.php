@@ -6,7 +6,7 @@ include('inc/timeago.php');
 
 $id=$_GET["id"];
 
-$result = mysqli_query($con,"SELECT videos.name, videos.description, videos.user_id, videos.categories_id, videos.date_added, videos.url, users.username FROM videos INNER JOIN users ON videos.user_id=users.id AND videos.id='$id'");
+$result = mysqli_query($con,"SELECT videos.name, videos.description, videos.user_id, videos.categories_id, videos.date_added, videos.url, users.username FROM videos LEFT JOIN users ON videos.user_id=users.id AND videos.id='$id'");
 
 while($row = mysqli_fetch_array($result)){
 	$title = $row['name'];
