@@ -6,12 +6,13 @@ include('inc/timeago.php');
 
 $id=$_GET["id"];
 
-$result = mysqli_query($con,"SELECT * FROM videos WHERE id=$id");
+$result = mysqli_query($con,"SELECT videos.name, videos.description, videos.user_id, videos.categories_id, videos.date_added, videos.url, users.username FROM videos INNER JOIN users WHERE videos.id=$id AND users.id=$id");
 
 while($row = mysqli_fetch_array($result)){
 	$title = $row['name'];
 	$description = $row['description'];
 	$user_id = $row['user_id'];
+	$username = $row['username'];
 	$categories_id = $row['categories_id'];
 	$date_added = $row['date_added'];
 	$url = $row['url'];
@@ -36,7 +37,7 @@ while($row = mysqli_fetch_array($result)){
 				<div class="span7">
 					<ul id="video-title">
 						<li><h2><?php echo $title; ?></h2></li>
-						<li><h4 id="author">Author</h4></li>
+						<li><h4 id="author"><?php echo $username; ?></h4></li>
 					</ul>
 						<div style="clear: both;"></div>
 

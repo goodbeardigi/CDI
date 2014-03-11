@@ -13,7 +13,7 @@ include('header.php');
  
 		<div id="main-form" class="text-center">
 
-			<h2> Login with email or sign up with Facebook </h2>
+			<!-- <h2> Login with email or sign up with Facebook </h2>
 
 			<div id="login-form-container">
 				<p>Some text</p>
@@ -26,12 +26,10 @@ include('header.php');
 			 </div>
 			 <div class="clear"></div>
 		<hr>
+ -->
+<!-- 				<span class="separator"><p>Or</p></span>
 
-				<span class="separator"><p>Or</p></span>
-
-				<input id="login-user-fb" class="button" type="submit" value="Connect with Facebook">
-
-				<a id="forgotdetails" href="#">Forgotten login details</a>
+				<input id="login-user-fb" class="button" type="submit" value="Connect with Facebook"> -->
 
 				<div id="create-account">
 					<h3> Create an account</h3>
@@ -41,6 +39,9 @@ include('header.php');
 					<input id="submit"  class="button" type="submit" value="Sign-up">
 					</form>
 				</div>
+				<span class="separator"><p>Or</p></span>
+
+				<input id="login-user-fb" class="button" type="submit" value="Connect with Facebook">
 			</div>
 		</div>											
 </div><!-- /CONTAINER-->
