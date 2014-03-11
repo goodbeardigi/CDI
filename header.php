@@ -124,10 +124,10 @@ require_once('inc/functions.inc.php');
 
           <div class="nav-collapse collapse top-spy">
             <ul class="nav" id="topnav">
-              <li class="active"><a href="category/skate">Skate</a></li>
-              <li><a href="category/surf">Surf</a></li>
-              <li><a href="category/sky">Sky</a></li>
-              <li><a href="category/snow">Snow</a></li>
+              <li class="active"><a href="category.php?id=0">Skate</a></li>
+              <li><a href="category.php?id=1">Surf</a></li>
+              <li><a href="category.php?id=2">Sky</a></li>
+              <li><a href="category.php?id=3">Snow</a></li>
               <li><a id="show-search" href="#"><img src="images/search-icon.png"></a></li>
             </ul>
           </div><!--/.nav-collapse -->
