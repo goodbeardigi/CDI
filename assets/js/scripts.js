@@ -241,7 +241,40 @@ function loginvideo(){
     return false;
 }
 
-function addcount() {
+function addcount(id) {
+  alert(id);
     this.removeEventListener('play', addcount, false);
     alert("add count");
+    // declaring variables to be used
+    var xhr, target, changeListener, url, data;
+
+    //setting url to the php code to add comments to the db
+    url = "http://cdisports.jamescobbett.co.uk/inc/addview.php ";
+    
+    var data = new FormData();
+    data.append("id", id);
+    
+    console.log("Sending", data);
+    // create a request object
+    xhr = new XMLHttpRequest();
+
+    changeListener = function () {
+        if (xhr.readyState == 4) {
+            if (xhr.status == 200) {
+                console.log("Response", this.responseText);
+                var response = this.responseText;
+                var s = "success";
+                var message = response.indexOf("failed:");
+                console.log(message);
+            }
+        }
+    };
+
+    // initialise a request, specifying the HTTP method
+    // to be used and the URL to be connected to.
+    xhr.onreadystatechange = changeListener;
+    xhr.open('POST', url, true);
+    //xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhr.send(data);
+    return false;
 }
