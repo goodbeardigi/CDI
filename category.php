@@ -6,7 +6,7 @@ include('inc/timeago.php');
 
 $id=$_GET["id"];
 
-$result = mysqli_query($con,"SELECT videos.name, videos.description, videos.user_id, videos.categories_id, videos.date_added, videos.url, categories.category, categories.id FROM videos INNER JOIN categories ON categories.id=videos.categories_id WHERE videos.categories_id=$id");
+$result = mysqli_query($con,"SELECT videos.id, videos.name, videos.description, videos.user_id, videos.categories_id, videos.date_added, videos.url, categories.category FROM videos INNER JOIN categories ON categories.id=videos.categories_id WHERE videos.categories_id=$id");
 ?>
 <div id="recent-videos" class=" tab-pane fade active in video-grid">
 			<div class="row-fluid">
