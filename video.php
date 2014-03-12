@@ -136,6 +136,8 @@ $('#twitter').sharrre({
 	    api.openPopup('pinterest');
 	  }
 	});
+
+	document.getElementById("video").addEventListener('play', dimBack, false);
 </script>
 
 <?php include('footer.php'); ?>

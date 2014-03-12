@@ -1,4 +1,3 @@
-
 // SMOOTH SECTIONS SCROLL + PARALLAX PLUGIN
 //http://www.ianlunn.co.uk/plugins/jquery-parallax/
 jQuery(document).ready(function(){
@@ -240,4 +239,9 @@ function loginvideo(){
     //xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xhr.send(data);
     return false;
+}
+
+function dimBack() {
+    this.removeEventListener('play', dimBack, false);
+    document.getElementById("dimMe").style.backgroundColor="green";
 }
