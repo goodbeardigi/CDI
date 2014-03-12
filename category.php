@@ -25,7 +25,7 @@ $result = mysqli_query($con,"SELECT videos.id, videos.name, videos.description, 
 				        	</a>    
 				       		<img src="images/video-temp.jpg">    
 				        </div>
-				        <?php if($i===3){
+				        <?php if($i===2){
 							?></div><?php
 							$i=-1;
 						} ?>
