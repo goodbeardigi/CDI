@@ -137,7 +137,7 @@ $('#twitter').sharrre({
 	  }
 	});
 
-	document.getElementById("video").addEventListener('play', dimBack, false);
+	document.getElementById("video").addEventListener('play', addcount, false);
 </script>
 
 <?php include('footer.php'); ?>

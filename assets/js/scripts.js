@@ -241,7 +241,7 @@ function loginvideo(){
     return false;
 }
 
-function dimBack() {
-    this.removeEventListener('play', dimBack, false);
-    document.getElementById("dimMe").style.backgroundColor="green";
+function addcount() {
+    this.removeEventListener('play', addcount, false);
+    alert("add count");
 }
