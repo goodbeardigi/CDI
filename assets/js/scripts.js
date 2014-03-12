@@ -242,9 +242,7 @@ function loginvideo(){
 }
 
 function addcount(id) {
-  alert(id);
     this.removeEventListener('play', addcount, false);
-    alert("add count");
     // declaring variables to be used
     var xhr, target, changeListener, url, data;
 
