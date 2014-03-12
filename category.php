@@ -10,7 +10,6 @@ $result = mysqli_query($con,"SELECT videos.id, videos.name, videos.description, 
 ?>
 <div class="container">
 	<div id="recent-videos" class=" tab-pane fade active in video-grid">
-				<div class="row-fluid">
 					<?php
 					while($row = mysqli_fetch_array($result)){
 						if($i===0){
