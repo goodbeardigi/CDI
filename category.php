@@ -13,7 +13,7 @@ $result = mysqli_query($con,"SELECT videos.id, videos.name, videos.description, 
 				<div class="row-fluid">
 					<?php
 					while($row = mysqli_fetch_array($result)){
-						if($i=0){
+						if($i===0){
 							?><div class="row-fluid"><?php
 						}
 						?>
@@ -26,7 +26,7 @@ $result = mysqli_query($con,"SELECT videos.id, videos.name, videos.description, 
 				        	</a>    
 				       		<img src="images/video-temp.jpg">    
 				        </div>
-				        <?php if($i=3){
+				        <?php if($i===3){
 							?></div><?php
 							$i=-1;
 						} ?>
