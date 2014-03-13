@@ -3,14 +3,14 @@
 jQuery(document).ready(function(){
   jQuery('#topnav').localScroll(3000);
   jQuery('.gobtnwrapper').localScroll(3000);
-	
-	//.parallax(xPosition, speedFactor, outerHeight) options:
-	//xPosition - Horizontal position of the element
-	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
-	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-	//jQuery('#section-1').parallax("50%", 0.1);
-	//jQuery('#section-2').parallax("50%", 0.1);
-	//jQuery('#section-3').parallax("50%", 0.1);
+  
+  //.parallax(xPosition, speedFactor, outerHeight) options:
+  //xPosition - Horizontal position of the element
+  //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+  //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+  //jQuery('#section-1').parallax("50%", 0.1);
+  //jQuery('#section-2').parallax("50%", 0.1);
+  //jQuery('#section-3').parallax("50%", 0.1);
 
 })
 
@@ -25,8 +25,8 @@ jQuery(document).ready(
 
 //Minimizes the menu on the mobile after clicking
 jQuery('.nav-collapse .nav > li > a').click(function(){
-		jQuery('.collapse.in').removeClass('in').css('height', '0');
-	});
+    jQuery('.collapse.in').removeClass('in').css('height', '0');
+  });
 
 jQuery('.carousel').carousel({
   interval: 7000
@@ -40,9 +40,9 @@ $(document).ready(function() {
       if(i == 0){
         $('#dropdown-search').animate({height: 50},800);
         $('#search').fadeIn( "fast", function() {
-		      // complete
-		    });
-    	$('#search').focus();
+          // complete
+        });
+      $('#search').focus();
       i=1;
     } else {
         $('#dropdown-search').animate({height: 7},800);
@@ -57,9 +57,9 @@ $(document).ready(function() {
 
 $('#search').keypress(function (e) {
   if (e.which == 13) {
-  	input = $('#search').val();
+    input = $('#search').val();
   //set
-  	alert('test - ' + input);
+    alert('test - ' + input);
         window.location = "/search?=" + input;
         return false; 
   }
@@ -308,9 +308,9 @@ function hottestvideos(days){
                       html += '<div class="row-fluid">';
                     }
                       html += '<div class="span4 video text-center box">';
-                      html += '<a href="/video.php?id='+response[i]["id"]+' class="video-overlay">';
+                      html += '<a href="/video.php?id='+response[i]["id"]+'" class="video-overlay">';
                       html += '<div>';
-                      html += '<h2>'+response[i]["name"]+'</h2>';
+                      html += '<h2>'+response[i]["title"]+'</h2>';
                       html += '<span>'+response[i]["category"]+'</span>';
                       html += '</div>';
                       html += '</a>';    
@@ -322,7 +322,11 @@ function hottestvideos(days){
                   } 
                   l++;
                 }
-                document.getElementById('weeks-hottest').innerHTML = html;
+                if(days === 7){
+                  document.getElementById('weeks-hottest').innerHTML = html;
+                } else if (days === 28){
+                  document.getElementById('months-hottest').innerHTML = html;
+                }
 
             }
         }

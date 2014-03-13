@@ -131,69 +131,8 @@ include('header.php');
 		<!-- months hottest videos tab -->
 
 		<div id="months-hottest" class="tab-pane fade video-grid">
-			<div class="row-fluid">
-		        <div class="span4 video text-center box"> 
-		        	<a href="#" class="video-overlay">
-		        		<div>
-		        			<h2>Video Name 3</h2>
-		        			<span>Skate</span>
-		        		</div>
-		        	</a>    
-		       		<img src="images/video-temp.jpg"/>    
-		        </div>
-
-		        <div class="span4 video text-center box"> 
-		        	<a href="#" class="video-overlay">
-		        		<div>
-		        			<h2>Video Name</h2>
-		        			<span>Skate</span>
-		        		</div>
-		        	</a>    
-		       		<img src="images/video-temp.jpg"/>    
-		        </div>
-
-		        <div class="span4 video text-center box"> 
-		        	<a href="#" class="video-overlay">
-		        		<div>
-		        			<h2>Video Name</h2>
-		        			<span>Skate</span>
-		        		</div>
-		        	</a>    
-		       		<img src="images/video-temp.jpg"/>    
-		        </div>
-			</div>
-			<div class="row-fluid">
-		        <div class="span4 video text-center box"> 
-		        	<a href="#" class="video-overlay">
-		        		<div>
-		        			<h2>Video Name</h2>
-		        			<span>Skate</span>
-		        		</div>
-		        	</a>    
-		       		<img src="images/video-temp.jpg"/>    
-		        </div>
-
-		        <div class="span4 video text-center box"> 
-		        	<a href="#" class="video-overlay">
-		        		<div>
-		        			<h2>Video Name</h2>
-		        			<span>Skate</span>
-		        		</div>
-		        	</a>    
-		       		<img src="images/video-temp.jpg"/>    
-		        </div>
-
-		        <div class="span4 video text-center box"> 
-		        	<a href="#" class="video-overlay">
-		        		<div>
-		        			<h2>Video Name</h2>
-		        			<span>Skate</span>
-		        		</div>
-		        	</a>    
-		       		<img src="images/video-temp.jpg"/>    
-		        </div>
-		      </div>
-			</div>
+			<script type="text/javascript">$( document ).ready(function() {hottestvideos(28);});</script>	
+		</div>
 		</div>
 	</div><!-- / CONTAINER-->
 </section>
