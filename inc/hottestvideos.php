@@ -1,6 +1,6 @@
 <?php
 
-include('inc/connect.php');
+include('connect.php');
 
 $id=$_GET["id"];
 $i=0;
