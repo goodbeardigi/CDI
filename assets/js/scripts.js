@@ -379,7 +379,7 @@ function recentvideos(){
                   } 
                   l++;
                 }
-                  document.getElementById('recent-hottest').innerHTML = html;
+                  document.getElementById('recent-videos').innerHTML = html;
 
             }
         }
