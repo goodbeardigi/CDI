@@ -340,3 +340,56 @@ function hottestvideos(days){
     xhr.send(data);
     return false;
 }
+
+function recentvideos(){
+    // declaring variables to be used
+    var xhr, target, changeListener, url, data, html;
+    var l=0;
+    url = "http://cdisports.jamescobbett.co.uk/inc/recentvideos.php";
+    
+    console.log("Sending", data);
+    // create a request object
+    xhr = new XMLHttpRequest();
+
+    changeListener = function () {
+        if (xhr.readyState == 4) {
+            if (xhr.status == 200) {
+                console.log("Response", this.responseText);
+                var response = this.responseText;
+                var s = "success";
+                var message = response.indexOf("failed:");
+                console.log(message);
+                response = JSON.parse(response);
+                for(var i=0; i<response.length; i++){
+                    if(l===0){
+                      html += '<div class="row-fluid">';
+                    }
+                      html += '<div class="span4 video text-center box">';
+                      html += '<a href="/video.php?id='+response[i]["id"]+'" class="video-overlay">';
+                      html += '<div>';
+                      html += '<h2>'+response[i]["title"]+'</h2>';
+                      html += '<span>'+response[i]["category"]+'</span>';
+                      html += '</div>';
+                      html += '</a>';    
+                      html +=  '<img src="images/video-temp.jpg">';
+                      html +=  '</div>';
+                      if(l===2){
+                        html += '</div>';
+                        l=-1;
+                  } 
+                  l++;
+                }
+                  document.getElementById('recent-hottest').innerHTML = html;
+
+            }
+        }
+    };
+
+    // initialise a request, specifying the HTTP method
+    // to be used and the URL to be connected to.
+    xhr.onreadystatechange = changeListener;
+    xhr.open('POST', url, true);
+    //xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhr.send();
+    return false;
+}

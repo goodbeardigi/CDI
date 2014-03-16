@@ -57,69 +57,8 @@ include('header.php');
 
 		<!-- recent videos tab -->
 		<div id="recent-videos" class=" tab-pane fade active in video-grid">
-			<div class="row-fluid">
-		        <div class="span4 video text-center box"> 
-		        	<a href="/video.php?id=1" class="video-overlay">
-		        		<div>
-		        			<h2>Video Name</h2>
-		        			<span>Skate</span>
-		        		</div>
-		        	</a>    
-		       		<img src="images/video-temp.jpg"/>    
-		        </div>
-
-		        <div class="span4 video text-center box"> 
-		        	<a href="/video.php?id=1" class="video-overlay">
-		        		<div>
-		        			<h2>Video Name</h2>
-		        			<span>Skate</span>
-		        		</div>
-		        	</a>    
-		       		<img src="images/video-temp.jpg"/>    
-		        </div>
-
-		        <div class="span4 video text-center box"> 
-		        	<a href="/video.php?id=1" class="video-overlay">
-		        		<div>
-		        			<h2>Video Name</h2>
-		        			<span>Skate</span>
-		        		</div>
-		        	</a>    
-		       		<img src="images/video-temp.jpg"/>    
-		        </div>
-			</div>
-			<div class="row-fluid">
-		        <div class="span4 video text-center box"> 
-		        	<a href="/video.php?id=1" class="video-overlay">
-		        		<div>
-		        			<h2>Video Name</h2>
-		        			<span>Skate</span>
-		        		</div>
-		        	</a>    
-		       		<img src="images/video-temp.jpg"/>    
-		        </div>
-
-		        <div class="span4 video text-center box"> 
-		        	<a href="/video.php?id=1" class="video-overlay">
-		        		<div>
-		        			<h2>Video Name</h2>
-		        			<span>Skate</span>
-		        		</div>
-		        	</a>    
-		       		<img src="images/video-temp.jpg"/>    
-		        </div>
-
-		        <div class="span4 video text-center box"> 
-		        	<a href="/video.php?id=1" class="video-overlay">
-		        		<div>
-		        			<h2>Video Name</h2>
-		        			<span>Skate</span>
-		        		</div>
-		        	</a>    
-		       		<img src="images/video-temp.jpg"/>    
-		        </div>
-		      </div>
-		     </div> <!-- end tab -->
+			<script type="text/javascript">$( document ).ready(function() {recentvideos();});</script>	
+		</div> <!-- end tab -->
 		
 		<!-- weeks hottest videos tab -->
 

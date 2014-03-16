@@ -15,6 +15,7 @@ while($row = mysqli_fetch_array($result)){
 	$recentvideos[$i]['category'] = $row['categoriy'];
 	$recentvideos[$i]['date_added'] = $row['date_added'];
 	$recentvideos[$i]['url'] = $row['url'];
+	$i++;
 }
 echo json_encode($recentvideos);
 ?>
