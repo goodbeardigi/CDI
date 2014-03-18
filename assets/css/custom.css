@@ -271,3 +271,10 @@ input[disabled]{
 #dropbox .preview.done .progress{
 	width:100% !important;
 }
+
+#failureText {
+background: url('http://carboncutterapp.co.uk/wp-content/themes/Divi/images/cross.png') no-repeat;
+padding-left: 60px;
+font-size: 22px;
+margin-top: 7px;
+}

@@ -86,6 +86,7 @@ require_once('inc/functions.inc.php');
            <form id="login-form" method="post" novalidate="" action="">                
                    <input type="text" name="username" id="username" placeholder="info@test.com" required="required">
                    <input type="password" name="password" id="password" placeholder="password" required="required">
+                   <div class="error" id="failure" style="display: none;"></div>
                    <a href="#" onclick="login()" class="button-form"><div class="button" id="login">Login</div></a>
            </form>
        </div>

@@ -123,20 +123,16 @@ function login(){
       var x=document.forms["login-form"]["username"].value;
       if (x==null || x=="")
       {
-          //document.getElementById("failure").innerHTML ="<div id='failureText'><img src='images/cross.png' id='cross'> <h1>Oops! You haven't eventered an email address.<h1></div>";      
-          //$('#failure').slideDown("slow");    
-          //$('#emailerror').slideDown("slow");  
-          alert('username error');
-          return false;
+        document.getElementById("failure").innerHTML ="<div id='failureText'><h1>Oops! You haven't entered a username.<h1></div>";      
+        jQuery('#failure').slideDown("slow");                    
+        return false;
       }
       var x=document.forms["login-form"]["password"].value;
       if (x==null || x=="")
       {
-          //document.getElementById("failure").innerHTML ="<div id='failureText'><img src='images/cross.png' id='cross'> <h1>Oops! You haven't eventered an email address.<h1></div>";      
-          //$('#failure').slideDown("slow");    
-          //$('#emailerror').slideDown("slow");  
-          alert('password error');
-          return false;
+          document.getElementById("failure").innerHTML ="<div id='failureText'><h1>Oops! You haven't entered a password.<h1></div>";      
+        jQuery('#failure').slideDown("slow");                    
+        return false;
       }
 
       var form = document.getElementById("login-form");
@@ -159,10 +155,12 @@ function login(){
                 var message = response.indexOf("Success");
                 console.log(message);
                 if (message == -1){
-                 alert('fail');
+                 document.getElementById("failure").innerHTML ="<div id='failureText'><h1>Oops! Your username and password do not match.<h1></div>";      
+                jQuery('#failure').slideDown("slow");                    
+                return false;
                 } else {
                   document.getElementById('main-form').innerHTML = "Succefully signed in";
-                  window.setTimeout(function(){$('#loginUpload').modal('hide');},700);
+                  //window.setTimeout(function(){$('#loginUpload').modal('hide');},700);
                   window.setTimeout(function(){$('#loginModal').modal('hide');},700);
                 }
             }
@@ -189,20 +187,16 @@ function loginvideo(){
       var x=document.forms["vlogin-form"]["username"].value;
       if (x==null || x=="")
       {
-          //document.getElementById("failure").innerHTML ="<div id='failureText'><img src='images/cross.png' id='cross'> <h1>Oops! You haven't eventered an email address.<h1></div>";      
-          //$('#failure').slideDown("slow");    
-          //$('#emailerror').slideDown("slow");  
-          alert('username error');
-          return false;
+        document.getElementById("vfailure").innerHTML ="<div id='failureText'><h1>Oops! You haven't entered a username.<h1></div>";      
+        jQuery('#vfailure').slideDown("slow");                    
+        return false;
       }
       var x=document.forms["vlogin-form"]["password"].value;
       if (x==null || x=="")
       {
-          //document.getElementById("failure").innerHTML ="<div id='failureText'><img src='images/cross.png' id='cross'> <h1>Oops! You haven't eventered an email address.<h1></div>";      
-          //$('#failure').slideDown("slow");    
-          //$('#emailerror').slideDown("slow");  
-          alert('password error');
-          return false;
+          document.getElementById("fvailure").innerHTML ="<div id='failureText'><h1>Oops! You haven't entered a password.<h1></div>";      
+        jQuery('#vfailure').slideDown("slow");                    
+        return false;
       }
 
       var form = document.getElementById("vlogin-form");
@@ -222,12 +216,16 @@ function loginvideo(){
                 console.log("Response", this.responseText);
                 var response = this.responseText;
                 var s = "success";
-                var message = response.indexOf("failed:");
+                var message = response.indexOf("Success");
                 console.log(message);
                 if (message == -1){
-                  $('#myModal').modal('hide');
+                  document.getElementById("failure").innerHTML ="<div id='failureText'><h1>Oops! Your username and password do not match.<h1></div>";      
+                jQuery('#vfailure').slideDown("slow");                    
+                return false;
                 } else {
-                    alert('failure');
+                  document.getElementById('main-form').innerHTML = "Succefully signed in";
+                  //window.setTimeout(function(){$('#loginUpload').modal('hide');},700);
+                  window.setTimeout(function(){$('#myModal').modal('hide');},700);
                 }
             }
         }
