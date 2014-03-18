@@ -273,8 +273,11 @@ input[disabled]{
 }
 
 #failureText {
-background: url('http://carboncutterapp.co.uk/wp-content/themes/Divi/images/cross.png') no-repeat;
+background: url('http://carboncutterapp.co.uk/wp-content/themes/Divi/images/cross.png') 0 no-repeat;
 padding-left: 60px;
 font-size: 22px;
 margin-top: 7px;
+}
+#failureText h1{
+	font-size: 25.5px;
 }

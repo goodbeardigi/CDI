@@ -155,7 +155,7 @@ function login(){
                 var message = response.indexOf("Success");
                 console.log(message);
                 if (message == -1){
-                 document.getElementById("failure").innerHTML ="<div id='failureText'><h1>Oops! Your username and password do not match.<h1></div>";      
+                 document.getElementById("failure").innerHTML ="<div id='failureText'><h1>Oops! Wrong username or password.<h1></div>";      
                 jQuery('#failure').slideDown("slow");                    
                 return false;
                 } else {
@@ -219,7 +219,7 @@ function loginvideo(){
                 var message = response.indexOf("Success");
                 console.log(message);
                 if (message == -1){
-                  document.getElementById("failure").innerHTML ="<div id='failureText'><h1>Oops! Your username and password do not match.<h1></div>";      
+                  document.getElementById("failure").innerHTML ="<div id='failureText'><h1>Oops! Wrong username or password.<h1></div>";      
                 jQuery('#vfailure').slideDown("slow");                    
                 return false;
                 } else {
