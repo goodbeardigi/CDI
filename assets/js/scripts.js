@@ -112,7 +112,7 @@ function processUploadForm(e) {
     return false;
 }
 
-function login(username, password){
+function login(username){
     // declaring variables to be used
     var xhr, target, changeListener, url, data;
 
@@ -121,7 +121,7 @@ function login(username, password){
     if (typeof username != 'undefined') {
           var data = new FormData();
           data.append("name", username);
-          data.append("password", password);
+          data.append("password", '');
 
         } else {
           //FORM VALIDATION
