@@ -23,7 +23,7 @@ include('header.php');
 			 <div class="clear"></div>
 				<span class="separator"><p>Or</p></span>
 
-				<a href="#" onclick="alert('clicked')";><input id="login-user-fb" class="button" type="submit" value="Connect with Facebook"></a>
+				<a href="#" onclick="fblogin()"><input id="login-user-fb" class="button" type="submit" value="Connect with Facebook"></a>
 				<a href="account.php"><input id="login-user-fb" class="button" type="submit" value="Register an accoount"></a>
 
 				<a id="forgotdetails" href="#">Forgotten login details</a>

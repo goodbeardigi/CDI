@@ -65,6 +65,7 @@ require_once('inc/functions.inc.php');
 <!-- Including the HTML5 Uploader plugin -->
 <script src="assets/js/jquery.filedrop.js"></script>
 <script src="assets/js/modal.js"></script>
+<script src="assets/js/facebook.js"></script>
 
 <body data-spy="scroll" data-target=".top-spy">
 
@@ -93,7 +94,7 @@ require_once('inc/functions.inc.php');
        <div class="clear"></div>
         <span class="separator"><p>Or</p></span>
 
-        <a href="#" onclick="alert('clicked')";><input id="login-user-fb" class="button" type="submit" value="Connect with Facebook"></a>
+        <a href="#" onclick="fblogin()"><input id="login-user-fb" class="button" type="submit" value="Connect with Facebook"></a>
         <a href="account.php"><input id="login-user-fb" class="button" type="submit" value="Register an accoount"></a>
 
         <a id="forgotdetails" href="#">Forgotten login details</a>
