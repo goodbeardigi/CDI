@@ -280,7 +280,7 @@ function signup(first_name, last_name, email){
                 var message = response.indexOf("Error");
                 console.log(message);
                 if (message == -1){
-                  response = JSON.parse(this.responseText);
+                  var response = JSON.parse(this.responseText);
                   login(response['username'],response['password']);
                 } else {
 
