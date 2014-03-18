@@ -156,13 +156,14 @@ function login(){
                 console.log("Response", this.responseText);
                 var response = this.responseText;
                 var s = "success";
-                var message = response.indexOf("failed:");
+                var message = response.indexOf("Success");
                 console.log(message);
                 if (message == -1){
+                 alert('fail');
+                } else {
                   $('#loginUpload').modal('hide');
                   $('#myModal').modal('hide');
-                } else {
-                    alert('failure');
+
                 }
             }
         }
