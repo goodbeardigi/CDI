@@ -43,6 +43,7 @@ if($term != ""){
 	<div class="container">
 		<h1>No search term given</h1>
 	</div>	
+<?php
 }
 ?>
 <?php include('footer.php'); ?>
