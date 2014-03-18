@@ -46,7 +46,7 @@ if ($_SESSION['logged_in'] === true) {
  //$result = mysqli_query($con,"SELECT * FROM users"); 
  $result = mysqli_query($con,"SELECT * FROM users WHERE username = '$username'AND password='$password'");
  // If one row is returned, username and password are valid 
- if (is_object($result) && $result->num_rows == 1) { 
+ if (mysqli_num_rows($result) == 1) { 
 	 // Set session variable for login status to true 
 	 $_SESSION['logged_in'] = true; 
 	 //Get Username and id of person who has logged in

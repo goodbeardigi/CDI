@@ -162,7 +162,7 @@ function login(){
                  alert('fail');
                 } else {
                   $('#loginUpload').modal('hide');
-                  $('#myModal').modal('hide');
+                  $('#loginModal').modal('hide');
 
                 }
             }
