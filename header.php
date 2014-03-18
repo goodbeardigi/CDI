@@ -136,7 +136,7 @@ require_once('inc/functions.inc.php');
       </div><!---end navbar-inner-->
       <div id="dropdown-search">
       <form id="search-form" method="post" novalidate="" action="search.php">                
-          <input id="search" type="text" placeholder="Search.." >
+          <input id="search" name="term" type="text" placeholder="Search.." >
       </form>
       </div>
     </div>
