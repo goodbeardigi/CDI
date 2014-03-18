@@ -276,11 +276,12 @@ function signup(first_name, last_name, email){
         if (xhr.readyState == 4) {
             if (xhr.status == 200) {
                 console.log("Response", this.responseText);
+                var response = this.responseText;
                 var s = "success";
                 var message = response.indexOf("Error");
                 console.log(message);
                 if (message == -1){
-                  var response = JSON.parse(this.responseText);
+                  response = JSON.parse(this.responseText);
                   login(response['username'],response['password']);
                 } else {
 
