@@ -281,12 +281,13 @@ function signup(first_name, last_name, email){
                 var message = response.indexOf("Success");
                 console.log(message);
                 if (message == -1){
-                  $('#loginModal').modal('hide');
-                  $('#myModal').modal('hide');
                 // document.getElementById("failure").innerHTML ="<div id='failureText'><h1>Oops! Wrong username or password.<h1></div>";      
                 //jQuery('#failure').slideDown("slow");                    
                 return false;
                 } else {
+                  document.getElementById('main-form').innerHTML = "Succefully signed in";
+                  window.setTimeout(function(){$('#loginUpload').modal('hide');},700);
+                  window.setTimeout(function(){$('#myModal').modal('hide');},700);
                 //  document.getElementById('main-form').innerHTML = "Succefully signed in";
                   //window.setTimeout(function(){$('#loginUpload').modal('hide');},700);
                 //  window.setTimeout(function(){$('#loginModal').modal('hide');},700);
