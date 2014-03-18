@@ -4,7 +4,7 @@ include('inc/connect.php');
 include('header.php');
 include('inc/timeago.php');
 
-$term=$_GET["term"];
+$term=$_POST["term"];
 $i=0;
 $videos = array();
 
