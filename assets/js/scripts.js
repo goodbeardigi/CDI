@@ -124,24 +124,24 @@ function login(username, password){
           data.append("password", password);
 
         } else {
-      //FORM VALIDATION
-      var x=document.forms["login-form"]["username"].value;
-      if (x==null || x=="")
-      {
-        document.getElementById("failure").innerHTML ="<div id='failureText'><h1>Oops! You haven't entered a username.<h1></div>";      
-        jQuery('#failure').slideDown("slow");                    
-        return false;
-      }
-      var x=document.forms["login-form"]["password"].value;
-      if (x==null || x=="")
-      {
-          document.getElementById("failure").innerHTML ="<div id='failureText'><h1>Oops! You haven't entered a password.<h1></div>";      
-        jQuery('#failure').slideDown("slow");                    
-        return false;
-      }
+          //FORM VALIDATION
+          var x=document.forms["login-form"]["username"].value;
+          if (x==null || x=="")
+          {
+            document.getElementById("failure").innerHTML ="<div id='failureText'><h1>Oops! You haven't entered a username.<h1></div>";      
+            jQuery('#failure').slideDown("slow");                    
+            return false;
+          }
+          var x=document.forms["login-form"]["password"].value;
+          if (x==null || x=="")
+          {
+              document.getElementById("failure").innerHTML ="<div id='failureText'><h1>Oops! You haven't entered a password.<h1></div>";      
+            jQuery('#failure').slideDown("slow");                    
+            return false;
+          }
 
-      var form = document.getElementById("login-form");
-      var data = new FormData(form);
+          var form = document.getElementById("login-form");
+          var data = new FormData(form);
     }
     //var form = document.getElementById("loginForm");
     //var data = new FormData(form);

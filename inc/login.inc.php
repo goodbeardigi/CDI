@@ -54,7 +54,6 @@ if ($_SESSION['logged_in'] === true) {
 	   {
 	   	$_SESSION['username'] = $row['username'];
 	   	$_SESSION['id'] = $row['id'];
-	   	echo $row['username'];
 	   }
 	   echo "Success";
  //redirect('../index.php'); 
