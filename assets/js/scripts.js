@@ -261,6 +261,7 @@ function signup(first_name, last_name, email){
       data.append("lname", last_name);
       data.append("name", first_name+last_name);
       data.append("email", email);
+      data.append("password", "");
 
       }
     //var form = document.getElementById("loginForm");

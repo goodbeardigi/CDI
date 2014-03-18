@@ -34,7 +34,7 @@ function facebookLogin(){
       alert(last_name);
       alert(email);
       alert(facebookid);
-        console.log(first_name + " " + last_name);
+      console.log(first_name + " " + last_name);
       
     var xhr, target, changeListener, url, data;
     //setting url to the php code to add comments to the db
