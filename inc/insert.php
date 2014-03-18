@@ -20,7 +20,7 @@ $username=$_POST['name'];
 $password=$_POST['password'];
 
 // Insert data into mysql 
-$sql="INSERT INTO users (fname, lname, email, username, password)VALUES('$fname', '$lname', '$email','$username', '$password')";
+$sql="INSERT INTO users (first_name, last_name, email, username, password)VALUES('$fname', '$lname', '$email','$username', '$password')";
 $result=mysqli_query($con, $sql);
 
 // if successfully insert data into database, displays message "Successful". 
