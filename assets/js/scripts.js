@@ -161,9 +161,9 @@ function login(){
                 if (message == -1){
                  alert('fail');
                 } else {
-                  $('#loginUpload').modal('hide');
-                  $('#loginModal').modal('hide');
-
+                  document.getElementById('main-form').innerHTML = "Succefully signed in";
+                  window.setTimeout(function(){$('#loginUpload').modal('hide');},700);
+                  window.setTimeout(function(){$('#loginModal').modal('hide');},700);
                 }
             }
         }
