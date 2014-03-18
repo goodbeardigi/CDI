@@ -246,7 +246,7 @@ function loginvideo(){
 }
 
 
-function signup(fname, lname, email){
+function signup(first_name, last_name, email){
       
       var xhr, target, changeListener, url, data;
       url = "http://cdisports.jamescobbett.co.uk/inc/insert.php ";
