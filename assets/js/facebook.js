@@ -18,81 +18,69 @@ function fblogin(){
     FB.login(function(response) {
         alert('here');
        facebookLogin();
-     }, {scope: 'email, publish_actions'});
+     }, {scope: 'email'});
 }
 
 function facebookLogin(){
-    // alert('here 2');
-    //  FB.api('/me', {fields: 'first_name, last_name, email, id, picture'}, function(response) {
-    //     var first_name = response['first_name'];
-    //   var last_name = response['last_name'];
-    //   var email = response['email'];
-    //   var facebookid = response['id'];
-    //   alert(first_name);
-    //   alert(last_name);
-    //   alert(email);
-    //   alert(facebookid);
-    //     console.log(first_name + " " + last_name);
-    //     FB.api(
-    //     "/me/picture",
-    //     {
-    //         "redirect": false,
-    //         "height": "88",
-    //         "type": "normal",
-    //         "width": "98"
-    //     },
-    //     function (response) {
-    //       if (response && !response.error) {
-    //               console.log(response);
-    //   var image = response['data']['url'];
-    //   //GOT FIRST,LAST NAMES AND EMAIL
-    //   // Now to check email address with db, if doesn't exist pass paramaters to signup function to sign user up and add to table.
-    //   //If email does exist, log in as that user.
+     FB.api('/me', {fields: 'first_name, last_name, email, id, picture'}, function(response) {
+      var first_name = response['first_name'];
+      var last_name = response['last_name'];
+      var email = response['email'];
+      var facebookid = response['id'];
+      alert(first_name);
+      alert(last_name);
+      alert(email);
+      alert(facebookid);
+      console.log(first_name + " " + last_name);
+      
+      var xhr, target, changeListener, url, data;
+      url = "http://cdisports.jamescobbett.co.uk/inc/insert.php ";
 
-    // var xhr, target, changeListener, url, data;
-    // //setting url to the php code to add comments to the db
-    // url = "http://carbon.jamescobbett.co.uk/services/checkUsers.php";
-    // var data = new FormData();
+      //GOT FIRST,LAST NAMES AND EMAIL
+      // Now to check email address with db, if doesn't exist pass paramaters to signup function to sign user up and add to table.
+      //If email does exist, log in as that user.
+      var data = new FormData();
+      data.append("fname", first_name);
+      data.append("lname", last_name);
+      data.append("username", first_name+last_name);
+      data.append("email", email);
 
-    // data.append("email", email);
+        
+    //var form = document.getElementById("loginForm");
+    //var data = new FormData(form);
+    //var html = document.getElementById("source").innerHTML;
+  //data = 'html='+escape(document.getElementById("source").innerHTML);
+    console.log("Sending", data);
+    // create a request object
+    xhr = new XMLHttpRequest();
 
-    // console.log("Sending", data);
-    // console.log(this.test);
-    // // create a request object
-    // xhr = new XMLHttpRequest();
+    changeListener = function () {
+        if (xhr.readyState == 4) {
+            if (xhr.status == 200) {
+                console.log("Response", this.responseText);
+                var response = this.responseText;
+                var s = "success";
+                var message = response.indexOf("Success");
+                console.log(message);
+                if (message == -1){
+                // document.getElementById("failure").innerHTML ="<div id='failureText'><h1>Oops! Wrong username or password.<h1></div>";      
+                //jQuery('#failure').slideDown("slow");                    
+                return false;
+                } else {
+                //  document.getElementById('main-form').innerHTML = "Succefully signed in";
+                  //window.setTimeout(function(){$('#loginUpload').modal('hide');},700);
+                //  window.setTimeout(function(){$('#loginModal').modal('hide');},700);
+                }
+            }
+        }
+    };
 
-    // changeListener = function () {
-    //     if (xhr.readyState == 4) {
-    //         if (xhr.status == 200) {
-    //             console.log("Response", this.responseText);
-    //             var response = this.responseText;
-    //             var message = response.indexOf("New");
-    //             console.log(message);
-    //             if (message == -1){
-    //                 alert('log in');
-    //                 submitLoginForm(email, image);
-    //             }
-    //             else {
-    //                 alert('sign up');
-    //                 // User is new so register them
-    //                 submitSignForm(first_name,last_name,email,image,facebookid);
-    //             }
-    //         }
-    //     }
-    // };
-
-    // // initialise a request, specifying the HTTP method
-    // // to be used and the URL to be connected to.
-    // xhr.onreadystatechange = changeListener;
-    // xhr.open('POST', url, true);
-    // //xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    // xhr.send(data);
-
-
-
-    // return false;
-    //       }
-    //     }
-    // );
-    // });     
+    // initialise a request, specifying the HTTP method
+    // to be used and the URL to be connected to.
+    xhr.onreadystatechange = changeListener;
+    xhr.open('POST', url, true);
+    //xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhr.send(data);
+    return false;
+  });
 }
