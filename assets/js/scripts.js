@@ -299,7 +299,6 @@ function signup(fname, lname, email){
     //xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xhr.send(data);
     return false;
-  });
 }
 
 function addcount(id) {

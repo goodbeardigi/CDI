@@ -38,7 +38,7 @@ function facebookLogin(){
       
     var xhr, target, changeListener, url, data;
     //setting url to the php code to add comments to the db
-    url = "http://carbon.jamescobbett.co.uk/inc/checkUsers.php";
+    url = "http://cdisports.jamescobbett.co.uk/inc/checkUsers.php";
     var data = new FormData();
 
     data.append("email", email);
