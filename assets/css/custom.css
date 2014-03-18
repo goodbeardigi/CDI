@@ -281,3 +281,13 @@ margin-top: 7px;
 #failureText h1{
 	font-size: 25.5px;
 }
+
+.hero-unit{
+	margin-bottom: 0px! important;
+}
+#Section-1{
+	padding-top: 0px !important;
+}
+.reducebottom{
+	margin-bottom: -20px;
+}
