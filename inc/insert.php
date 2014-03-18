@@ -28,7 +28,7 @@ $result=mysqli_query($con, $sql);
 if($result){
 	$user['username'] = $username;
 	$user['password'] = $password;
-	echo json_encode($actions); 
+	echo json_encode($user); 
 }
 
 else {
