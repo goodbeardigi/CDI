@@ -112,7 +112,7 @@ function processUploadForm(e) {
     return false;
 }
 
-function login(username){
+function login(username, password){
     // declaring variables to be used
     var xhr, target, changeListener, url, data;
 
@@ -121,7 +121,7 @@ function login(username){
     if (typeof username != 'undefined') {
           var data = new FormData();
           data.append("name", username);
-          data.append("password", '');
+          data.append("password", password);
 
         } else {
       //FORM VALIDATION
@@ -276,21 +276,14 @@ function signup(first_name, last_name, email){
         if (xhr.readyState == 4) {
             if (xhr.status == 200) {
                 console.log("Response", this.responseText);
-                var response = this.responseText;
+                var response = JSON.parse(this.responseText);
                 var s = "success";
-                var message = response.indexOf("Success");
+                var message = response.indexOf("Error");
                 console.log(message);
                 if (message == -1){
-                // document.getElementById("failure").innerHTML ="<div id='failureText'><h1>Oops! Wrong username or password.<h1></div>";      
-                //jQuery('#failure').slideDown("slow");                    
-                return false;
+                  login(response['username'],response['password']);
                 } else {
-                  document.getElementById('main-form').innerHTML = "Succefully signed in";
-                  window.setTimeout(function(){$('#loginUpload').modal('hide');},700);
-                  window.setTimeout(function(){$('#myModal').modal('hide');},700);
-                //  document.getElementById('main-form').innerHTML = "Succefully signed in";
-                  //window.setTimeout(function(){$('#loginUpload').modal('hide');},700);
-                //  window.setTimeout(function(){$('#loginModal').modal('hide');},700);
+
                 }
             }
         }

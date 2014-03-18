@@ -18,6 +18,7 @@ $lname=$_POST['lname'];
 $email=$_POST['email'];
 $username=$_POST['name'];
 $password=$_POST['password'];
+$user = array();
 
 // Insert data into mysql 
 $sql="INSERT INTO users (username, password, first_name, second_name, email) VALUES ('$username', '$password', '$fname','$lname', '$email')";
@@ -25,9 +26,9 @@ $result=mysqli_query($con, $sql);
 
 // if successfully insert data into database, displays message "Successful". 
 if($result){
-echo "Success";
-//echo "<BR>";
-//echo "<a href='account.php'>Back to main page</a>";
+	$user['username'] = $username;
+	$user['password'] = $password;
+	echo json_encode($actions); 
 }
 
 else {
