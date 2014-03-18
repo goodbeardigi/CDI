@@ -120,7 +120,7 @@ function login(username, password){
     url = "http://cdisports.jamescobbett.co.uk/inc/login.inc.php ";
     if (typeof username != 'undefined') {
           var data = new FormData();
-          data.append("name", username);
+          data.append("username", username);
           data.append("password", password);
 
         } else {
