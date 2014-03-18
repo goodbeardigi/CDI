@@ -8,6 +8,7 @@ $term=$_GET["term"];
 $i=0;
 $videos = array();
 
+echo $term;
 $result = mysqli_query($con,"SELECT videos.id, videos.name, videos.description, videos.user_id, videos.categories_id, videos.date_added, videos.url, categories.category FROM videos INNER JOIN categories ON categories.id=videos.categories_id WHERE videos.name LIKE '%$term%' OR videos.description LIKE '%$term%'");
 
 ?>
