@@ -291,3 +291,9 @@ margin-top: 7px;
 .reducebottom{
 	margin-bottom: -20px;
 }
+#searchterm{
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+	margin-top: 20px;
+}

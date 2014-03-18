@@ -14,7 +14,7 @@ if($term != ""){
 ?>
 <div class="container">
 	<div id="recent-videos" class=" tab-pane fade active in video-grid">
-		<h1 id="searchterm">Searching: <?php echo $term; ?></h1>
+		<h2 id="searchterm">Searching: <?php echo $term; ?></h2>
 					<?php
 					while($row = mysqli_fetch_array($result)){
 						if($i===0){
