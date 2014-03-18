@@ -42,7 +42,7 @@ function facebookLogin(){
       var data = new FormData();
       data.append("fname", first_name);
       data.append("lname", last_name);
-      data.append("username", first_name+last_name);
+      data.append("name", first_name+last_name);
       data.append("email", email);
 
         
