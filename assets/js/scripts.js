@@ -281,6 +281,8 @@ function signup(first_name, last_name, email){
                 var message = response.indexOf("Success");
                 console.log(message);
                 if (message == -1){
+                  $('#loginModal').modal('hide');
+                  $('#myModal').modal('hide');
                 // document.getElementById("failure").innerHTML ="<div id='failureText'><h1>Oops! Wrong username or password.<h1></div>";      
                 //jQuery('#failure').slideDown("slow");                    
                 return false;
