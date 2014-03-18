@@ -13,18 +13,21 @@
 include('connect.php');
 
 // Get values from form 
+$fname=$_POST['fname'];
+$lname=$_POST['lname'];
+$email=$_POST['email'];
 $username=$_POST['name'];
 $password=$_POST['password'];
 
 // Insert data into mysql 
-$sql="INSERT INTO users (username, password)VALUES('$username', '$password')";
+$sql="INSERT INTO users (fname, lname, email, username, password)VALUES('$fname', '$lname', '$email','$username', '$password')";
 $result=mysqli_query($con, $sql);
 
 // if successfully insert data into database, displays message "Successful". 
 if($result){
-echo "Successful";
-echo "<BR>";
-echo "<a href='account.php'>Back to main page</a>";
+echo "Success";
+//echo "<BR>";
+//echo "<a href='account.php'>Back to main page</a>";
 }
 
 else {
