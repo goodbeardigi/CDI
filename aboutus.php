@@ -17,20 +17,6 @@ include('header.php');
 				</div>
 			</div>
 		</div>
-		<div class="item">
-			<div class="row">
-				<div class="span12 text-left">
-					<img src="images/banner-temp.jpg" alt="" />
-				</div>
-			</div>
-		</div>
-		<div class="item">
-			<div class="row">
-				<div class="span12 text-left">
-					<img src="images/surf-girl.jpg" alt="" />
-				</div>
-			</div>
-		</div>
 	</div>
   <!-- Carousel nav -->
   <a class="carousel-control left" href="#myCarousel" data-slide="prev"><i class="icon-chevron-left"></i></a>
