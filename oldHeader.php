@@ -26,6 +26,7 @@ require_once('inc/functions.inc.php');
 <link href="assets/css/bootstrap.css" rel="stylesheet">
 <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
 <link href="assets/css/style.css" rel="stylesheet">
+<link href="assets/css/custom.css" rel="stylesheet">
 
 
 <!--[if lt IE 7]>
@@ -66,82 +67,81 @@ require_once('inc/functions.inc.php');
 <script src="assets/js/modal.js"></script>
 <script src="assets/js/facebook.js"></script>
 
-<body data-spy="scroll" data-target=".top-spy">
+<body>
 
-<!-- HEADER --> 
-<header id="head-top">
+    <!-- HEADER --> 
+  <header id="head-top">
+    <!-- LOGIN MODAL -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 
-  <!-- LOGIN MODAL -->
+          <div id="main-form" class="text-center">
 
-  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-body">
-                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h2>Login</h2>
 
-            <div id="main-form" class="text-center">
+      <div id="login-form-container">
 
-        <h2>Login</h2>
+           <form id="login-form" method="post" novalidate="" action="">                
+                   <input type="text" name="username" id="username" placeholder="info@test.com" required="required">
+                   <input type="password" name="password" id="password" placeholder="password" required="required">
+                   <div class="error" id="failure" style="display: none;"></div>
+                   <a href="#" onclick="login()" class="button-form"><div class="button" id="login">Login</div></a>
+           </form>
+       </div>
+       <div class="clear"></div>
+        <span class="separator"><p>Or</p></span>
 
-        <div id="login-form-container">
+        <a href="#" onclick="fblogin()"><input id="login-user-fb" class="button" type="submit" value="Connect with Facebook"></a>
+        <a href="account.php"><input id="login-user-fb" class="button" type="submit" value="Register an accoount"></a>
 
-             <form id="login-form" method="post" novalidate="" action="">                
-                     <input type="text" name="username" id="username" placeholder="info@test.com" required="required">
-                     <input type="password" name="password" id="password" placeholder="password" required="required">
-                     <div class="error" id="failure" style="display: none;"></div>
-                     <a href="#" onclick="login()" class="button-form"><div class="button" id="login">Login</div></a>
-             </form>
-         </div>
-         <div class="clear"></div>
-          <span class="separator"><p>Or</p></span>
-
-          <a href="#" onclick="fblogin()"><input id="login-user-fb" class="button" type="submit" value="Connect with Facebook"></a>
-          <a href="account.php"><input id="login-user-fb" class="button" type="submit" value="Register an accoount"></a>
-
-          <a id="forgotdetails" href="#">Forgotten login details</a>
-        </div>
-        </div>
+        <a id="forgotdetails" href="#">Forgotten login details</a>
+      </div>
       </div>
     </div>
   </div>
+</div>
+    <div class="navbar navbar-fixed-top navbar-inverse">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="http://cdisports.jamescobbett.co.uk"><img src="images/supremeLogo.jpg"/></a>
 
-  <!-- END LOGIN MODAL -->
-
-  <div class="head">
-    <div class="innerHead">
-      <ul>
-        <li><a class = "logo" href="http://cdisports.jamescobbett.co.uk"><img src="images/xtv.png"/></a></li>
-        <li class="active"><div class = "navElement"><a href="category.php?id=0">Skate</a></div></li>
-        <li><div class = "navElement"><a href="category.php?id=1">Surf</a></div></li>
-        <li><div class = "navElement"><a href="category.php?id=2">Sky</a></div></li>
-        <li><div class = "navElement" style = "border-right:1px solid #fff"><a href="category.php?id=3">Snow</a></div></li>
-        <li>
-          <form>
-            <span><input type="text" class="searchBar" placeholder="Search..." style = "margin-left: 38px;"></span>
-          </form>
-        <li>
-        <li>
-          <div class = "navElement">
-            <span><a href="#" onclick="$('#loginModal').modal('show')">Sign In</a></span>
-          </div>
-        </li>
-        <li>
-          <div class = "navElement" style = "border-right:1px solid #fff">
+          <div id="user-inks">
+            <span><a href="#" onclick="$('#loginModal').modal('show')">Sign In</a>//</span>
             <span><a href="upload.php">Upload</a></span>
             <?php 
             if(isset($_SESSION['username'])){
               echo "Hello ".$_SESSION['username'];
             }?>
+            <br>
+            <a href="inc/logout.inc.php"> Log Out</a>
           </div>
-        </li>
-        <li>
-            <div id="social-links">
-              <span class="icon facebook"><a href="http://www.facebook.com"><img src="images/facebookMain.png"/></a></span>
-              <span class="icon twitter"><a href="http://www.twitter.com"><img src="images/twitterMain.png"/></a></span>
-            </div>
-        </li>
-    </div>
-  </div>
 
+          <div id="social-links">
+            <span class="icon facebook"><a href="http://www.facebook.com"><img src="images/facebook-icon.png"/></a></span>
+            <span class="icon twitter"><a href="http://www.twitter.com"><img src="images/twitter-icon.png"/></a></span>
+          </div>
+
+          <div class="nav-collapse collapse top-spy">
+            <ul class="nav" id="topnav">
+              <li class="active"><a href="category.php?id=0">Skate</a></li>
+              <li><a href="category.php?id=1">Surf</a></li>
+              <li><a href="category.php?id=2">Sky</a></li>
+              <li><a href="category.php?id=3">Snow</a></li>
+              <li><a id="show-search" href="#"><img src="images/search-icon.png"></a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div><!---end navbar-inner-->
+      <div id="dropdown-search">
+      <form id="search-form" method="post" novalidate="" action="search.php">                
+          <input id="search" name="term" type="text" placeholder="Search.." >
+      </form>
+      </div>
+    </div>
+
+</div>
 </header>
 <!-- / HEADER -->
