@@ -110,7 +110,7 @@ require_once('inc/functions.inc.php');
   <div class="head">
     <div class="innerHead">
       <ul>
-        <li><a class = "logo" href="http://cdisports.jamescobbett.co.uk"><img src="images/xtv.png" style="padding-top:3px"/></a></li>
+        <li><a class = "logo" href="http://cdisports.jamescobbett.co.uk"><img src="images/xtv.png"/></a></li>
         <li class="active"><div class = "navElement"><a href="category.php?id=0">Skate</a></div></li>
         <li><div class = "navElement"><a href="category.php?id=1">Surf</a></div></li>
         <li><div class = "navElement"><a href="category.php?id=2">Sky</a></div></li>
@@ -136,11 +136,7 @@ require_once('inc/functions.inc.php');
         </li>
         <li>
             <div id="social-links">
-              <span class="icon facebook"><a href="http://www.facebook.com"><img src="images/facebookMain.png" style="padding-left:40px"/></a></span>
-            </div>
-        </li>
-        <li>
-            <div id="social-links">
+              <span class="icon facebook"><a href="http://www.facebook.com"><img src="images/facebookMain.png"/></a></span>
               <span class="icon twitter"><a href="http://www.twitter.com"><img src="images/twitterMain.png"/></a></span>
             </div>
         </li>

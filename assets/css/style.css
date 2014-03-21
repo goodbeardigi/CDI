@@ -4,7 +4,7 @@
       body {
         padding-bottom: 0px;
 		background: #eeeeee;
-		font-size: 16px;
+		font-size: 15px;
 		font-family: 'Open Sans', sans-serif!important;
       }
 
@@ -54,7 +54,9 @@
 		background: linear-gradient(to bottom,  rgba(208,228,247,1) 0%,rgba(45,157,226,1) 0%,rgba(23,115,181,1) 100%,rgba(135,188,234,1) 100%); /* W3C */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7', endColorstr='#87bcea',GradientType=0 ); /* IE6-9 */
 
-		height: 75px;
+		height: 49px;
+		position: fixed;
+
 	}
 
 	.innerHead{
@@ -62,9 +64,8 @@
 
 
 	.logo{
-		padding-top: 4px;
-		padding-left: 30px;
-		padding-right: 40px;
+		padding-left: 70px;
+		padding-right: 25px;
 	}
 
 	ul {
@@ -79,13 +80,12 @@
 
 	.navElement {
 		display: block;
-	    width: 100px;
-	    height: 75px;
-	    border-left: 1px solid #fff;
+	    width: 75px;
+	    height: 50px;
 	    background-color: transparent;
 	    color: #82ccff !important;
 	    text-align: center;
-	    line-height: 4.5em;
+	    line-height: 3.3em;
 
 	}
 
@@ -95,8 +95,8 @@
 	}
 
 	a{
-		display: block;
 		color: white;
+		display: block;
 	}
 
 
@@ -109,15 +109,15 @@
 	}
 
 	.searchBar { 
-		margin-top: 22px; 
+		margin-top: 10px; 
 		margin-left: 30px;
-		background: url('../../images/search-icon.png') no-repeat 186px 6px !important; 
+		background: url('../../images/search-icon.png') no-repeat 186px 7px !important; 
 		border: 1px solid white;
 		border-radius:20px !important; 
 		-moz-border-radius:20px !important; 
 		-webkit-border-radius:20px !important; 
 		background-color: #addeff !important; 
-		padding: 5px 0px 5px 15px !important;
+		padding: 4px 0px 4px 15px !important;
 
 	}
 
@@ -387,8 +387,12 @@
 	}
 
 	#social-links {
-		padding-top: 8px;
-		padding-left: 20px;
+		padding-left: 5px;
+		padding-top: 10px;
+	}
+
+	li #social-links {
+		line-height: 0 !important;
 	}
 	
 	#social-links .icon img {
