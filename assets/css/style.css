@@ -459,11 +459,11 @@
 	==============================*/
 	.carousel-control {
 		position: absolute;
-		top: 50%;
+		/*top: 50%;*/
 		left: 15px;
-		width: 40px;
-		height: 40px;
-		margin-top: 20px;
+		width: 49px;
+		height: 91px;
+		margin-top: 0px;
 		font-size: 30px;
 		padding-top:10px;
 		font-weight: 100;
@@ -478,7 +478,7 @@
 
 	}
 	.carousel-control.right {
-		right: -20px;
+		
 		left: auto;
 		-moz-border-radius-topleft: 5px;
 		-webkit-border-top-left-radius: 5px;
@@ -486,10 +486,13 @@
 		-moz-border-radius-bottomleft: 5px;
 		-webkit-border-bottom-left-radius: 5px;
 		border-bottom-left-radius: 5px;
+		background:url(../../images/chevron-right.png);
+		background-repeat:no-repeat;
+		
 		
 	}
 	.carousel-control.left {
-		left: -20px;
+		
 		right: auto;
 		-moz-border-radius-topright: 5px;
 		-webkit-border-top-right-radius: 5px;
@@ -497,6 +500,9 @@
 		-moz-border-radius-bottomright: 5px;
 		-webkit-border-bottom-right-radius: 5px;
 		border-bottom-right-radius: 5px;
+		background:url(../../images/chevron-left2.png);
+		background-repeat:no-repeat;
+		
 		
 	}
 	
