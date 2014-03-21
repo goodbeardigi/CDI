@@ -465,7 +465,6 @@
 		height: 91px;
 		margin-top: 0px;
 		font-size: 30px;
-		padding-top:10px;
 		font-weight: 100;
 		line-height: 30px;
 		color: #ffffff;
@@ -500,11 +499,18 @@
 		-moz-border-radius-bottomright: 5px;
 		-webkit-border-bottom-right-radius: 5px;
 		border-bottom-right-radius: 5px;
-		background:url(../../images/chevron-left2.png);
+		background:url(../../images/chevron-left.png);
 		background-repeat:no-repeat;
-		
-		
-	}
+		}
+
+		.carousel-control.right:hover {
+		background:url(../../images/chevron-right2.png);	
+		}
+		.carousel-control.left:hover {
+		background:url(../../images/chevron-left2.png);	
+		}
+
+
 	
 	
   .btn:hover, 
