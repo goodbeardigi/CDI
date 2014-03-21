@@ -34,7 +34,7 @@ p{
 /* Forms
 ===========================*/
 input[type="text"]{
-	height: 38px;
+	/*height: 38px;*/
 	border: 0;
 	border-radius: 0px;
 	color: black;
@@ -285,7 +285,7 @@ margin-top: 7px;
 .hero-unit{
 	margin-bottom: 0px! important;
 }
-#Section-1{
+section{
 	padding-top: 0px !important;
 }
 .reducebottom{
