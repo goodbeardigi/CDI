@@ -130,20 +130,24 @@ require_once('inc/functions.inc.php');
         <li>
           <div class = "navElement">
             <span><a href="upload.php">Upload</a></span>
-            <?php 
+          </div>
+        </li>
+        <li>
+          <div class = "navElement" style="width:185px;">
+         <?php 
             if(isset($_SESSION['username'])){
               echo "Hello ".$_SESSION['username'];
             }?>
-          </div>
+            </div>
         </li>
-        <li class="floatright">
+        <li class="floatright"  >
             <div id="social-links">
               <span class="icon twitter"><a href="http://www.twitter.com"><img src="images/twitterMain.png"/></a></span>
             </div>
         </li>
-        <li class="floatright">
+        <li class="floatright" style="padding-left:0px;">
             <div id="social-links">
-              <span class="icon facebook"><a href="http://www.facebook.com"><img src="images/facebookMain.png" style="padding-left:40px"/></a></span>
+              <span class="icon facebook"><a href="http://www.facebook.com"><img src="images/facebookMain.png" /></a></span>
             </div>
         </li>
       <div>
