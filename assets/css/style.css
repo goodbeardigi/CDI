@@ -21,7 +21,7 @@
       }
 	  
 	  header{
-		padding-top:0px;
+		padding-top:50px;
 	  }
 	  section {
 		position:relative;
@@ -55,11 +55,10 @@
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7', endColorstr='#87bcea',GradientType=0 ); /* IE6-9 */
 
 		height: 49px;
-		z-index: 2;
+/*		z-index: 2;
 		position: fixed;
 		width: 100%;
-		margin-bottom: 40px;
-
+		margin-bottom: 40px;*/
 	}
 
 	.innerHead{

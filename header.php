@@ -107,7 +107,7 @@ require_once('inc/functions.inc.php');
 
   <!-- END LOGIN MODAL -->
 
-  <div class="head">
+  <div class="head navbar-fixed-top">
     <div class="innerHead">
       <ul>
         <li><a class = "logo" href="http://cdisports.jamescobbett.co.uk"><img src="images/xtv.png" style="padding-top:3px"/></a></li>
