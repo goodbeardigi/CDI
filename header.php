@@ -110,6 +110,7 @@ require_once('inc/functions.inc.php');
 
   <div class="head navbar-fixed-top">
     <div class="innerHead">
+      <div class="container">
       <ul>
         <li><a class = "logo" href="http://cdisports.jamescobbett.co.uk"><img src="images/xtv.png" style="padding-top:3px"/></a></li>
         <li class="active"><div class = "navElement"><a href="category.php?id=0">Skate</a></div></li>
@@ -135,16 +136,17 @@ require_once('inc/functions.inc.php');
             }?>
           </div>
         </li>
-        <li>
-            <div id="social-links">
-              <span class="icon facebook"><a href="http://www.facebook.com"><img src="images/facebookMain.png" style="padding-left:40px"/></a></span>
-            </div>
-        </li>
-        <li>
+        <li class="floatright">
             <div id="social-links">
               <span class="icon twitter"><a href="http://www.twitter.com"><img src="images/twitterMain.png"/></a></span>
             </div>
         </li>
+        <li class="floatright">
+            <div id="social-links">
+              <span class="icon facebook"><a href="http://www.facebook.com"><img src="images/facebookMain.png" style="padding-left:40px"/></a></span>
+            </div>
+        </li>
+      <div>
     </div>
   </div>
 

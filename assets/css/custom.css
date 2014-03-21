@@ -30,6 +30,12 @@ p{
 .center{
 	margin-left: auto; margin-right: auto;
 }
+.floatright{
+	float: right;
+}
+.floatleft{
+	float: left;
+}
 
 /* Forms
 ===========================*/
