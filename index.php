@@ -35,7 +35,7 @@ include('header.php');
 	</div>
   </div>
   <!-- Carousel nav -->
-  <a class="carousel-control left" href="#myCarousel" data-slide="prev"><i class="icon-chevron-left"></i></a>
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev" ><i class="icon-chevron-left" style="color:blue;"></i> </a>
   <a class="carousel-control right" href="#myCarousel" data-slide="next"><i class="icon-chevron-right"></i></a>
 </div>
 			

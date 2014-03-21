@@ -470,7 +470,7 @@
 		line-height: 30px;
 		color: #ffffff;
 		text-align: center;
-		background: none;
+		background: #0097FC;
 		border: none;
 		-webkit-border-radius: 0px;
 		-moz-border-radius: 0px;
@@ -486,6 +486,7 @@
 		-moz-border-radius-bottomleft: 5px;
 		-webkit-border-bottom-left-radius: 5px;
 		border-bottom-left-radius: 5px;
+		
 	}
 	.carousel-control.left {
 		left: -20px;
@@ -496,6 +497,7 @@
 		-moz-border-radius-bottomright: 5px;
 		-webkit-border-bottom-right-radius: 5px;
 		border-bottom-right-radius: 5px;
+		
 	}
 	
 	
