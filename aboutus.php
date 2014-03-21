@@ -27,7 +27,7 @@ include('header.php');
 						
 					<table style=" text-align:center;padding-left:10px; padding-right:10px; padding-bottom:10px">
 							<tr>
-								<td style="width:100%; color:#0099FF; font-size: 100px;">
+								<td style="width:100%; color:#3B5FBD; font-size: 100px;">
 								<h1><b>ABOUT Xtv SPORTS</b></h1>
 								</td>
 							</tr>
@@ -43,14 +43,14 @@ include('header.php');
 						
 					<table style="text-align:justify;">
 							<tr>
-								<td style="width:45%; padding-left:15px; border-top: 3px solid #0097FC ">
-									<h2 style="color:#0099FF;">Expirience</h2>
+								<td style="width:45%; padding-left:15px; border-top: 3px solid #3B5FBD ">
+									<h2 style="color:#3B5FBD;">Expirience</h2>
 								</td>
-								<td style="width:5%; padding-left:15px; border-top: 3px solid #0097FC ">
-									<h2 style="color:#0099FF;"></h2>
+								<td style="width:5%; padding-left:15px; border-top: 3px solid #3B5FBD ">
+									<h2 style="color:#3B5FBD;"></h2>
 								</td>
-								<td style="width:45%; padding-left:15px; border-top: 3px solid #0097FC; ">
-									<h2 style="color:#0099FF;">Social</h2>
+								<td style="width:45%; padding-left:15px; border-top: 3px solid #3B5FBD; ">
+									<h2 style="color:#3B5FBD;">Social</h2>
 								</td>
 							</tr>
 							<tr>
