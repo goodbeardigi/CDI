@@ -788,6 +788,7 @@
 
 #login-form input {
 	color: black;
+	border: 1px solid #CCC;
 }
 
 #vlogin-form {

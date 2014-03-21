@@ -9,34 +9,34 @@ include('header.php');
 			<div class="span12">		
 				<!-- Form -->
 				<form id="contact-form" action="/" method="post">
-					<h3>Get in touch</h3>
-					<h4>Fill in the form below, and we'll get back to you within 24 hours.</h4>
+					<h2>GET IN TOUCH</h2>
+					<p>Fill in the form below, and we'll get back to you within 24 hours.</p>
 					<div>
 						<label>
-							<span>Name: (required)</span>
-							<input placeholder="Please enter your name" type="text" tabindex="1" required autofocus>
+							<span><h3>Name: (required)</h3></span>
+							<input style = "border-radius: 0; width 90%; " placeholder="Please enter your name" type="text" tabindex="1" required autofocus>
 						</label>
 					</div>
 					<div>
 						<label>
-							<span>Email: (required)</span>
-							<input placeholder="Please enter your email address" type="email" tabindex="2" required>
+							<span><h3>Email: (required)</h3></span>
+							<input style = "border-radius: 0;" placeholder="Please enter your email address" type="email" tabindex="2" required>
 						</label>
 					</div>
 					<div>
 						<label>
-							<span>Telephone: (required)</span>
-							<input placeholder="Please enter your number" type="tel" tabindex="3" required>
+							<span><h3>Telephone: (required)</h3></span>
+							<input style = "border-radius: 0;" placeholder="Please enter your number" type="tel" tabindex="3" required>
 						</label>
 					</div>
 					<div>
 						<label>
-							<span>Message: (required)</span>
-							<textarea placeholder="Include all the details you can" tabindex="5" required></textarea>
+							<span><h3>Message: (required)</h3></span>
+							<textarea style = "border-radius: 0;" placeholder="Include all the details you can" tabindex="5" required></textarea>
 						</label>
 					</div>
 					<div>
-						<button name="submit" type="submit" id="contact-submit">Send Email</button>
+						<button  name="submit" type="submit" id="contact-submit">SEND EMAIL</button>
 					</div>
 				</form>
 				<!-- /Form -->
