@@ -2,7 +2,6 @@ h2{
 	font-size: 29.5px;
 	font-weight: 400 !important;
 	text-transform: uppercase;
-	font-style: italic;
 	color: #606060;
 }
 h3{
@@ -279,13 +278,16 @@ input[disabled]{
 }
 
 #failureText {
-background: url('http://carboncutterapp.co.uk/wp-content/themes/Divi/images/cross.png') 0 no-repeat;
-padding-left: 60px;
-font-size: 22px;
-margin-top: 7px;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: left;
+	color: red;
 }
+
 #failureText h1{
-	font-size: 25.5px;
+	margin-top:-10px;
+	font-size: 13px;
+	padding-bottom: 5px;
 }
 
 .hero-unit{

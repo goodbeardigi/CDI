@@ -74,33 +74,33 @@ require_once('inc/functions.inc.php');
 
   <!-- LOGIN MODAL -->
 
+  <img src="boat.gif" alt="Big Boat">
+
   <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-body">
-                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 
             <div id="main-form" class="text-center">
 
-        <h2>Login</h2>
+              <h2>SIGN IN</h2>
 
-        <div id="login-form-container">
+              <div id="login-form-container">
+                <form id="login-form" method="post" novalidate="" action="">                
+                  <input type="text" name="username" id="username" placeholder="Username" required="required" style="width:288px !important">
+                  <input type="password" name="password" id="password" placeholder="Password" required="required" style="width:288px">
+                  <div class="error" id="failure" style="display: none;"></div>
+                  <a href="#" onclick="login()" class="loginButton">Sign in</a>
+              
+                  <div class="orLine">OR</div>
 
-             <form id="login-form" method="post" novalidate="" action="">                
-                     <input type="text" name="username" id="username" placeholder="info@test.com" required="required">
-                     <input type="password" name="password" id="password" placeholder="password" required="required">
-                     <div class="error" id="failure" style="display: none;"></div>
-                     <a href="#" onclick="login()" class="button-form"><div class="button" id="login">Login</div></a>
-             </form>
-         </div>
-         <div class="clear"></div>
-          <span class="separator"><p>Or</p></span>
-
-          <a href="#" onclick="fblogin()"><input id="login-user-fb" class="button" type="submit" value="Connect with Facebook"></a>
-          <a href="account.php"><input id="login-user-fb" class="button" type="submit" value="Register an accoount"></a>
-
-          <a id="forgotdetails" href="#">Forgotten login details</a>
-        </div>
+                  <a href="#" onclick="fblogin()" class = "fbLoginButton">Sign in with Facebook</a>
+                  <a id="forgotdetails" href="#">Forgot your password?</a>
+                  <div class = "signUpLink"><a href="account.php" id="forgotdetails">Sign up</a></div>
+                </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>

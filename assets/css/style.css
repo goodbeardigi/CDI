@@ -86,7 +86,9 @@
 	    background-color: transparent;
 	    color: #82ccff !important;
 	    text-align: center;
-	    line-height: 3.3em;
+	    line-height: 3.4em;
+	    text-transform: uppercase;
+	    font-size: 14px;
 
 	}
 
@@ -307,7 +309,7 @@
 		text-decoration: none;
 		text-shadow: none;
 		font-size:14px;
-		font-wight:bold;
+		font-weight:bold;
 		text-transform:uppercase;
 	}
 	.navbar .nav > .active > a, 
@@ -773,7 +775,7 @@
 
 
 #login-form {
-	width: 350px;
+	padding-top: 15px;
 	text-align: center;
 	margin: 0 auto;
 }
@@ -782,7 +784,7 @@
 #login-form input, #main-form .button  {
 	height: 38px;
 	border: 0;
-	border-radius: 0;
+	border-radius: 4px;
 	width: 300px;
 }
 
@@ -792,7 +794,7 @@
 }
 
 #vlogin-form {
-	width: 350px;
+	width: 300px;
 	text-align: center;
 	margin: 0 auto;
 }
@@ -802,24 +804,89 @@
 	height: 38px;
 	border: 0;
 	border-radius: 0;
-	width: 300px;
 }
 
 #vlogin-form input {
 	color: black;
 }
 
-.button {
-	background: #222;
+.loginButton {
+	margin: 10px 0px 15px;
 	color: white!important;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	font-size: 16px;
-	font-style: italic;
+	font-size: 13px;
+	background-color: #2289cc;
+	height: 40px;
+	line-height: 3.1em;
+	border-radius: 4px;
+	border: solid 1px #1a79bc;
+}
+
+.loginButton:hover{
+	background-color: #2995d9;
+	text-decoration: none !important;
+}
+
+.fbLoginButton {
+	background: url('../../images/fbWhite.png') no-repeat 7px 7px;
+	color: white!important;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 13px;
+	background-color: #3b5998;
+	height: 40px;
+	line-height: 3.1em;
+	border-radius: 4px;
+	border: solid 1px #fff;
+	margin: 14px 0px 20px;
+}
+
+.fbLoginButton:hover{
+	background-color: #496fbf;
+	text-decoration: none !important;
+}
+
+.orLine{
+	display: block;
+	font-size: .875em;
+	margin-bottom: 10px;
+	position: relative;
+	text-align: center;
+	width: 100%;
+	z-index: 1;
+	color: #606060;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.orLine:before{
+	width: 40px;
+	height: 10px;
+	background-color: #eeeeee;
+	content: '';
+	margin: -5px 0 0 -20px;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	z-index: -1;
+}
+
+.orLine:after{
+	border-bottom: 1px solid #cccccc;
+	content: '';
+	display: block;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	z-index: -2;
+}
+
+.signUpLink{
+	position: inline !important;
 }
 
 .button:hover {
-	background: #363636;
 }
 
 #login-user-fb {
@@ -834,7 +901,7 @@
 #forgotdetails {
 	margin-top: 10px;
 	display: block;
-	font-size: 11px;
+	font-size: 14px;
 	color: #464646;
 }
 
