@@ -18,8 +18,10 @@ while($row = mysqli_fetch_array($result)){
 			<div class="span12 text-left">
 				<a href="/video.php?id=<?php echo $row['id'] ?>">
 					<img src="images/banner-temp.jpg" alt="" />
-					<div class="name"><?php echo $row['name'];?></div>
-					<div class="description"><?php echo $row['description'];?></div>
+					<div class="featured-video-text">
+						<div class="name"><?php echo $row['name'];?></div>
+						<div class="description"><?php echo $row['description'];?></div>
+					</div>
 				</a>
 			</div>
 		</div>
