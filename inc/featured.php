@@ -11,10 +11,9 @@ while($row = mysqli_fetch_array($result)){
 	if($p=0){
 		?><div class="active item"><?php
 	} else {
-		?><div class="active item"><?php
+		?><div class="item"><?php
 	}
 	?>
-	<div class="active item">
     	<div class="row">
 			<div class="span12 text-left">
 				<a href="/video.php?id=<?php echo $row['id'] ?>">
@@ -24,7 +23,6 @@ while($row = mysqli_fetch_array($result)){
 				</a>
 			</div>
 		</div>
-	</div>
 	<?
 	$p++;
 }
