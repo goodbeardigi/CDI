@@ -11,28 +11,8 @@ include('header.php');
     
   </ol>
   <!-- Carousel items -->
-  <div class="carousel-inner">
-    <div class="active item">
-    	<div class="row">
-			<div class="span12 text-left">
-				<img src="images/banner-temp.jpg" alt="" />
-			</div>
-		</div>
-	</div>
-    <div class="item">
-    	<div class="row">
-			<div class="span12 text-left">
-				<img src="images/banner-temp.jpg" alt="" />
-			</div>
-		</div>
-	</div>
-       <div class="item">
-    	<div class="row">
-			<div class="span12 text-left">
-				<img src="images/banner-temp.jpg" alt="" />
-			</div>
-		</div>
-	</div>
+  <div id="home-carousel" class="carousel-inner">
+    <?php include('inc/featured.php');?>
   </div>
   <!-- Carousel nav -->
   <a class="carousel-control left" href="#myCarousel" data-slide="prev" ><i class="icon-chevron-left" style="color:blue;"></i> </a>
