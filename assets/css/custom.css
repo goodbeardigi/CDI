@@ -411,7 +411,7 @@ section{
 }
 
 
-#featured-video-text{
+.featured-video-text{
 	position: absolute;
 	z-index: 100;
 	margin-top: -147px;
