@@ -8,7 +8,7 @@ $p=0;
 $result = mysqli_query($con,"SELECT * FROM videos WHERE featured = 1");
 
 while($row = mysqli_fetch_array($result)){
-	if($p=0){
+	if($p==0){
 		?><div class="active item"><?php
 	} else {
 		?><div class="item"><?php
