@@ -409,3 +409,12 @@ section{
 :-ms-input-placeholder {
     color:#888;
 }
+
+
+#featured-video-text{
+	position: absolute;
+	z-index: 100;
+	margin-top: -147px;
+	width: 507px;
+	padding-left: 73px;
+}
