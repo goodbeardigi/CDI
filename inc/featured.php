@@ -23,6 +23,7 @@ while($row = mysqli_fetch_array($result)){
 				</a>
 			</div>
 		</div>
+	</div>
 	<?
 	$p++;
 }
