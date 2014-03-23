@@ -372,19 +372,18 @@ section{
 	cursor:pointer;
 	width:100%;
 	border:none;
-	background: #3B5FBD;
+	background: #2995d9;
 	color:#FFF;
 	margin:0 0 5px;
 	padding:10px;
-	border-radius:0px;
+	border-radius:4px;
 	font-size: 14px;
-	font-style:italic;
 	letter-spacing: 1px;
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
 #contact-form button[type="submit"]:hover {
-	background: #3758af;
+	background: #3fa5e5;
 	-webkit-transition:background 0.3s ease-in-out;
 	-moz-transition:background 0.3s ease-in-out;
 	transition:background-color 0.3s ease-in-out;
