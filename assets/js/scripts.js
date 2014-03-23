@@ -337,7 +337,8 @@ function addcount(id) {
 
 function hottestvideos(days){
     // declaring variables to be used
-    var xhr, target, changeListener, url, data, html;
+    var xhr, target, changeListener, url, data;
+    var html = "";
     var l=0;
     url = "http://cdisports.jamescobbett.co.uk/inc/hottestvideos.php";
 
@@ -401,7 +402,8 @@ function hottestvideos(days){
 
 function recentvideos(){
     // declaring variables to be used
-    var xhr, target, changeListener, url, data, html;
+    var xhr, target, changeListener, url, data;
+    var html = "";
     var l=0;
     url = "http://cdisports.jamescobbett.co.uk/inc/recentvideos.php";
     
