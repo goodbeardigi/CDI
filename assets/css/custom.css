@@ -417,6 +417,9 @@ section{
 	width: 507px;
 	padding-left: 73px;
 }
+.featured-video-text h2{
+	color: #fff !important;
+}
 .featured-description{
 	font-size: 15px;
 }
