@@ -66,6 +66,7 @@ require_once('inc/functions.inc.php');
 <script src="assets/js/jquery.filedrop.js"></script>
 <script src="assets/js/modal.js"></script>
 <script src="assets/js/facebook.js"></script>
+<script src="assets/js/popcorn.min.js"></script>
 
 <body data-spy="scroll" data-target=".top-spy">
 

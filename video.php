@@ -138,6 +138,19 @@ $('#twitter').sharrre({
 	});
 
 	document.getElementById("video").addEventListener('play', function(){ addcount(<?php echo $id; ?>); }, false);
+
+	$( document ).ready(function() {
+		// This block of code must be run _after_ the DOM is ready
+		// This will capture the frame at the 10th second and create a poster
+		var video = Popcorn( "#video" );
+
+		// Once the video has loaded into memory, we can capture the poster
+		video.listen( "canplayall", function() {
+
+		  this.currentTime( 10 ).capture();
+
+		});
+	});
 </script>
 
 <?php include('footer.php'); ?>
