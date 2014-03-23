@@ -35,6 +35,12 @@ if(array_key_exists('pic',$_FILES) && $_FILES['pic']['error'] == 0 ){
 	
 	if(move_uploaded_file($pic['tmp_name'], $upload_dir.$pic['name'])){
 		exit_status('File was uploaded successfuly!');
+		$ffmpeg = 'ffmpeg/ffmpeg'; //put the relative path to the ffmpeg.exe file
+		$second = 15; //specify the time to get the screen shot at (can easily be randomly generated)
+		$image = '../videos/thumbnails/sample.jpg'; //define the output file
+		//finally assemble the command and execute it
+		$command = "$ffmpeg  -itsoffset -$second  -i $pic -vcodec mjpeg -vframes 1 -an -f rawvideo -s 150×84 $image";
+		exec($command);
 	}
 	
 }

@@ -8,7 +8,7 @@ $(function(){
     paramname:'pic',
     
     maxfiles: 5,
-      maxfilesize: 2,
+      maxfilesize: 250,
     url: 'inc/upload.php',
     
     uploadFinished:function(i,file,response){

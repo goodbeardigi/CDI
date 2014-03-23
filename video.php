@@ -130,7 +130,7 @@ $('#twitter').sharrre({
 	  url: document.URL,  //if you need to personalize url button
   	  media: '',
       description: '',
-      template: '<a class="box" href="#"><div class="count" href="#">{total}</div></a>',
+      templ ate: '<a class="box" href="#"><div class="count" href="#">{total}</div></a>',
       	  click: function(api, options){
 	    api.simulateClick();
 	    api.openPopup('pinterest');
