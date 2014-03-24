@@ -40,7 +40,7 @@ if(array_key_exists('pic',$_FILES) && $_FILES['pic']['error'] == 0 ){
 		$image = '../videos/thumbnails/sample.jpg'; //define the output file
 		$video = $pic['tmp_name'];
 		//finally assemble the command and execute it
-		$command = "$ffmpeg  -itsoffset -$second  -i $pic -vcodec mjpeg -vframes 1 -an -f rawvideo -s 150×84 $image";
+		$command = "$ffmpeg  -itsoffset -$second  -i $video -vcodec mjpeg -vframes 1 -an -f rawvideo -s 150×84 $image";
 		exec($command);
 	}
 	
