@@ -22,7 +22,7 @@ while($row = mysqli_fetch_array($result)){
 <div class="hero-unit" id="video-unit">
 		<div class="container">
 			<div class="row">
-				<video class="span12" style="background:#000" id="video" preload="auto" autobuffer="" controls="" poster="">
+				<video class="span11 center" style="background:#000" id="video" preload="auto" autobuffer="" controls="" poster="">
 				  	<?php echo '<source src="videos/'.$url.'" type="video/mp4">'; ?>
 				  	<!--<source src="movie.ogg" type="video/ogg">-->
 					Your browser does not support the video tag.

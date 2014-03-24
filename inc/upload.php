@@ -29,13 +29,13 @@ if(array_key_exists('pic',$_FILES) && $_FILES['pic']['error'] == 0 ){
 		exit_status('Uploads are ignored in demo mode.');
 	}
 	
-	
+	$pic['name'] = str_replace(" ", "-", $pic['name']);
 	// Move the uploaded file from the temporary 
 	// directory to the uploads folder:
 		$ffmpeg = "ffmpeg/ffmpeg";
 		$videofile = $_FILES['pic']['tmp_name'];
 		$imagefile = "../videos/thumbnails/".$pic['name'].".jpg";
-		$size = "120x90";
+		$size = "1170x658";
 		$getFromSecond = 5;
 
 		$cmd = "$ffmpeg -i $videofile -an -ss $getFromSecond -s $size $imagefile";
