@@ -4,7 +4,7 @@ include('header.php');
 <!-- Main hero unit for a primary marketing message or call to action -->
 <div class="hero-unit">
 	<div class="container">
-	<div id="myCarousel" class="carousel slide">
+	<div id="home-carousel" class="carousel slide">
   	<ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -25,7 +25,7 @@ include('header.php');
 <section id="Section-1">
 	<div class="container" style="padding-top:30px">
     <div class="row">
-		<div class="span12 reducebottom" id="home-carousel">
+		<div class="span12 reducebottom">
 			<ul  id="myTab"  class="video-grid-nav nav nav-tabs"> 
 				<li><a href="#recent-videos" class="active" data-toggle="tab">Recent videos</a></li>
 				<li><a href="#weeks-hottest" data-toggle="tab">Weeks Hottest</a></li>
