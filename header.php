@@ -120,28 +120,30 @@ require_once('inc/functions.inc.php');
         <li><div class = "navElement"><a href="category.php?id=3">Snow</a></div></li>
         <li>
           <form>
-            <span><input type="text" class="searchBar" placeholder="Search..." style = "margin-left: 38px;"></span>
+            <input type="text" class="searchBar" placeholder="Search..." style = "margin-left: 38px;">
           </form>
         <li>
-        <li>
-          <div class = "navElement">
+        <li><div class = "navElement" style = "width: 75px"><a href="about-us.php">About</a></div></li>
+        <li><div class = "navElement" style = "width: 75px"><a href="contact-us.php">Contact</a></div></li>
+         <li class="floatright">
+          <div class = "navElement" style = "width: 75px">
             <span><a href="#" onclick="$('#loginModal').modal('show')">Sign In</a></span>
           </div>
         </li>
-        <li>
-          <div class = "navElement">
+        <li class="floatright">
+          <div class = "navElement" style = "width: 75px">
             <span><a href="upload.php">Upload</a></span>
           </div>
         </li>
-        <li>
-          <div class = "navElement" style="width:185px;">
+        <li class="floatright">
+          <div class = "navElement" style="width:150px;">
          <?php 
             if(isset($_SESSION['username'])){
               echo "Hello ".$_SESSION['username'];
             }?>
             </div>
         </li>
-        <li class="floatright"  >
+        <li class="floatright">
             <div id="social-links">
               <span class="icon twitter"><a href="http://www.twitter.com"><img src="images/twitterMain.png"/></a></span>
             </div>
