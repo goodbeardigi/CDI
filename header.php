@@ -117,23 +117,28 @@ require_once('inc/functions.inc.php');
         <li><div class = "navElement"><a href="category.php?id=2">Sky</a></div></li>
         <li><div class = "navElement"><a href="category.php?id=3">Snow</a></div></li>
         <li>
-          <form>
-            <input type="text" class="searchBar" placeholder="Search..." style = "margin-left: 38px;">
+          <form action="search.php" method="POST">
+            <input type="text" class="searchBar" name="term" placeholder="Search..." style = "margin-left: 38px;">
           </form>
         <li>
-        <li><div class = "navElement" style = "width: 75px"><a href="about-us.php">About</a></div></li>
-        <li><div class = "navElement" style = "width: 75px"><a href="contact-us.php">Contact</a></div></li>
-         <li class="floatright">
+         <li>
           <div class = "navElement" style = "width: 75px">
-            <span><a href="#" onclick="$('#loginModal').modal('show')">Sign In</a></span>
+            <?php 
+              if(isset($_SESSION['username'])){
+                ?><span><a href="#" onclick="signOut()">Sign Out</a></span> <?php
+              } else {
+                ?><span><a href="#" onclick="$('#loginModal').modal('show')">Sign In</a></span> <?php
+              } ?>
           </div>
         </li>
-        <li class="floatright">
+        <li>
           <div class = "navElement" style = "width: 75px">
             <span><a href="upload.php">Upload</a></span>
           </div>
         </li>
-        <li class="floatright">
+        <li><div class = "navElement" style = "width: 75px"><a href="about-us.php">About</a></div></li>
+        <li><div class = "navElement" style = "width: 75px"><a href="contact-us.php">Contact</a></div></li>
+        <li>
           <div class = "navElement" style="width:150px;">
          <?php 
             if(isset($_SESSION['username'])){

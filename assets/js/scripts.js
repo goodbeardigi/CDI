@@ -374,7 +374,7 @@ function hottestvideos(days){
                       html += '<br><span>'+response[i]["length"]+'</span>';
                       html += '</div>';
                       html += '</a>';    
-                      html +=  '<img src="images/video-temp.jpg">';
+                      html +=  '<img src="videos/thumbnails/'+response[i]["image"]+'">';
                       html +=  '</div>';
                       if(l===2){
                         html += '</div>';
@@ -454,4 +454,8 @@ function recentvideos(){
     //xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xhr.send();
     return false;
+}
+
+function signOut(){
+  
 }
