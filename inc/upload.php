@@ -32,16 +32,24 @@ if(array_key_exists('pic',$_FILES) && $_FILES['pic']['error'] == 0 ){
 	
 	// Move the uploaded file from the temporary 
 	// directory to the uploads folder:
-	
+		$ffmpeg = "ffmpeg/ffmpeg";
+		$videofile = $pic['tmp_name'];
+		$imagefile = "../videos/thumbnails/2.jpg";
+		$size = "120x90";
+		$getFromSecond = 5;
+
+		$cmd = "$ffmpeg -i $videofile -an -ss $getFromSecond -s $size $imagefile";
+		//echo $cmd;
+		exec($cmd)
 	if(move_uploaded_file($pic['tmp_name'], $upload_dir.$pic['name'])){
+		// if(exec($cmd)){
+		// 	echo "Thumbnail created";
+		// } else {
+		// 	echo "Thumbnail failed";
+		// }
+
 		exit_status('File was uploaded successfuly!');
-		$ffmpeg = 'ffmpeg/ffmpeg'; //put the relative path to the ffmpeg.exe file
-		$second = 15; //specify the time to get the screen shot at (can easily be randomly generated)
-		$image = '../videos/thumbnails/sample.jpg'; //define the output file
-		$video = $pic['tmp_name'];
-		//finally assemble the command and execute it
-		$command = "$ffmpeg  -itsoffset -$second  -i $video -vcodec mjpeg -vframes 1 -an -f rawvideo -s 150×84 $image";
-		exec($command);
+
 	}
 	
 }
