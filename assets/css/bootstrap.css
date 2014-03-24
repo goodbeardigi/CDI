@@ -6023,7 +6023,7 @@ a.badge:focus {
 
 .carousel-control {
   position: absolute;
-  top: 40%;
+  top: 210px;
   left: 15px;
   width: 40px;
   height: 40px;
