@@ -293,7 +293,6 @@ input[disabled]{
 
 .hero-unit{
 	margin-bottom: 0px! important;
-	height: 500px;
 }
 section{
 	padding-top: 0px !important;
@@ -425,4 +424,8 @@ section{
 .featured-description{
 	font-size: 15px;
 	color: #fff !important;
+}
+#home-carousel{
+	height: 500px !important;
+	margin-bottom: 0px! important;
 }

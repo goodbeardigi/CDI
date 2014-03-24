@@ -25,7 +25,7 @@ include('header.php');
 <section id="Section-1">
 	<div class="container" style="padding-top:30px">
     <div class="row">
-		<div class="span12 reducebottom">
+		<div class="span12 reducebottom" id="home-carousel">
 			<ul  id="myTab"  class="video-grid-nav nav nav-tabs"> 
 				<li><a href="#recent-videos" class="active" data-toggle="tab">Recent videos</a></li>
 				<li><a href="#weeks-hottest" data-toggle="tab">Weeks Hottest</a></li>
