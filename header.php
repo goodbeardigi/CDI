@@ -75,8 +75,6 @@ require_once('inc/functions.inc.php');
 
   <!-- LOGIN MODAL -->
 
-  <img src="boat.gif" alt="Big Boat">
-
   <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
