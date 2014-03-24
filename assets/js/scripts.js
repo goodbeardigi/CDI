@@ -433,7 +433,7 @@ function recentvideos(){
                       html += '<br><span>'+response[i]["length"]+'</span>';
                       html += '</div>';
                       html += '</a>';    
-                      html +=  '<img src="images/'+response[i]["category"]+'">';
+                      html +=  '<img src="videos/thumbnails/'+response[i]["image"]+'">';
                       html +=  '</div>';
                       if(l===2){
                         html += '</div>';
