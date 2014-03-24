@@ -17,6 +17,8 @@ while($row = mysqli_fetch_array($result)){
 	$videos[$p]['category'] = $row['category'];
 	$videos[$p]['date_added'] = $row['date_added'];
 	$videos[$p]['url'] = $row['url'];
+	$videos[$p]['length'] = $row['length'];
+	$videos[$p]['image'] = $row['image'];
 	$p++;
 }
 echo json_encode($videos);
