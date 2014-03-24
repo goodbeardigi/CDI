@@ -17,7 +17,7 @@ while($row = mysqli_fetch_array($result)){
     	<div class="row">
 			<div class="span12 text-left">
 				<a href="/video.php?id=<?php echo $row['id'] ?>">
-					<img src="images/banner-temp.jpg" alt="" />
+					<img src="images/<?php echo $row['image'] ?>" alt="" />
 					<div class="featured-video-text">
 						<div class="name"><h2><?php echo $row['name'];?></h2></div>
 						<div class="featured-description"><?php echo $row['description'];?></div>
