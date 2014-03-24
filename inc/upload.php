@@ -33,14 +33,18 @@ if(array_key_exists('pic',$_FILES) && $_FILES['pic']['error'] == 0 ){
 	// Move the uploaded file from the temporary 
 	// directory to the uploads folder:
 		$ffmpeg = "ffmpeg/ffmpeg";
-		$videofile = $pic['tmp_name'];
-		$imagefile = "../videos/thumbnails/2.jpg";
+		$videofile = $_FILES['pic']['tmp_name'];
+		$imagefile = "../videos/thumbnails/".$pic['name'].".jpg";
 		$size = "120x90";
 		$getFromSecond = 5;
 
 		$cmd = "$ffmpeg -i $videofile -an -ss $getFromSecond -s $size $imagefile";
 		//echo $cmd;
-		exec($cmd)
+		if(exec($cmd)){
+			//echo "Thumbnail created";
+		} else {
+			//echo "Thumbnail failed";
+		}
 	if(move_uploaded_file($pic['tmp_name'], $upload_dir.$pic['name'])){
 		// if(exec($cmd)){
 		// 	echo "Thumbnail created";
