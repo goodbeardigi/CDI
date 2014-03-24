@@ -38,6 +38,7 @@ if(array_key_exists('pic',$_FILES) && $_FILES['pic']['error'] == 0 ){
 		$ffmpeg = 'ffmpeg/ffmpeg'; //put the relative path to the ffmpeg.exe file
 		$second = 15; //specify the time to get the screen shot at (can easily be randomly generated)
 		$image = '../videos/thumbnails/sample.jpg'; //define the output file
+		$video = $pic['tmp_name'];
 		//finally assemble the command and execute it
 		$command = "$ffmpeg  -itsoffset -$second  -i $pic -vcodec mjpeg -vframes 1 -an -f rawvideo -s 150×84 $image";
 		exec($command);
