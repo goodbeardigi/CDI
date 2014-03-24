@@ -115,7 +115,7 @@
 	.searchBar { 
 		margin-top: 10px; 
 		margin-left: 20px !important;
-		background: url('../../images/search-icon.png') no-repeat 180px 7px !important; 
+		background: url('../../images/search-icon.png') no-repeat 180px 6px !important; 
 		border: 1px solid white;
 		border-radius:20px !important; 
 		-moz-border-radius:20px !important; 
