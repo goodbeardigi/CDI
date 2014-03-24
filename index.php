@@ -3,8 +3,8 @@ include('header.php');
 ?>
 <!-- Main hero unit for a primary marketing message or call to action -->
 <div class="hero-unit">
-		<div class="container">
-		<div id="myCarousel" class="carousel slide">
+	<div class="container">
+	<div id="myCarousel" class="carousel slide">
   	<ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>

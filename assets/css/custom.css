@@ -293,6 +293,7 @@ input[disabled]{
 
 .hero-unit{
 	margin-bottom: 0px! important;
+	height: 500px;
 }
 section{
 	padding-top: 0px !important;
