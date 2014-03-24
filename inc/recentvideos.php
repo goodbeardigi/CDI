@@ -17,8 +17,9 @@ while($row = mysqli_fetch_array($result)){
 	$recentvideos[$i]['date_added'] = $row['date_added'];
 	$recentvideos[$i]['url'] = $row['url'];
 	$length = explode(":", $row['length']);
+	$mins = $length[1];
 	$length = explode(".", $length[2]);
-	$recentvideos[$i]['length'] = $length[0].":".$length[1];
+	$recentvideos[$i]['length'] = $mins.":".$length[0];
 	$recentvideos[$i]['image'] = $row['image'];
 	$i++;
 }
