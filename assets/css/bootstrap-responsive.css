@@ -135,6 +135,9 @@
   }
   .span12 {
     width: 1170px;
+  }  
+  .span12b {
+    width: 1170px;
     height: 500px;
   }
   .span11 {
