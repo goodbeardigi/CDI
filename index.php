@@ -11,7 +11,6 @@ include('header.php');
     <li data-target="#home-carousel" data-slide-to="2"></li>
     <li data-target="#home-carousel" data-slide-to="3"></li>
     <li data-target="#home-carousel" data-slide-to="4"></li>
-    <li data-target="#home-carousel" data-slide-to="5"></li>
     
   </ol>
   <!-- Carousel items -->
@@ -20,7 +19,7 @@ include('header.php');
   </div>
   <!-- Carousel nav -->
   <a class="carousel-control left" href="#home-carousel" data-slide="prev" ><i class="icon-chevron-left" style="color:blue;"></i> </a>
-  <a class="carousel-control right" href="home-carousel" data-slide="next"><i class="icon-chevron-right"></i></a>
+  <a class="carousel-control right" href="#home-carousel" data-slide="next"><i class="icon-chevron-right"></i></a>
 </div>
 			
 		</div>
