@@ -679,26 +679,20 @@
 		margin-left: 0;
 	}
 
-	.video-grid-nav li:after  {
-		content: "//";
-		margin: 0 5px 0 5px;
-		color: #232323;
-		top: 0px;
-		position: relative;
-	}
-
 	.video-grid-nav li {
 	  	display: inline;
 		margin-right: 0px;
 		text-transform: uppercase;
-		font-size: 12px;
+		font-size: 14px;
+		color: #b0b0b0;
+		border-bottom: 1px solid #b0b0b0;
 	}
 
 	.video-grid-nav li a {
-	  	color: #232323
+	  	color: #838383
 	}
 
-	.video-grid-nav li a:hover, .video-grid-nav li a:active {
+	.video-grid-nav li a:hover{
 	  	color: #1175d2;
 	}
 
