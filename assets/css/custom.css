@@ -29,6 +29,7 @@ p{
 .center {
    margin: 0 auto !important;
    float: none !important;
+   margin-bottom: 10px !important;
 }
 .floatright{
 	float: right;
@@ -129,7 +130,7 @@ textarea{
 }
 
 #related-videos{
-	margin-top: -114px;
+	margin-top: -85px;
 }
 #disqus_thread{
 	background-color: #fff;

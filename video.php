@@ -21,7 +21,7 @@ while($row = mysqli_fetch_array($result)){
 <!-- Main hero unit for a primary marketing message or call to action -->
 <div class="hero-unit" id="video-unit">
 		<div class="container">
-			<div class="row">
+			<div class="row center">
 				<video class="span11 center" style="background:#000" id="video" preload="auto" autobuffer="" controls="" poster="">
 				  	<?php echo '<source src="videos/'.$url.'" type="video/mp4">'; ?>
 				  	<!--<source src="movie.ogg" type="video/ogg">-->
