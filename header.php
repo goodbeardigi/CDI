@@ -121,7 +121,9 @@ require_once('inc/functions.inc.php');
             <input type="text" class="searchBar" name="term" placeholder="Search..." style = "margin-left: 38px;">
           </form>
         <li>
-         <li>
+        <li><div class = "navElement" style = "width: 75px"><a href="about-us.php">About</a></div></li>
+        <li><div class = "navElement" style = "width: 75px"><a href="contact-us.php">Contact</a></div></li>
+        <li>
           <div class = "navElement" style = "width: 75px">
             <?php 
               if(isset($_SESSION['username'])){
@@ -136,8 +138,6 @@ require_once('inc/functions.inc.php');
             <span><a href="upload.php">Upload</a></span>
           </div>
         </li>
-        <li><div class = "navElement" style = "width: 75px"><a href="about-us.php">About</a></div></li>
-        <li><div class = "navElement" style = "width: 75px"><a href="contact-us.php">Contact</a></div></li>
         <li>
           <div class = "navElement" style="width:150px;">
          <?php 
