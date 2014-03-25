@@ -9,7 +9,7 @@ $i=0;
 $result = mysqli_query($con,"SELECT videos.id, videos.name, videos.description, videos.user_id, videos.categories_id, videos.date_added, videos.url, categories.category FROM videos INNER JOIN categories ON categories.id=videos.categories_id WHERE videos.categories_id=$id");
 ?>
 <div class="container">
-	<h2 id="searchterm"><?php echo $row['category'];?></h2>
+	<h2 id="searchterm"><?php $row=mysqli_fetch_array($result); echo $row[0]['category'];?></h2>
 	<div id="cat-videos" class=" tab-pane fade active in video-grid">
 					<?php
 					while($row = mysqli_fetch_array($result)){
