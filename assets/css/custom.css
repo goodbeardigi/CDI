@@ -429,3 +429,10 @@ section{
 	height: 500px !important;
 	margin-bottom: 0px! important;
 }
+
+/*--------------------------
+	CATEGORY PAGE
+--------------------------*/
+#cat-videos{
+	margin-top: 20px;
+}
