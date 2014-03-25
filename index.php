@@ -6,8 +6,12 @@ include('header.php');
 	<div class="container">
 	<div id="home-carousel" class="carousel slide">
   	<ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#home-carousel" data-slide-to="1"></li>
+    <li data-target="#home-carousel" data-slide-to="2"></li>
+    <li data-target="#home-carousel" data-slide-to="3"></li>
+    <li data-target="#home-carousel" data-slide-to="4"></li>
+    <li data-target="#home-carousel" data-slide-to="5"></li>
     
   </ol>
   <!-- Carousel items -->
@@ -15,8 +19,8 @@ include('header.php');
     <?php include('inc/featured.php');?>
   </div>
   <!-- Carousel nav -->
-  <a class="carousel-control left" href="#myCarousel" data-slide="prev" ><i class="icon-chevron-left" style="color:blue;"></i> </a>
-  <a class="carousel-control right" href="#myCarousel" data-slide="next"><i class="icon-chevron-right"></i></a>
+  <a class="carousel-control left" href="#home-carousel" data-slide="prev" ><i class="icon-chevron-left" style="color:blue;"></i> </a>
+  <a class="carousel-control right" href="home-carousel" data-slide="next"><i class="icon-chevron-right"></i></a>
 </div>
 			
 		</div>
