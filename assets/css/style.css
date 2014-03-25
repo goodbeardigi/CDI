@@ -688,12 +688,6 @@
 		border-bottom: 1px solid #b0b0b0;
 	}
 
-	.video-grid-nav li {
-	  	display: inline;
-		border-bottom: 1px solid #b0b0b0;
-		width: 100%;
-	}
-
 	.video-grid-nav li a {
 	  	color: #838383
 	}

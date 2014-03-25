@@ -30,7 +30,6 @@ include('header.php');
 				<li><a href="#recent-videos" class="active" data-toggle="tab">Recent videos</a></li>
 				<li><a href="#weeks-hottest" data-toggle="tab">Weeks Hottest</a></li>
 				<li><a href="#months-hottest" data-toggle="tab">Months Hottest</a></li>
-				<li><div style="border-bottom: 1px solid #b0b0b0"></div></li>
 			</ul>
 		</div> 
 	</div>	
