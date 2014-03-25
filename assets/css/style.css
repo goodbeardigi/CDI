@@ -685,7 +685,6 @@
 		text-transform: uppercase;
 		font-size: 14px;
 		color: #b0b0b0;
-		border-bottom: 1px solid #b0b0b0;
 	}
 
 	.video-grid-nav li a {
@@ -694,11 +693,16 @@
 
 	.video-grid-nav li a:hover{
 	  	color: #1175d2;
+	  	background: transparent;
 	}
 
 	.video-grid .video {
 		position: relative;
 		display: block;
+	}
+
+	.navLine{
+		border-bottom: 1px solid #b0b0b0;
 	}
 
 	.video-grid .video .video-overlay {

@@ -31,6 +31,7 @@ include('header.php');
 				<li><a href="#weeks-hottest" data-toggle="tab">Weeks Hottest</a></li>
 				<li><a href="#months-hottest" data-toggle="tab">Months Hottest</a></li>
 			</ul>
+			<div class="navLine"></div>
 		</div> 
 	</div>	
 	<div id="myTabContent" class="tab-content">
