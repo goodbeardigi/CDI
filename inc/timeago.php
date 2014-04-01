@@ -5,7 +5,7 @@ function ago($time)
    $lengths = array("60","60","24","7","4.35","12","10");
 
    $now = time();
-
+   //echo $now;
        $difference     = $now - $time;
        $tense         = "ago";
 
