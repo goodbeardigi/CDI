@@ -448,8 +448,11 @@ section{
 .span-title{
 	float: left !important;
 	text-align: left !important;
+	padding-left: 10px;
 }
 .span-length{
 	float: right !important;
 	text-align: right !important;
+	margin-top: -28px;
+	padding-right: 20px;
 }
