@@ -60,7 +60,7 @@ while($row = mysqli_fetch_array($result)){
 </section>
 
 <section id="related-videos">
-	<div class="container">
+	<div class="container reducebottom">
     	<div class="row">
 			<div class="span12">
 				<h3>RELATED VIDEOS //</h3>
