@@ -71,7 +71,7 @@ while($row = mysqli_fetch_array($result)){
 					<?php
 					while($row = mysqli_fetch_array($result2)){
 					?>
-				        <div class="span4 video text-center box"> 
+				        <div class="span4 video text-center box margin0"> 
 				        	<a href="/video.php?id=<?php echo $row['id'];?>" class="video-overlay">
 				        		<div>
 				        			<h2><?php echo $row['name'];?></h2>
@@ -80,7 +80,7 @@ while($row = mysqli_fetch_array($result)){
 				        	</a>    
 				       		<img src="videos/thumbnails/<?php echo $row['image'] ?>" alt="<?php echo $row['name'] ?>" />
 				       		<div class="overlay">
-		                      <span class="span-title"><?php echo $row['title'] ?></span>
+		                      <span class="span-title"><?php echo $row['name'] ?></span>
 		                      <span class="span-length"><?php echo $row['length'] ?></span>
 		                      </div>
 				        </div>
