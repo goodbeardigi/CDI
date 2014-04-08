@@ -528,12 +528,10 @@ function hottestvideos_videopage(days){
                       html +=  '</div>';
                       html += '</div>';
                   } 
-                  l++;
                 }
                   document.getElementById('weeks-hottest').innerHTML = html;
 
             }
-        }
     };
 
     // initialise a request, specifying the HTTP method
