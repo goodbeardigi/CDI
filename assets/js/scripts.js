@@ -427,6 +427,7 @@ function recentvideos(){
                     }
                       html += '<div class="span4 video text-center box">';
                       html += '<a href="/video.php?id='+response[i]["id"]+'" class="video-overlay">';
+                      html += '<div class="overlay">VIDEO NAME</div>';
                       html += '<div>';
                       html += '<h2>'+response[i]["title"]+'</h2>';
                       html += '<span>'+response[i]["category"]+'</span>';
