@@ -446,10 +446,10 @@ section{
 	height: 40px;
 }
 .span-title{
-	float: left;
-	text-align: left;
+	float: left !important;
+	text-align: left !important;
 }
 .span-length{
-	float: right;
-	text-align: right;
+	float: right !important;
+	text-align: right !important;
 }
