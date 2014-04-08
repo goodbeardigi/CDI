@@ -437,3 +437,17 @@ section{
 #cat-videos{
 	margin-top: 20px;
 }
+
+.overlay{
+	margin-top: -20px;
+	background: rgba(47, 106, 182, .55);
+	width: 100%;
+	position: absolute;
+	height: 40px;
+}
+.span-title{
+	float: left;
+}
+.span-length{
+	float: right;
+}
