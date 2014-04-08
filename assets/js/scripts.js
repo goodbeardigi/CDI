@@ -434,10 +434,10 @@ function recentvideos(){
                       html += '</div>';
                       html += '</a>';    
                       html += '<img src="videos/thumbnails/'+response[i]["image"]+'">';
-                      // html += '<div class="overlay">';
-                      // html += '<span class="span-title">'+response[i]["title"]+'</span>';
-                      // html += '<span class="span-length">'+response[i]["length"]+'</span>';
-                      // html += '</div>';
+                      html += '<div class="overlay">';
+                      html += '<span class="span-title">'+response[i]["title"]+'</span>';
+                      html += '<span class="span-length">'+response[i]["length"]+'</span>';
+                      html += '</div>';
                       html += '</div>';
                       if(l===2){
                         html += '</div>';
