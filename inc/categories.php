@@ -20,6 +20,10 @@ $result = mysqli_query($con,"SELECT videos.id, videos.name, videos.description, 
 				        		</div>
 				        	</a>    
 				       		<img src="videos/thumbnails/<?php echo $row['image'] ?>" alt="<?php echo $row['name'] ?>" />
+				       		<div class="overlay">
+                      <span class="span-title"><?php echo $row['title'] ?></span>
+                      <span class="span-length"><?php echo $row['length'] ?></span>
+                      </div>
 				        </div>
 				        <?php if($i===2){
 							?></div><?php
