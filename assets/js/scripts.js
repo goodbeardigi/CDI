@@ -511,9 +511,7 @@ function hottestvideos_videopage(days){
                 console.log(message);
                 response = JSON.parse(response);
                 for(var i=0; i<response.length; i++){
-                    if(l===0){
                       html += '<div class="row-fluid">';
-                    }
                       html += '<div class="span4 video text-center box">';
                       html += '<a href="/video.php?id='+response[i]["id"]+'" class="video-overlay">';
                       html += '<div>';
@@ -528,9 +526,7 @@ function hottestvideos_videopage(days){
                       html += '<span class="span-length">'+response[i]["length"]+'</span>';
                       html += '</div>';
                       html +=  '</div>';
-                      if(l===2){
-                        html += '</div>';
-                        l=-1;
+                      html += '</div>';
                   } 
                   l++;
                 }
