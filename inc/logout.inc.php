@@ -17,6 +17,6 @@ if (check_login_status() == false) {
  
  // Destroy session 
  session_destroy(); 
- redirect('../index.php'); 
+ echo "logged out";
 } 
 ?> 

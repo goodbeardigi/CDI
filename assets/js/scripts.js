@@ -472,4 +472,37 @@ function recentvideos(){
 
 function signOut(){
   
+var xhr, target, changeListener, url, data;
+    var html = "";
+    var l=0;
+    url = "http://cdisports.jamescobbett.co.uk/inc/logout.inc.php";
+    
+    console.log("Sending", data);
+    // create a request object
+    xhr = new XMLHttpRequest();
+
+    changeListener = function () {
+        if (xhr.readyState == 4) {
+            if (xhr.status == 200) {
+                console.log("Response", this.responseText);
+                var response = this.responseText;
+                var s = "success";
+                var message = response.indexOf("failed:");
+                console.log(message);
+                response = JSON.parse(response);
+                if(response== "logged out"){
+                  $('#logoutModal').modal('show')
+                }
+
+            }
+        }
+    };
+
+    // initialise a request, specifying the HTTP method
+    // to be used and the URL to be connected to.
+    xhr.onreadystatechange = changeListener;
+    xhr.open('POST', url, true);
+    //xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhr.send();
+    return false;
 }

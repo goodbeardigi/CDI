@@ -107,6 +107,26 @@ require_once('inc/functions.inc.php');
 
   <!-- END LOGIN MODAL -->
 
+  <!-- LOGOUT MODAL -->
+
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+            <div id="main-form" class="text-center">
+
+              <h2>SUCCESFULLY LOGGED OUT</h2>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- END LOGOUT MODAL -->
+
   <div class="head navbar-fixed-top">
     <div class="innerHead">
       <div class="container">
