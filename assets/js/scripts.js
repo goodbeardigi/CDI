@@ -3,7 +3,13 @@
 jQuery(document).ready(function(){
   jQuery('#topnav').localScroll(3000);
   jQuery('.gobtnwrapper').localScroll(3000);
-  
+  $( ".video-overlay" ).hover(
+  function() {
+    $('.overlay').hide();
+  }, function() {
+    $('.overlay').show();
+  }
+);
   //.parallax(xPosition, speedFactor, outerHeight) options:
   //xPosition - Horizontal position of the element
   //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
