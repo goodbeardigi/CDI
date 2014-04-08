@@ -447,7 +447,9 @@ section{
 }
 .span-title{
 	float: left;
+	text-align: left;
 }
 .span-length{
 	float: right;
+	text-align: right;
 }
