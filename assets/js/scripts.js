@@ -483,6 +483,72 @@ function hottestvideos(days){
     return false;
 }
 
+function hottestvideos_videopage(days){
+    // declaring variables to be used
+    var xhr, target, changeListener, url, data;
+    var html = "";
+    var l=0;
+    url = "http://cdisports.jamescobbett.co.uk/inc/hottestvideos.php";
+
+    var data = new FormData();
+    data.append('days', days);
+    
+    //var form = document.getElementById("loginForm");
+    //var data = new FormData(form);
+    //var html = document.getElementById("source").innerHTML;
+  //data = 'html='+escape(document.getElementById("source").innerHTML);
+    console.log("Sending", data);
+    // create a request object
+    xhr = new XMLHttpRequest();
+
+    changeListener = function () {
+        if (xhr.readyState == 4) {
+            if (xhr.status == 200) {
+                console.log("Response", this.responseText);
+                var response = this.responseText;
+                var s = "success";
+                var message = response.indexOf("failed:");
+                console.log(message);
+                response = JSON.parse(response);
+                for(var i=0; i<response.length; i++){
+                    if(l===0){
+                      html += '<div class="row-fluid">';
+                    }
+                      html += '<div class="span4 video text-center box">';
+                      html += '<a href="/video.php?id='+response[i]["id"]+'" class="video-overlay">';
+                      html += '<div>';
+                      html += '<h2>'+response[i]["title"]+'</h2>';
+                      html += '<span>'+response[i]["category"]+'</span>';
+                      html += '<br><span>'+response[i]["length"]+'</span>';
+                      html += '</div>';
+                      html += '</a>';    
+                      html +=  '<img src="videos/thumbnails/'+response[i]["image"]+'">';
+                      html += '<div class="overlay">';
+                      html += '<span class="span-title">'+response[i]["title"]+'</span>';
+                      html += '<span class="span-length">'+response[i]["length"]+'</span>';
+                      html += '</div>';
+                      html +=  '</div>';
+                      if(l===2){
+                        html += '</div>';
+                        l=-1;
+                  } 
+                  l++;
+                }
+                  document.getElementById('weeks-hottest').innerHTML = html;
+
+            }
+        }
+    };
+
+    // initialise a request, specifying the HTTP method
+    // to be used and the URL to be connected to.
+    xhr.onreadystatechange = changeListener;
+    xhr.open('POST', url, true);
+    //xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhr.send(data);
+    return false;
+}
+
 function recentvideos(){
     // declaring variables to be used
     var xhr, target, changeListener, url, data;
