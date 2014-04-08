@@ -115,7 +115,7 @@ while($row = mysqli_fetch_array($result)){
 			<div class="span5">
 				<h3>THIS WEEKS HOTTEST //</h3>
 				<script type="text/javascript">$( document ).ready(function() {hottestvideos_videopage(7);});</script>	
-				<div id="weeks-hottest">  </div>
+				<div id="weeks-hottest" class=" tab-pane fade active in video-grid">
 			<div>	
 		</div>
 	</div>
