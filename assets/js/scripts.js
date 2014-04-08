@@ -489,8 +489,8 @@ var xhr, target, changeListener, url, data;
                 var message = response.indexOf("logged out");
                 console.log(message);
                 response = JSON.parse(response);
-                if(message == 1){
-                  $('#logoutModal').modal('show')
+                if(message == 0){
+                  $('#logoutModal').modal('show');
                 }
 
             }
