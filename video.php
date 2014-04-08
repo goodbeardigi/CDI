@@ -115,6 +115,7 @@ while($row = mysqli_fetch_array($result)){
 			<div class="span5">
 				<h3>THIS WEEKS HOTTEST //</h3>
 				<script type="text/javascript">$( document ).ready(function() {hottestvideos_videopage(days);});</script>	
+				<div id="weeks-hottest">  </div>
 			<div>	
 		</div>
 	</div>
