@@ -130,27 +130,27 @@ $('#twitter').sharrre({
 	  url: document.URL,  //if you need to personalize url button
   	  media: '',
       description: '',
-      templ ate: '<a class="box" href="#"><div class="count" href="#">{total}</div></a>',
+      template: '<a class="box" href="#"><div class="count" href="#">{total}</div></a>',
       	  click: function(api, options){
 	    api.simulateClick();
 	    api.openPopup('pinterest');
 	  }
 	});
 
-	document.getElementById("video").addEventListener('play', function(){ addcount(<?php echo $id; ?>); }, false);
+	// document.getElementById("video").addEventListener('play', function(){ addcount(<?php echo $id; ?>); }, false);
 
-	$( document ).ready(function() {
-		// This block of code must be run _after_ the DOM is ready
-		// This will capture the frame at the 10th second and create a poster
-		var video = Popcorn( "#video" );
+	// $( document ).ready(function() {
+	// 	// This block of code must be run _after_ the DOM is ready
+	// 	// This will capture the frame at the 10th second and create a poster
+	// 	var video = Popcorn( "#video" );
 
-		// Once the video has loaded into memory, we can capture the poster
-		video.listen( "canplayall", function() {
+	// 	// Once the video has loaded into memory, we can capture the poster
+	// 	video.listen( "canplayall", function() {
 
-		  this.currentTime( 10 ).capture();
+	// 	  this.currentTime( 10 ).capture();
 
-		});
-	});
+	// 	});
+	// });
 </script>
 
 <?php include('footer.php'); ?>
