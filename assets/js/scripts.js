@@ -486,11 +486,10 @@ var xhr, target, changeListener, url, data;
             if (xhr.status == 200) {
                 console.log("Response", this.responseText);
                 var response = this.responseText;
-                var s = "success";
-                var message = response.indexOf("failed:");
+                var message = response.indexOf("logged out");
                 console.log(message);
                 response = JSON.parse(response);
-                if(response== "logged out"){
+                if(message == 1){
                   $('#logoutModal').modal('show')
                 }
 
