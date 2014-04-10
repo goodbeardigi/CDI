@@ -144,7 +144,7 @@ require_once('inc/functions.inc.php');
         <li><div class = "navElement" style = "width: 75px"><a href="about-us.php">About</a></div></li>
         <li><div class = "navElement" style = "width: 75px"><a href="contact-us.php">Contact</a></div></li>
         <li>
-          <div class = "navElement" style = "width: 75px">
+          <div class="navElement" id="sign" style = "width: 75px">
             <?php 
               if(isset($_SESSION['username'])){
                 ?><span><a href="#" onclick="signOut()">Sign Out</a></span> <?php

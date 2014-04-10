@@ -171,6 +171,7 @@ function login(username, password){
                 return false;
                 } else {
                   document.getElementById('main-form').innerHTML = "Succefully signed in";
+                  document.getElementById('sign').innerHTML = '<span><a href="#" onclick="signOut()">Sign Out</a></span>';
                   //window.setTimeout(function(){$('#loginUpload').modal('hide');},700);
                   window.setTimeout(function(){$('#loginModal').modal('hide');},700);
                 }
@@ -621,6 +622,7 @@ var xhr, target, changeListener, url, data;
                 var message = response.indexOf("logged out");
                 console.log(message);
                 if(message == 0){
+                  document.getElementById('sign').innerHTML = '<span><a href="#" onclick="$(\'#loginModal\').modal(\'show\')">Sign In</a></span>';
                   $('#logoutModal').modal('show');
                 }
 
