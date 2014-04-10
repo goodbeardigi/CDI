@@ -172,7 +172,7 @@ function login(username, password){
                 } else {
                   document.getElementById('main-form').innerHTML = "Succefully signed in";
                   document.getElementById('sign').innerHTML = '<span><a href="#" onclick="signOut()">Sign Out</a></span>';
-                  document.getElementById('welcome').innerHTML = 'Hello <?php echo $_SESSION["variable_name"]; ?>';
+                  document.getElementById('welcome').innerHTML = 'Hello <?php echo $_SESSION["username"]; ?>';
                   //window.setTimeout(function(){$('#loginUpload').modal('hide');},700);
                   window.setTimeout(function(){$('#loginModal').modal('hide');},700);
                 }
@@ -624,6 +624,7 @@ var xhr, target, changeListener, url, data;
                 console.log(message);
                 if(message == 0){
                   document.getElementById('sign').innerHTML = '<span><a href="#" onclick="$(\'#loginModal\').modal(\'show\')">Sign In</a></span>';
+                  document.getElementById('welcome').innerHTML = '';
                   $('#logoutModal').modal('show');
                 }
 
