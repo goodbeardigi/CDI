@@ -55,7 +55,7 @@ if ($_SESSION['logged_in'] === true) {
 	   	$_SESSION['username'] = $row['username'];
 	   	$_SESSION['id'] = $row['id'];
 	   }
-	   echo "Success";
+	   echo $row['username'];
  //redirect('../index.php'); 
  } else { 
  // If number of rows returned is not one, redirect back to login screen 

@@ -163,18 +163,18 @@ function login(username, password){
                 console.log("Response", this.responseText);
                 var response = this.responseText;
                 var s = "success";
-                var message = response.indexOf("Success");
+                var message = response.indexOf("failure");
                 console.log(message);
                 if (message == -1){
-                 document.getElementById("failure").innerHTML ="<div id='failureText'><h1>Oops! Wrong username or password.<h1></div>";      
-                jQuery('#failure').slideDown("slow");                    
-                return false;
-                } else {
                   document.getElementById('main-form').innerHTML = "Succefully signed in";
                   document.getElementById('sign').innerHTML = '<span><a href="#" onclick="signOut()">Sign Out</a></span>';
-                  document.getElementById('welcome').innerHTML = 'Hello <?php echo $_SESSION["username"]; ?>';
+                  document.getElementById('welcome').innerHTML = 'Hello '+message;
                   //window.setTimeout(function(){$('#loginUpload').modal('hide');},700);
-                  window.setTimeout(function(){$('#loginModal').modal('hide');},700);
+                  window.setTimeout(function(){$('#loginModal').modal('hide');},700);                   
+                } else {
+                  document.getElementById("failure").innerHTML ="<div id='failureText'><h1>Oops! Wrong username or password.<h1></div>";      
+                jQuery('#failure').slideDown("slow"); 
+                return false;
                 }
             }
         }
