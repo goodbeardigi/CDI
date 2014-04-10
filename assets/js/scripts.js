@@ -172,6 +172,7 @@ function login(username, password){
                 } else {
                   document.getElementById('main-form').innerHTML = "Succefully signed in";
                   document.getElementById('sign').innerHTML = '<span><a href="#" onclick="signOut()">Sign Out</a></span>';
+                  document.getElementById('welcome').innerHTML = 'Hello <?php echo $_SESSION["variable_name"]; ?>';
                   //window.setTimeout(function(){$('#loginUpload').modal('hide');},700);
                   window.setTimeout(function(){$('#loginModal').modal('hide');},700);
                 }

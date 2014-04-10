@@ -159,7 +159,7 @@ require_once('inc/functions.inc.php');
           </div>
         </li>
         <li>
-          <div class = "navElement" style="width:150px;">
+          <div class = "navElement" id="welcome" style="width:150px;">
          <?php 
             if(isset($_SESSION['username'])){
               echo "Hello ".$_SESSION['username'];
