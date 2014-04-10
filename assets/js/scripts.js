@@ -168,7 +168,7 @@ function login(username, password){
                 if (message == -1){
                   document.getElementById('main-form').innerHTML = "Succefully signed in";
                   document.getElementById('sign').innerHTML = '<span><a href="#" onclick="signOut()">Sign Out</a></span>';
-                  document.getElementById('welcome').innerHTML = 'Hello '+message;
+                  document.getElementById('welcome').innerHTML = 'Hello '+response;
                   //window.setTimeout(function(){$('#loginUpload').modal('hide');},700);
                   window.setTimeout(function(){$('#loginModal').modal('hide');},700);                   
                 } else {
