@@ -171,22 +171,7 @@ function login(username, password){
                   document.getElementById('welcome').innerHTML = 'Hello '+response;
                   //window.setTimeout(function(){$('#loginUpload').modal('hide');},700);
                   window.setTimeout(function(){$('#loginModal').modal('hide');},700);
-                  document.getElementById('main-form').innerHTML = '<h2>SIGN IN</h2>
-
-              <div id="login-form-container">
-                <form id="login-form" method="post" novalidate="" action="">                
-                  <input type="text" name="username" id="username" placeholder="Username" required="required" style="width:288px !important">
-                  <input type="password" name="password" id="password" placeholder="Password" required="required" style="width:288px">
-                  <div class="error" id="failure" style="display: none;"></div>
-                  <a href="#" onclick="login()" class="loginButton">Sign in</a>
-              
-                  <div class="orLine">OR</div>
-
-                  <a href="#" onclick="fblogin()" class = "fbLoginButton">Sign in with Facebook</a>
-                  <a id="forgotdetails" href="#">Forgot your password?</a>
-                  <div class = "signUpLink"><a href="account.php" id="forgotdetails">Sign up</a></div>
-                </form>
-            </div>';                   
+                  document.getElementById('main-form').innerHTML = '<h2>SIGN IN</h2><div id="login-form-container"><form id="login-form" method="post" novalidate="" action=""><input type="text" name="username" id="username" placeholder="Username" required="required" style="width:288px !important"><input type="password" name="password" id="password" placeholder="Password" required="required" style="width:288px"><div class="error" id="failure" style="display: none;"></div><a href="#" onclick="login()" class="loginButton">Sign in</a><div class="orLine">OR</div><a href="#" onclick="fblogin()" class = "fbLoginButton">Sign in with Facebook</a><a id="forgotdetails" href="#">Forgot your password?</a><div class = "signUpLink"><a href="account.php" id="forgotdetails">Sign up</a></div></form></div>';                   
                 } else {
                   document.getElementById("failure").innerHTML ="<div id='failureText'><h1>Oops! Wrong username or password.<h1></div>";      
                 jQuery('#failure').slideDown("slow"); 
