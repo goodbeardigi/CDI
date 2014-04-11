@@ -114,6 +114,9 @@
     *zoom: 1;
     padding-bottom: 60px;
   }
+  .row-video{
+    margin-right: -30px;
+  }
   .row:before,
   .row:after {
     display: table;
