@@ -71,6 +71,7 @@ while($row = mysqli_fetch_array($result)){
 					<?php
 					while($row = mysqli_fetch_array($result2)){
 					?>
+					<div id="recent-videos" class=" tab-pane fade active in video-grid">
 				        <div class="span4 video text-center box margin0"> 
 				        	<a href="/video.php?id=<?php echo $row['id'];?>" class="video-overlay">
 				        		<div>
@@ -84,6 +85,7 @@ while($row = mysqli_fetch_array($result)){
 		                      <span class="span-length"><?php echo $row['length'] ?></span>
 		                      </div>
 				        </div>
+				    </div>
 					<?php } ?>
 					</div>
 			</div>	
