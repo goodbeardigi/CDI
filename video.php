@@ -67,7 +67,7 @@ while($row = mysqli_fetch_array($result)){
 				<?php
 					$result2 = mysqli_query($con,"SELECT videos.id, videos.name, videos.description, videos.user_id, videos.categories_id, videos.date_added, videos.url, videos.length, videos.image, categories.category FROM videos INNER JOIN categories ON categories.id=videos.categories_id WHERE videos.categories_id=$categories_id");
 					?>
-					<div id="cat-videos" class=" tab-pane fade active in video-grid">
+					<div class="row-fluid">
 					<?php
 					while($row = mysqli_fetch_array($result2)){
 					?>
@@ -114,7 +114,7 @@ while($row = mysqli_fetch_array($result)){
 			</div>
 			<div class="span5">
 				<h3>THIS WEEKS HOTTEST //</h3>
-				<script type="text/javascript">$( document ).ready(function() {hottestvideos_videopage(7);});</script>	
+				<script type="text/javascript">$( document ).ready(function() {hottestvideos_videopage(70);});</script>	
 				<div id="weeks-hottest" class=" tab-pane fade active in video-grid">
 			<div>	
 		</div>
