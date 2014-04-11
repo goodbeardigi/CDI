@@ -449,14 +449,13 @@ section{
 .span-title{
 	float: left !important;
 	text-align: left !important;
-	padding-left: 10px !important;
+	margin-left: 0px !important;
 	padding-top: 5px !important;
 }
 .span-length{
 	padding-top: 5px !important;
 	float: right !important;
 	text-align: right !important;
-	margin-top: -28px !important;
 	padding-right: 20px !important;
 }
 .margin0{
