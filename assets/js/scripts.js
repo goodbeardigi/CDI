@@ -568,7 +568,7 @@ function recentvideos(){
                 var message = response.indexOf("failed:");
                 console.log(message);
                 response = JSON.parse(response);
-                html += '<div class="row-fluid">';
+                html += '<div class="row">';
                 for(var i=0; i<response.length; i++){
                     // if(l===0){
                     //   html += '<div class="row-fluid">';
