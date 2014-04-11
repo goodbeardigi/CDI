@@ -83,7 +83,7 @@ while($row = mysqli_fetch_array($result)){
 				       		<div class="overlay">
 		                      <span class="span-title"><?php echo $row['name'] ?></span>
 		                      <span class="span-length"><?php echo $row['length'] ?></span>
-		                      </div>
+		                    </div>
 				        </div>
 				    </div>
 					<?php } ?>
