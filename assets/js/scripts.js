@@ -5,9 +5,9 @@ jQuery(document).ready(function(){
   jQuery('.gobtnwrapper').localScroll(3000);
   $( ".video-overlay" ).hover(
   function() {
-    $('this > .overlay').hide();
+     $('.overlay',$(this).parent('div:first')).hide();
   }, function() {
-    $('this > .overlay').show();
+    $('.overlay',$(this).parent('div:first')).show();
   }
 );
   //.parallax(xPosition, speedFactor, outerHeight) options:
