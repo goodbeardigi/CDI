@@ -443,11 +443,12 @@ function hottestvideos(days){
                 var message = response.indexOf("failed:");
                 console.log(message);
                 response = JSON.parse(response);
+                html += '<div class="row">';
                 for(var i=0; i<response.length; i++){
-                    if(l===0){
-                      html += '<div class="row-fluid">';
-                    }
-                      html += '<div class="span4 video text-center box">';
+                    // if(l===0){
+                    //   html += '<div class="row-fluid">';
+                    // }
+                      html += '<div class="col-lg-4 video text-center box">';
                       html += '<a href="/video.php?id='+response[i]["id"]+'" class="video-overlay">';
                       html += '<div>';
                       html += '<h2>'+response[i]["title"]+'</h2>';
@@ -461,12 +462,13 @@ function hottestvideos(days){
                       html += '<span class="span-length">'+response[i]["length"]+'</span>';
                       html += '</div>';
                       html +=  '</div>';
-                      if(l===2){
-                        html += '</div>';
-                        l=-1;
-                  } 
+                  //     if(l===2){
+                  //       html += '</div>';
+                  //       l=-1;
+                  // } 
                   l++;
                 }
+                html += '</div>';
                 if(days === 7){
                   document.getElementById('weeks-hottest').innerHTML = html;
                 } else if (days === 28){
@@ -566,11 +568,12 @@ function recentvideos(){
                 var message = response.indexOf("failed:");
                 console.log(message);
                 response = JSON.parse(response);
+                html += '<div class="row-fluid">';
                 for(var i=0; i<response.length; i++){
-                    if(l===0){
-                      html += '<div class="row-fluid">';
-                    }
-                      html += '<div class="span4 video text-center box">';
+                    // if(l===0){
+                    //   html += '<div class="row-fluid">';
+                    // }
+                      html += '<div class="col-lg-4 video text-center box">';
                       html += '<a href="/video.php?id='+response[i]["id"]+'" class="video-overlay">';
                       html += '<div>';
                       html += '<h2>'+response[i]["title"]+'</h2>';
@@ -584,12 +587,13 @@ function recentvideos(){
                       html += '<span class="span-length">'+response[i]["length"]+'</span>';
                       html += '</div>';
                       html += '</div>';
-                      if(l===2){
-                        html += '</div>';
-                        l=-1;
-                  } 
+                  //     if(l===2){
+                  //       html += '</div>';
+                  //       l=-1;
+                  // } 
                   l++;
                 }
+                  html += '</div>';
                   document.getElementById('recent-videos').innerHTML = html;
 
             }
