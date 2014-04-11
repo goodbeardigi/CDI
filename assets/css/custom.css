@@ -444,6 +444,7 @@ section{
 	background: rgba(47, 106, 182, .55);
 	width: 100%;
 	position: absolute;
+	color: #fff;
 }
 .span-title{
 	float: left !important;

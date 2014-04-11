@@ -23,13 +23,14 @@ $result = mysqli_query($con,"SELECT videos.id, videos.name, videos.description, 
 		?>
 	</h2>
 	<div id="cat-videos" class=" tab-pane fade active in video-grid">
+		<div class="row">
 					<?php
 					while($row = mysqli_fetch_array($result)){
 						if($i===0){
-							?><div class="row-fluid"><?php
+							?><!--<div class="row-fluid">--><?php
 						}
 						?>
-				        <div class="span4 video text-center box"> 
+				        <div class="col-lg-4 video text-center box"> 
 				        	<a href="/video.php?id=<?php echo $row['id'];?>" class="video-overlay">
 				        		<div>
 				        			<h2><?php echo $row['name'];?></h2>
@@ -43,7 +44,7 @@ $result = mysqli_query($con,"SELECT videos.id, videos.name, videos.description, 
 		                    </div>
 				        </div>
 				        <?php if($i===2){
-							?></div><?php
+							?><!--</div>--><?php
 							$i=-1;
 						} ?>
 					<?php $i++; } ?>
