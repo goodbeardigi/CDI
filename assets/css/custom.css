@@ -440,7 +440,7 @@ section{
 }
 
 .overlay{
-	margin-top: -31px;
+	margin-top: -24px;
 	background: rgba(47, 106, 182, .55);
 	width: 100%;
 	position: absolute;
@@ -451,6 +451,7 @@ section{
 	text-align: left !important;
 	margin-left: 0px !important;
 	padding-top: 5px !important;
+	padding-left: 10px !important;
 }
 .span-length{
 	padding-top: 5px !important;
