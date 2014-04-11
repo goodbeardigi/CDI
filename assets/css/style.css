@@ -714,8 +714,6 @@
 		background: rgba(47, 106, 182, .55);
 		z-index: 100;
 		opacity: 0;
-		padding-right: 15px;
-		padding-left: 15px;
 	}
 
 	.video-grid .video .video-overlay:hover {
