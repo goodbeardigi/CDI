@@ -67,12 +67,12 @@ while($row = mysqli_fetch_array($result)){
 				<?php
 					$result2 = mysqli_query($con,"SELECT videos.id, videos.name, videos.description, videos.user_id, videos.categories_id, videos.date_added, videos.url, videos.length, videos.image, categories.category FROM videos INNER JOIN categories ON categories.id=videos.categories_id WHERE videos.categories_id=$categories_id");
 					?>
-					<div class="row-fluid">
+					<div class="row">
 					<?php
 					while($row = mysqli_fetch_array($result2)){
 					?>
 					<div id="recent-videos" class=" tab-pane fade active in video-grid">
-				        <div class="span4 video text-center box margin0"> 
+				        <div class="col-lg-4 video text-center box margin0"> 
 				        	<a href="/video.php?id=<?php echo $row['id'];?>" class="video-overlay">
 				        		<div>
 				        			<h2><?php echo $row['name'];?></h2>
