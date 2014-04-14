@@ -45,6 +45,7 @@ require_once('inc/functions.inc.php');
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
 <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
 
 <!-- Generic javascript/jquery files -->
@@ -68,6 +69,18 @@ require_once('inc/functions.inc.php');
 <script src="assets/js/modal.js"></script>
 <script src="assets/js/facebook.js"></script>
 <script src="assets/js/popcorn.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+
+<script>
+
+ var wordList = ['surf','skate','sky','snow'];
+
+  $(function() {
+      $("#searchBar").autocomplete({
+          source: wordList
+      });
+  });
+</script>
 
 <body data-spy="scroll" data-target=".top-spy">
 
@@ -88,8 +101,8 @@ require_once('inc/functions.inc.php');
 
               <div id="login-form-container">
                 <form id="login-form" method="post" novalidate="" action="">                
-                  <input type="text" name="username" id="username" placeholder="Username" required="required" style="width:288px !important">
-                  <input type="password" name="password" id="password" placeholder="Password" required="required" style="width:288px">
+                  <input type="text" name="username" id="username" placeholder="Username" required="required">
+                  <input type="password" name="password" id="password" placeholder="Password" required="required">
                   <div class="error" id="failure" style="display: none;"></div>
                   <a href="#" onclick="login()" class="loginButton">Sign in</a>
               
@@ -139,7 +152,7 @@ require_once('inc/functions.inc.php');
         <li><div class = "navElement"><a href="category.php?id=3">Snow</a></div></li>
         <li>
           <form action="search.php" method="POST">
-            <input type="text" class="searchBar" name="term" placeholder="Search..." style = "margin-left: 38px;">
+            <input type="text"  id = 'searchBar' class="searchBar" name="term" placeholder="Search..." style = "margin-left: 38px;">
           </form>
         <li>
         <li><div class = "navElement" style = "width: 75px"><a href="about-us.php">About</a></div></li>

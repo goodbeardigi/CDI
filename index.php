@@ -30,7 +30,7 @@ include('header.php');
     <div class="row">
 		<div class="span12 reducebottom">
 			<ul  id="myTab"  class="video-grid-nav nav nav-tabs"> 
-				<li><a href="#recent-videos" class="active" data-toggle="tab">Recent videos</a></li>
+				<li><a href="#recent-videos" class="selected" data-toggle="tab">Recent videos</a></li>
 				<li><a href="#weeks-hottest" data-toggle="tab">Weeks Hottest</a></li>
 				<li><a href="#months-hottest" data-toggle="tab">Months Hottest</a></li>
 			</ul>

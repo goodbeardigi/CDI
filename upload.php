@@ -36,22 +36,14 @@ include('header.php');
 <?php
 if(!isset($_SESSION['username'])){
 	?>
-	<script>$('#myModal').modal('show');</script>
+	<script>$('#loginModal').modal('show');</script>
 	<?php
 }
 ?>
 
 <!-- Main hero unit for a primary marketing message or call to action -->
-<div class="hero-unit">
-		<div class="container">
-			<div class="row">
-				
-			</div>
-		</div>
-</div>
-
 <section id="upload">
-	<div class="container">
+	<div class="container" style="padding-top: 40px !important";>
     	<div class="row">
 		
     		<div id="dropbox" class="span12">
@@ -59,13 +51,13 @@ if(!isset($_SESSION['username'])){
 			</div>
 			<div class="span12">
 				<div id="container">
-					<form class="span12" name="upload-form" id="upload-form" action="html_form_action.asp" method="post">
-						<input type="text" class="span8" placeholder="Name" name="name"><br />
-						<textarea name="description" class="span8" placeholder="Enter description here..." form="upload-form"></textarea><br />
-						<input type="text" placeholder="Categories" class="span8" name="categories"><br />
+					<form class="upload-form" name="upload-form" action="html_form_action.asp" method="post">
+						<input type="text" class="upload-input" placeholder="Name" name="name"><br />
+						<textarea name="description" style="margin-bottom: 10px" class="upload-input" placeholder="Enter description here..." form="upload-form"></textarea><br />
+						<input type="text" class="upload-input" placeholder="Categories" name="categories"><br />
 						<input type="hidden" name="url" value="" id="url">
 						<input type="hidden" name="id" value="<?php echo $_SESSION['id'] ?>" id="id">
-						<input id="uploadsubmit" class="button" type="submit" value="Submit" disabled="disabled">
+						<input id="uploadsubmit" style="width: 100%" class="loginButton" type="submit" value="Submit" disabled="disabled">
 						<!--<br><input type="submit" id="uploadsubmit" class="button" value="Submit" disabled="disabled">-->
 					</form>
 				</div>

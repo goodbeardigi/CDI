@@ -156,9 +156,18 @@ input[disabled]{
 	color: #eee !important;
 }
 
-#upload-form{
-	margin: 0 auto;
-	text-align: center;
+.upload-form{
+	margin-top: 40px;
+	width: 500px;
+}
+
+.upload-input{
+	width: 95.5%;
+	border: 1px solid #CCC !important;
+	background: #FFF;
+	margin: 0 0 5px;
+	padding: 10px;
+	border-radius: 4px !important;
 }
 .modal-body{
 	background: #eee;
@@ -169,6 +178,7 @@ input[disabled]{
 	padding: 10px 0 !important;
 	height: auto !important;
 }
+
 /*-------------------------
 	Dropbox Element
 --------------------------*/
@@ -189,7 +199,7 @@ input[disabled]{
 
 
 #dropbox .message{
-	font-size: 11px;
+	font-size: 16px;
     text-align: center;
     padding-top:160px;
     display: block;
