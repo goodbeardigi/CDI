@@ -380,7 +380,7 @@ section{
 }
 #contact-form button[type="submit"] {
 	cursor:pointer;
-	width:100%;
+	width:95%;
 	border:none;
 	background: #2995d9;
 	color:#FFF;
