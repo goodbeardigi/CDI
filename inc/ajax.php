@@ -18,6 +18,20 @@ while($row = mysqli_fetch_array($run)) {
 	echo '<h1><a href="'.$row['guid'].'">'.$row['post_title'].'</a></h1><hr />';
 	echo '<p>'.$content.'...</p><hr />';
 
+	 echo '<div class="col-lg-4 video text-center box">';
+	 echo '<a href="/video.php?id=<?php echo $row['id'];?>" class="video-overlay">';
+	 echo '<div>';
+	 echo '<h2><?php echo $row['name'];?></h2>';
+	 echo '<span><?php echo $row['category'];?></span>';
+	echo '</div>';
+	echo '</a>';    
+	echo '<img src="videos/thumbnails/<?php echo $row['image'] ?>" alt="<?php echo $row['name'] ?>" />';
+	echo '<div class="overlay">';
+	echo '<span class="span-title"><?php echo $row['name'] ?></span>';
+	echo '<span class="span-length"><?php echo $row['length'] ?></span>';
+	echo '</div>';
+	echo '</div>';
+
 }
 
 ?>
