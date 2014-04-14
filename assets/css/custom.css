@@ -56,6 +56,9 @@ textarea{
 
 /* video page
 ===========================*/
+.video-overlay h2{
+	color: #fff !important;
+}
 #about-video{
 	padding-top: 0px;
 }
