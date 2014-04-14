@@ -21,14 +21,14 @@ while($row = mysqli_fetch_array($run)) {
 	 echo '<div class="col-lg-4 video text-center box">';
 	 echo '<a href="/video.php?id='.$row['id'].'" class="video-overlay">';
 	 echo '<div>';
-	 echo '<h2>.'$row['name'].'</h2>';
-	 echo '<span>.'$row['category'].'</span>';
+	 echo '<h2>'.$row['name'].'</h2>';
+	 echo '<span>'.$row['category'].'</span>';
 	echo '</div>';
 	echo '</a>';    
-	echo '<img src="videos/thumbnails/.'$row['image'].'" alt=".'$row['name'].'" />';
+	echo '<img src="videos/thumbnails/'.$row['image'].'" alt=".'$row['name'].'" />';
 	echo '<div class="overlay">';
-	echo '<span class="span-title">.'$row['name'].'</span>';
-	echo '<span class="span-length">.'$row['length'].'</span>';
+	echo '<span class="span-title">'.$row['name'].'</span>';
+	echo '<span class="span-length">'.$row['length'].'</span>';
 	echo '</div>';
 	echo '</div>';
 
