@@ -47,7 +47,7 @@ if(!isset($_SESSION['username'])){
     	<div class="row">
 		
     		<div id="dropbox" class="span12">
-				<span class="message">Drop images here to upload. <br /><i>(they will only be visible to you)</i></span>
+				<span class="message">Drop video files here to upload...</span>
 			</div>
 			<div class="span12">
 				<div id="container">
