@@ -13,16 +13,11 @@ $run = mysqli_query($con, "SELECT videos.id, videos.name, videos.description, vi
 
 while($row = mysqli_fetch_array($run)) {
 	
-	$content = substr(strip_tags($row['post_content']), 0, 500);
-	
-	echo '<h1><a href="'.$row['guid'].'">'.$row['post_title'].'</a></h1><hr />';
-	echo '<p>'.$content.'...</p><hr />';
-
-	 echo '<div class="col-lg-4 video text-center box">';
-	 echo '<a href="/video.php?id='.$row['id'].'" class="video-overlay">';
-	 echo '<div>';
-	 echo '<h2>'.$row['name'].'</h2>';
-	 echo '<span>'.$row['category'].'</span>';
+	echo '<div class="col-lg-4 video text-center box">';
+	echo '<a href="/video.php?id='.$row['id'].'" class="video-overlay">';
+	echo '<div>';
+	echo '<h2>'.$row['name'].'</h2>';
+	echo '<span>'.$row['category'].'</span>';
 	echo '</div>';
 	echo '</a>';    
 	echo '<img src="videos/thumbnails/'.$row['image'].'" alt="'.$row['name'].'" />';
