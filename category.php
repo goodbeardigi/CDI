@@ -54,7 +54,7 @@ $result = mysqli_query($con,"SELECT videos.id, videos.name, videos.description, 
 <script type="text/javascript">
 $(document).ready(function() {
  
-    $('#content').scrollPagination({
+    $('#cat-videos').scrollPagination({
  
         nop     : 10, // The number of posts per scroll to be loaded
         offset  : 0, // Initial offset, begins at 0 in this case
