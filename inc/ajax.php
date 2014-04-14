@@ -2,6 +2,8 @@
 
 include('connect.php');
 
+//echo $_POST['cat_id'];
+$id = $_POST['cat_id'];
 $offset = is_numeric($_POST['offset']) ? $_POST['offset'] : die();
 $postnumbers = is_numeric($_POST['number']) ? $_POST['number'] : die();
 

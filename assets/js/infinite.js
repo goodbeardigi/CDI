@@ -3,6 +3,7 @@
 	$.fn.scrollPagination = function(options) {
 		
 		var settings = { 
+			cat_id	: 1,
 			nop     : 10, // The number of posts per scroll to be loaded
 			offset  : 0, // Initial offset, begins at 0 in this case
 			error   : 'No More Posts!', // When the user reaches the end this is the message that is
@@ -25,6 +26,7 @@
 			$this = $(this);
 			$settings = settings;
 			var offset = $settings.offset;
+			var cat_id = $settings.cat_id;
 			var busy = false; // Checks if the scroll action is happening 
 			                  // so we don't run it multiple times
 			
@@ -43,6 +45,7 @@
 					action        : 'scrollpagination',
 				    number        : $settings.nop,
 				    offset        : offset,
+				    cat_id 		  : cat_id,
 					    
 				}, function(data) {
 						

@@ -55,7 +55,8 @@ $result = mysqli_query($con,"SELECT videos.id, videos.name, videos.description, 
 $(document).ready(function() {
  
     $('#cat-videos').scrollPagination({
- 
+ 		
+ 		cat_id 	: 3,
         nop     : 10, // The number of posts per scroll to be loaded
         offset  : 0, // Initial offset, begins at 0 in this case
         error   : 'No More Posts!', // When the user reaches the end this is the message that is
