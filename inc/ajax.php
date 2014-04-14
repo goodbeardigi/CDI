@@ -19,16 +19,16 @@ while($row = mysqli_fetch_array($run)) {
 	echo '<p>'.$content.'...</p><hr />';
 
 	 echo '<div class="col-lg-4 video text-center box">';
-	 echo '<a href="/video.php?id=<?php echo $row['id'];?>" class="video-overlay">';
+	 echo '<a href="/video.php?id='.$row['id'].'" class="video-overlay">';
 	 echo '<div>';
-	 echo '<h2><?php echo $row['name'];?></h2>';
-	 echo '<span><?php echo $row['category'];?></span>';
+	 echo '<h2>.'$row['name'].'</h2>';
+	 echo '<span>.'$row['category'].'</span>';
 	echo '</div>';
 	echo '</a>';    
-	echo '<img src="videos/thumbnails/<?php echo $row['image'] ?>" alt="<?php echo $row['name'] ?>" />';
+	echo '<img src="videos/thumbnails/.'$row['image'].'" alt=".'$row['name'].'" />';
 	echo '<div class="overlay">';
-	echo '<span class="span-title"><?php echo $row['name'] ?></span>';
-	echo '<span class="span-length"><?php echo $row['length'] ?></span>';
+	echo '<span class="span-title">.'$row['name'].'</span>';
+	echo '<span class="span-length">.'$row['length'].'</span>';
 	echo '</div>';
 	echo '</div>';
 
