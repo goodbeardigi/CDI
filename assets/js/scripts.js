@@ -474,7 +474,13 @@ function hottestvideos(days){
                 } else if (days === 28){
                   document.getElementById('months-hottest').innerHTML = html;
                 }
-
+                $( ".video-overlay" ).hover(
+                    function() {
+                       $('.overlay',$(this).parent('div:first')).hide();
+                    }, function() {
+                      $('.overlay',$(this).parent('div:first')).show();
+                    }
+                  );
             }
         }
     };
@@ -535,6 +541,14 @@ function hottestvideos_videopage(days){
                   } 
                 }
                   document.getElementById('weeks-hottest').innerHTML = html;
+                   $( ".video-overlay" ).hover(
+                    function() {
+                       $('.overlay',$(this).parent('div:first')).hide();
+                    }, function() {
+                      $('.overlay',$(this).parent('div:first')).show();
+                    }
+                  );
+
 
             }
     };
@@ -595,6 +609,13 @@ function recentvideos(){
                 }
                   html += '</div>';
                   document.getElementById('recent-videos').innerHTML = html;
+                    $( ".video-overlay" ).hover(
+                    function() {
+                       $('.overlay',$(this).parent('div:first')).hide();
+                    }, function() {
+                      $('.overlay',$(this).parent('div:first')).show();
+                    }
+                  );
 
             }
         }
