@@ -52,7 +52,7 @@ require_once('inc/functions.inc.php');
 <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="assets/js/responsiveslides.js"></script>
 <script type="text/javascript" src="assets/js/jquery.sharrre.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.infinity.js"></script>
+<script type="text/javascript" src="assets/js/infinite.js"></script>
 
 <!--Scroll js files -->
 <script src="assets/js/jquery.parallax-1.1.3.js" type="text/javascript" ></script>
