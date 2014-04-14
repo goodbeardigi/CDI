@@ -8,7 +8,7 @@ include('header.php');
 		<div class="row">
 			<div class="span12">		
 				<!-- Form -->
-				<form id="contact-form" action="send_mail.php" method="post" enctype="multipart/form-data">
+				<form id="contact-form" action="send_mail.php" method="post" enctype="multipart/form-data" style="width:450px;">
 					<h2>GET IN TOUCH</h2>
 					<p>Fill in the form below, and we'll get back to you within 24 hours.</p>
 					<div>
