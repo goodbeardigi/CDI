@@ -55,7 +55,7 @@ display: block;">Social</h3>
 							</tr>
 							<tr>
 								<td style="width:45%;padding-top: 0px;padding-bottom: 40px;">
-								The site will host a variety of videos from different  extreme sports. Xtv Sports aims to combine great videos with a clean, modern looking interface, providing a very user friendly experience.
+								The site will host a variety of videos from different  extreme sports. Xtv Sports aims to combine thrilling videos with a clean, modern looking interface, providing a friendly user experience.
 								</td>
 								<td style="width 10%;">
 								</td>
