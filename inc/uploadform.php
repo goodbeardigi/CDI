@@ -8,7 +8,7 @@ $categories_id =  $_POST['categories'];
 $date_added =  date("Y-m-d");
 $url =  $_POST['url'];
 $url = str_replace(" ", "-", $url);
-$image = $_POST['url']."jpg";
+$image = $url."jpg";
 //$length = "";
 
 $ffmpeg = "ffmpeg/ffmpeg";
