@@ -35,7 +35,7 @@
 			else $initmessage = 'Click for more';
 			
 			// Append custom messages and extra UI
-			$this.append('<div class="content"></div><div class="loading-bar">'+$initmessage+'</div>');
+			//$this.append('<div class="content"></div><div class="loading-bar">'+$initmessage+'</div>');
 			
 			function getData() {
 				
@@ -62,7 +62,7 @@
 					    offset = offset+$settings.nop; 
 						    
 						// Append the data to the content div
-					   	$this.find('.content').append(data);
+					   	$this.find('.row').append(data);
 						
 						// No longer busy!	
 						busy = false;
