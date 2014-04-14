@@ -48,6 +48,7 @@ $result = mysqli_query($con,"SELECT videos.id, videos.name, videos.description, 
 							$i=-1;
 						} ?>
 					<?php $i++; } ?>
+		</div>
 	</div>
 </div>
 <?php include('footer.php'); ?>

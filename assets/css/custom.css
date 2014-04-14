@@ -440,11 +440,12 @@ section{
 }
 
 .overlay{
-	margin-top: -24px;
+	margin-top: -29px;
 	background: rgba(47, 106, 182, .55);
 	width: 100%;
 	position: absolute;
 	color: #fff;
+	padding-bottom: 5px;
 }
 .span-title{
 	float: left !important;
