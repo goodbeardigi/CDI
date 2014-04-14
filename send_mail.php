@@ -2,7 +2,7 @@
 $webmaster_email = "cam00766@myport.ac.uk";
 
 $feedback_page = "contact-us.php";
-$error_page = "error_message.html";
+$error_page = "contact-us.php";
 
 
 $name = $_REQUEST['name'];
@@ -39,7 +39,7 @@ if (!isset ($_REQUEST['email_address'])) {
 	header("Location: $error_page");
 }
 // Any empty fields
-else (empty ($name) || empty ($email) || empty ($telephone_no) || empty ($message)) {
+if (empty ($name) || empty ($email) || empty ($telephone_no) || empty ($message)) {
 	header("Location: $error_page");
 }
 
@@ -48,19 +48,27 @@ else (empty ($name) || empty ($email) || empty ($telephone_no) || empty ($messag
 	$now = date('l F dS, Y, H:i a');
 	$to = "$webmaster_email";
 	$subject2 = "XTV website contact form message";
+	$headers = "From: Xtv@contact.com";
 	$message = "
 	The following message has been submitted from the XTV website:
+
+		Message submitted: $now
 	
 		Name: $name 
 		
 		Email: $email
 		
 		Telephone: $telephone_no
-	
-		System/Program: $system_type
 			
 		Message: $message";
 
-	mail($to, $subject2, $message);
- //End of mail to user   
+	mail($to, $subject2, $message, $headers);
+ //End of mail to user 
+
+print '<script type="text/javascript">'; 
+print 'alert("Message Submited!")'; 
+print '</script>'; 
+
+header("Location: $feedback_page");
+
 ?>
