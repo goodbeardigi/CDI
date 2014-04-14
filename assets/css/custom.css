@@ -481,3 +481,13 @@ section{
 	margin-left: 0px !important;
 	margin-right: 30px !important;
 }
+
+/*-------------------------------
+			AUTOCOMPLETE
+--------------------------------*/
+
+.ui-menu{
+    z-index: 1000;
+    background-color: #addeff;
+    border: 1px solid #2185c9;
+}

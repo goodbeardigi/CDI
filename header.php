@@ -45,7 +45,7 @@ require_once('inc/functions.inc.php');
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
 <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
-<link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="assets/css/jquery-ui.css" />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
 
 <!-- Generic javascript/jquery files -->
@@ -69,7 +69,7 @@ require_once('inc/functions.inc.php');
 <script src="assets/js/modal.js"></script>
 <script src="assets/js/facebook.js"></script>
 <script src="assets/js/popcorn.min.js"></script>
-<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="assets/js/jquery-ui.js"></script>
 
 <script>
 
