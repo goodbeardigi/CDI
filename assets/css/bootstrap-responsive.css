@@ -849,20 +849,20 @@
     width: 100%;
   }
   .featured-video-text{
-    margin-top: -47px;
-    padding-left: 16px;
+    margin-top: -47px !important;
+    padding-left: 16px !important;
   }
   .featured-description{
-    display: none;
+    display: none !important;
   }
   .featured-video-text h2{
-    font-size: 16px;
+    font-size: 16px !important;
   }
   #home-carousel{
     height: auto !important;
   }
   .carousel-control{
-    top:44px;
+    top:44px !important;
   }
   .row,
   .thumbnails {
@@ -872,7 +872,7 @@
     float: none;
     margin-left: 0;
   }
-  .span-lenghth{
+  .span-length{
     width: auto !important;
   }
   .span-title{
