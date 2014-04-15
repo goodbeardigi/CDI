@@ -141,9 +141,7 @@ require_once('inc/functions.inc.php');
     </div>
   </div>
 
-  <!-- END LOGOUT MODAL -->
-<a id="simple-menu" href="#sidr">Toggle menu</a>
- 
+  <!-- END LOGOUT MODAL --> 
 <div id="sidr">
   <!-- Your content -->
   <ul>
@@ -157,9 +155,10 @@ require_once('inc/functions.inc.php');
     <div class="innerHead">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-          </button>
-          <a class="navbar-brand logo" href="http://cdisports.jamescobbett.co.uk"><img src="images/xtv.png" style="padding-top:3px"/></a>
+          <ul class="nav navbar-nav">
+            <li><a id="simple-menu" href="#sidr">Toggle menu</a></li>
+            <li><a class="navbar-brand logo" href="http://cdisports.jamescobbett.co.uk"><img src="images/xtv.png" style="padding-top:3px"/></a></li>
+          </ul>
         </div>
         <div class="navbar-collapse" style="height: 1px;">
           <ul class="nav navbar-nav">
