@@ -505,30 +505,30 @@ section{
 	width: 1070px !important;
 }
 
-.vote-up-button{
+.voteup-button{
 	display: inline-block;
 	width: 70px;
 	height: 70px;
-	background: url("../ico/up-thumb.png");;
+	background: url("../ico/voteup-grey.png");;
 }
 
-.vote-up-button:hover{
+.voteup-button:hover{
 	display: inline-block;
 	width: 70px;
 	height: 70px;
-	background: url("../ico/up-green.png");;
+	background: url("../ico/voteup-green.png");;
 }
 
-.vote-down-button{
+.votedown-button{
 	display: inline-block;
 	width: 70px;
 	height: 70px;
-	background: url("../ico/down-thumb.png");;
+	background: url("../ico/votedown-grey.png");;
 }
 
-.vote-down-button:hover{
+.votedown-button:hover{
 	display: inline-block;
 	width: 70px;
 	height: 70px;
-	background: url("../ico/down-red.png");;
+	background: url("../ico/votedown-red.png");;
 }
