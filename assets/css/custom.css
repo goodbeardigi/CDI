@@ -504,3 +504,17 @@ section{
 	margin-left: 183px !important;
 	width: 1070px !important;
 }
+
+.vote-up-button{
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	background: url("../ico/up.png");;
+}
+
+.vote-down-button{
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	background: url("../ico/down.png");;
+}
