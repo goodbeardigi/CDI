@@ -47,7 +47,13 @@ while($row = mysqli_fetch_array($result)){
 							} else {
 								?> class="red" <?php
 							} ?>
-						 style="margin: 0px !important"><?php echo $rating ?></li>
+						 style="margin: 0px !important"><h2>
+							<?php if($rating > 0){
+								?> + <?php
+							} else {
+								?> - <?php
+							} ?>
+						 <?php echo $rating ?></h2></li>
 					</ul>
 				</div>
 				<div id="specific_buttons" class="span4 social-share">

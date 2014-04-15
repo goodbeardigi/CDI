@@ -603,3 +603,9 @@ section{
 #rate-feedback img{
 	padding-right: 5px;
 }
+.green{
+	color: green;
+}
+.red{
+	color: red;
+}
