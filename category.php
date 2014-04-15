@@ -56,7 +56,7 @@ $(document).ready(function() {
  
     $('#cat-videos').scrollPagination({
  		
- 		cat_id 	: $id,
+ 		cat_id 	: "<?php echo $id ?>",
         nop     : 10, // The number of posts per scroll to be loaded
         offset  : 0, // Initial offset, begins at 0 in this case
         error   : 'No More Posts!', // When the user reaches the end this is the message that is
