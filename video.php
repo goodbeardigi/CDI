@@ -77,7 +77,7 @@ while($row = mysqli_fetch_array($result)){
 					while($row = mysqli_fetch_array($result2)){
 					?>
 					<div id="recent-videos" class=" tab-pane fade active in video-grid">
-				        <div class="col-lg-4 video text-center box"> 
+				        <div class="col-xs-12 col-sm-5 col-md-4 col-lg-4 video text-center box"> 
 				        	<a href="/video.php?id=<?php echo $row['id'];?>" class="video-overlay">
 				        		<div>
 				        			<h2><?php echo $row['name'];?></h2>

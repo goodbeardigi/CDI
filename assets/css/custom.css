@@ -569,7 +569,7 @@ section{
 }
 
 #about-video{
-	padding-top: 0px;
+	padding-top: 6px !important;
 }
 #about-video .container{
 	border-top: solid 1px #1575C9;
@@ -595,15 +595,3 @@ section{
 	float: left;
 	margin-right: 30px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
