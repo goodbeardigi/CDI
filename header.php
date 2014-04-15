@@ -156,11 +156,11 @@ require_once('inc/functions.inc.php');
       <div class="container">
         <div class="navbar-header">
           <ul class="nav navbar-nav">
-            <a class="navbar-toggle collapsed" href="#sidr"></a>
+            <a class="navbar-toggle collapsed" href="#sidr">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button>
+          </a>
             <li><a class="navbar-brand logo" href="http://cdisports.jamescobbett.co.uk"><img src="images/xtv.png" style="padding-top:3px"/></a></li>
           </ul>
         </div>
