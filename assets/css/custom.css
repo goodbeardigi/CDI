@@ -79,48 +79,6 @@ textarea{
 	/*color: black;*/
 }
 
-/* video page
-===========================*/
-.video-overlay h2{
-	color: #fff !important;
-}
-.video-overlay a{
-	text-decoration: none !important;
-}
-
-#about-video{
-	padding-top: 0px;
-}
-#about-video .container{
-	border-top: solid 1px #1575C9;
-	border-bottom: solid 1px #1575C9;
-}
-#video-unit{
-	padding-bottom: 0px;
-	margin-bottom: 7px;
-}
-#date{
-	margin-top: -10px;
-}
-
-.social-share{
-	float: right;
-	text-align: center;
-	padding-top: 20px;
-}
-
-#video-title{
-	list-style: none;
-	display: block;
-	margin: 0;
-}
-#video-title li{
-	float: left;
-	margin-right: 30px;
-}
-#author{
-	margin-top: 23px;
-}
 
 /*Share*/
 #twitter.sharrre,
@@ -564,7 +522,43 @@ section{
 	font-size: 16px !important;
 }
 
+.video-overlay h2{
+	color: #fff !important;
+}
+.video-overlay a{
+	text-decoration: none !important;
+}
 
+#about-video{
+	padding-top: 0px;
+}
+#about-video .container{
+	border-top: solid 1px #1575C9;
+	border-bottom: solid 1px #1575C9;
+}
+#video-unit{
+	padding-bottom: 0px;
+	margin-bottom: 7px;
+}
+#date{
+	margin-top: -10px;
+}
+
+.social-share{
+	float: right;
+	text-align: center;
+	padding-top: 20px;
+}
+
+#video-title{
+	list-style: none;
+	display: block;
+	margin: 0;
+}
+#video-title li{
+	float: left;
+	margin-right: 30px;
+}
 
 
 
