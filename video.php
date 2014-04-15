@@ -43,11 +43,11 @@ while($row = mysqli_fetch_array($result)){
 						<li style="margin: 0px !important"><a href="#" class="voteup-button"></a></li>
 						<li style="margin: 0px !important"><a href="#" class="votedown-button"></a></li>
 					</ul>
-					<ul>
-						<li><h4 id="author"><?php echo $username; ?></h4></li>
-						<li><h5 id="date">Uploaded: <?php echo ago($date_added); ?></h5></li>
-						<li><p id="description"><?php echo $description; ?></p></li>
-					</ul>
+				
+					<h4 id="author"><?php echo $username; ?></h4>
+					<h5 id="date">Uploaded: <?php echo ago($date_added); ?></h5>
+					<p id="description"><?php echo $description; ?></p>
+				
 						<div style="clear: both;"></div>
 
 				</div>
