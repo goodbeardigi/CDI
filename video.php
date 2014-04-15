@@ -44,13 +44,13 @@ while($row = mysqli_fetch_array($result)){
 						<li id="rating"
 							<?php if($rating > 0){
 								?> class="green" <?php
-							} else {
+							} elseif ($rating < 0) {
 								?> class="red" <?php
 							} ?>
 						 style="margin: 0px !important"><h2>
 							<?php if($rating > 0){
 								?> + <?php
-							} else {
+							} elseif ($rating < 0) {
 								?> - <?php
 							} ?>
 						 <?php echo $rating ?></h2></li>
