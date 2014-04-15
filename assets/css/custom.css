@@ -509,7 +509,7 @@ section{
 	display: inline-block;
 	width: 70px;
 	height: 70px;
-	background: url("../ico/up.png");;
+	background: url("../ico/up-thumb.png");;
 }
 
 .vote-up-button:hover{
@@ -523,7 +523,7 @@ section{
 	display: inline-block;
 	width: 70px;
 	height: 70px;
-	background: url("../ico/down.png");;
+	background: url("../ico/down-thumb.png");;
 }
 
 .vote-down-button:hover{
