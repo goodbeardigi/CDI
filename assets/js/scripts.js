@@ -2,14 +2,14 @@
 //http://www.ianlunn.co.uk/plugins/jquery-parallax/
 jQuery(document).ready(function(){
   $(document).ready(function() {
-  $('#simple-menu').sidr(
+  $('#simple-menu').sidr({
     onOpen: function(name) {
         alert('open');
-      }
+      },
     onClose: function(name) {
         alert('close');
       }
-    );
+    });
 });
 
   jQuery('#topnav').localScroll(3000);
