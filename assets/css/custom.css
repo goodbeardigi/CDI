@@ -519,8 +519,8 @@ section{
 }
 
 .date{
-	font-size: 15px !important;
-	font-weight: italic;
+	font-size: 14px !important;
+	font-style: italic;
 }
 
 .video-overlay h2{
