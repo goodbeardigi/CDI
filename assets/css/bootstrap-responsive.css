@@ -1136,3 +1136,11 @@
     overflow: visible !important;
   }
 }
+@media (max-width: 1119px) {
+  .navbar-toggle{
+    display: block;
+  }
+  .nav-collapse{
+    display: none;
+  }
+}
