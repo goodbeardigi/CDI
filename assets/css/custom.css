@@ -64,6 +64,9 @@ p{
 	border-radius: 1px;
 	background-color: #fff;
 }
+.navleft{
+	left:260px;
+}
 /* Forms
 ===========================*/
 input[type="text"]{

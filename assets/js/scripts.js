@@ -4,10 +4,10 @@ jQuery(document).ready(function(){
   $(document).ready(function() {
   $('#simple-menu').sidr({
     onOpen: function(name) {
-        alert('open');
+        $( ".navbar-fixed-top" ).addClass( "nav-left" );
       },
     onClose: function(name) {
-        alert('close');
+        $( ".navbar-fixed-top" ).removeClass( "nav-left" );
       }
     });
 });
