@@ -158,14 +158,10 @@ require_once('inc/functions.inc.php');
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand logo" href="http://cdisports.jamescobbett.co.uk"><img src="images/xtv.png" style="padding-top:3px"/></a>
         </div>
-        <div class="navbar-collapse collapse" style="height: 1px;">
+        <div class="navbar-collapse" style="height: 1px;">
           <ul class="nav navbar-nav">
             <li class="active"><div class = "navElement"><a href="category.php?id=0">Skate</a></div></li>
             <li><div class = "navElement"><a href="category.php?id=1">Surf</a></div></li>
