@@ -156,7 +156,7 @@ require_once('inc/functions.inc.php');
       <div class="container">
         <div class="navbar-header">
           <ul class="nav navbar-nav">
-            <a class="navbar-toggle collapsed" href="#sidr">
+            <a id="simple-menu" class="navbar-toggle collapsed" href="#sidr">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
