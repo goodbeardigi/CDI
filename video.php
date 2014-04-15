@@ -32,8 +32,6 @@ while($row = mysqli_fetch_array($result)){
 		</div>
 </div>
 
-<br><br><br>
-
 <section id="about-video">
 	<div class="container">
     	<div class="row">
