@@ -468,6 +468,10 @@
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
+  .featured-video-text{
+    margin-top: -98px !important;
+  }
+
   .row {
     margin-left: -20px;
     *zoom: 1;
@@ -836,6 +840,21 @@
   }
   .row-fluid {
     width: 100%;
+  }
+  .featured-video-text{
+    display: none;
+  }
+  .featured-description{
+    display: none;
+  }
+  .featured-description h2{
+    font-size: 16px;
+  }
+  .featured-description{
+    height: auto !important;
+  }
+  .carousel-control{
+    top:44px;
   }
   .row,
   .thumbnails {
