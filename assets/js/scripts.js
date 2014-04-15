@@ -1,6 +1,10 @@
 // SMOOTH SECTIONS SCROLL + PARALLAX PLUGIN
 //http://www.ianlunn.co.uk/plugins/jquery-parallax/
 jQuery(document).ready(function(){
+  $(document).ready(function() {
+  $('#simple-menu').sidr();
+});
+
   jQuery('#topnav').localScroll(3000);
   jQuery('.gobtnwrapper').localScroll(3000);
   $( ".video-overlay" ).hover(

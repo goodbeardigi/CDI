@@ -27,6 +27,7 @@ require_once('inc/functions.inc.php');
 <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
 <link href="assets/css/style.css" rel="stylesheet">
 <link href="assets/css/custom.css" rel="stylesheet">
+<link href="assets/css/jquery.sidr.dark.css" rel="stylesheet">
 
 
 <!--[if lt IE 7]>
@@ -54,6 +55,7 @@ require_once('inc/functions.inc.php');
 <script type="text/javascript" src="assets/js/responsiveslides.js"></script>
 <script type="text/javascript" src="assets/js/jquery.sharrre.min.js"></script>
 <script type="text/javascript" src="assets/js/infinite.js"></script>
+<script type="text/javascript" src="assets/js/jquery.sidr.min.js"></script>
 
 <!--Scroll js files -->
 <script src="assets/js/jquery.parallax-1.1.3.js" type="text/javascript" ></script>
@@ -140,13 +142,16 @@ require_once('inc/functions.inc.php');
   </div>
 
   <!-- END LOGOUT MODAL -->
-<div data-role="panel" id="menu">
-    <ul id="menu-list">
-        <li class="active"><a href="#" class="contentLink"><h1>Home</h1> </a></li>
-        <li class="active"><a href="#" class="contentLink"><h1>Home</h1> </a></li>
-        <li class="active"><a href="#" class="contentLink"><h1>Home</h1> </a></li>
-    </ul>
-</div><!-- /panel -->
+<a id="simple-menu" href="#sidr">Toggle menu</a>
+ 
+<div id="sidr">
+  <!-- Your content -->
+  <ul>
+    <li><a href="#">List 1</a></li>
+    <li class="active"><a href="#">List 2</a></li>
+    <li><a href="#">List 3</a></li>
+  </ul>
+</div>
 
   <div class="head navbar-fixed-top">
     <div class="innerHead">
