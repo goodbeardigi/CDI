@@ -45,10 +45,8 @@ while($row = mysqli_fetch_array($result)){
 					</ul>
 				</div>
 				<div class="span7" style="margin-top: -30px">
-					<ul>
-						<li><div class="author" id="author"><?php echo $username; ?></div><li>
-						<li><div class="date" id="date">Uploaded: <?php echo ago($date_added); ?></div></li>
-					<ul>
+					<div class="author" id="author"><?php echo $username; ?></div>
+					<div class="date" id="date">Uploaded: <?php echo ago($date_added); ?></div>
 					<p id="description"><?php echo $description; ?></p>
 				</div>
 
