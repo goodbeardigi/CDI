@@ -512,6 +512,15 @@ section{
 	background: url("../ico/up.png");;
 }
 
+.vote-up-button:hover{
+	border-radius: 4px;
+	border: 1px solid #d3d3d3;
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	background: url("../ico/up.png");;
+}
+
 .vote-down-button{
 	display: inline-block;
 	width: 70px;
