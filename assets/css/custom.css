@@ -526,7 +526,7 @@ section{
 	background: url("../ico/down.png");;
 }
 
-.vote-down-button{
+.vote-down-button:hover{
 	display: inline-block;
 	width: 70px;
 	height: 70px;
