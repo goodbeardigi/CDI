@@ -1136,7 +1136,7 @@
     overflow: visible !important;
   }
 }
-@media (max-width: 1119px) {
+@media (min-width: 1119px) {
   .navbar-toggle{
     display: block;
   }
