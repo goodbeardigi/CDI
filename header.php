@@ -156,6 +156,12 @@ require_once('inc/functions.inc.php');
       <div class="container">
         <div class="navbar-header">
           <ul class="nav navbar-nav">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
             <li><a id="simple-menu" href="#sidr">Toggle menu</a></li>
             <li><a class="navbar-brand logo" href="http://cdisports.jamescobbett.co.uk"><img src="images/xtv.png" style="padding-top:3px"/></a></li>
           </ul>

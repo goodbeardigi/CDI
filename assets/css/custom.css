@@ -41,6 +41,9 @@ p{
 .row-video{
 	margin-right: -30px;
 }
+.logo{
+	background-color: transparent !important;
+}
 
 /* Forms
 ===========================*/
