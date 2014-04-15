@@ -7,7 +7,14 @@
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
-
+@media (max-width: 1199px) {
+  .navbar-toggle{
+    display: block !important;
+  }
+  .nav-collapse{
+    display: none !important;
+  }
+}
 .clearfix {
   *zoom: 1;
 }
@@ -1136,11 +1143,4 @@
     overflow: visible !important;
   }
 }
-@media (max-width: 1199px) {
-  .navbar-toggle{
-    display: block;
-  }
-  .nav-collapse{
-    display: none;
-  }
-}
+
