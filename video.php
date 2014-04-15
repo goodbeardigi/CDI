@@ -37,15 +37,15 @@ while($row = mysqli_fetch_array($result)){
 <section id="about-video">
 	<div class="container">
     	<div class="row">
-				<div class="span7">
+				<div class="span7" style="padding-top: 20px">
 					<ul id="video-title">
 						<li><h1><?php echo $title; ?></h1></li>
 						<li style="margin: 0px !important"><a href="#" class="voteup-button"></a></li>
 						<li style="margin: 0px !important"><a href="#" class="votedown-button"></a></li>
 					</ul>
 				</div>
-				<div class="span7">
-					<h4 id="author"><?php echo $username; ?></h4>
+				<div class="span7" style="margin-top: ">
+					<h4 style="text-weight: bold" id="author"><?php echo $username; ?></h4>
 					<h5 id="date">Uploaded: <?php echo ago($date_added); ?></h5>
 					<p id="description"><?php echo $description; ?></p>
 				</div>
