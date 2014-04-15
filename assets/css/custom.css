@@ -510,6 +510,7 @@ section{
 	width: 70px;
 	height: 70px;
 	background: url("../ico/voteup-grey.png");;
+	margin: 0px !important;
 }
 
 .voteup-button:hover{
@@ -517,6 +518,7 @@ section{
 	width: 70px;
 	height: 70px;
 	background: url("../ico/voteup-green.png");;
+	margin: 0px !important;
 }
 
 .votedown-button{
@@ -524,6 +526,7 @@ section{
 	width: 70px;
 	height: 70px;
 	background: url("../ico/votedown-grey.png");;
+	margin: 0px !important;
 }
 
 .votedown-button:hover{
@@ -531,4 +534,5 @@ section{
 	width: 70px;
 	height: 70px;
 	background: url("../ico/votedown-red.png");;
+	margin: 0px !important;
 }
