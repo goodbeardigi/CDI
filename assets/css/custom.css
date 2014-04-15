@@ -513,12 +513,10 @@ section{
 }
 
 .vote-up-button:hover{
-	border-radius: 4px;
-	border: 1px solid #d3d3d3;
 	display: inline-block;
 	width: 70px;
 	height: 70px;
-	background: url("../ico/up.png");;
+	background: url("../ico/up-green.png");;
 }
 
 .vote-down-button{
@@ -526,4 +524,11 @@ section{
 	width: 70px;
 	height: 70px;
 	background: url("../ico/down.png");;
+}
+
+.vote-down-button{
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	background: url("../ico/down-red.png");;
 }
