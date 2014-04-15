@@ -520,6 +520,7 @@ section{
 
 .date{
 	font-size: 14px !important;
+	padding-top: 3px;
 }
 
 .video-overlay h2{
