@@ -5,8 +5,10 @@ jQuery(document).ready(function(){
   $('#simple-menu').sidr({
     onOpen: function(name) {
         $( ".navbar-fixed-top" ).addClass( "nav-left" );
+        $( ".navbar-fixed-top" ).removeClass( "nav-return" );
       },
     onClose: function(name) {
+        $( ".navbar-fixed-top" ).addClass( "nav-return" );
         $( ".navbar-fixed-top" ).removeClass( "nav-left" );
       }
     });
