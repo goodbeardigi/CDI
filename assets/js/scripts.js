@@ -382,6 +382,17 @@ function addrating(id) {
                 console.log(message);
                 $('#like').html('<div id="rate-feedback"><img src="http://carbon.jamescobbett.co.uk/www/img/complete.png">Video rated</div>');
                 $('#dislike').hide();
+                var rating = $('#rating').data().value + 1;
+                if(rating > 0){
+                  $('#rating').html('+'+rating);
+                  $('#rating').addClass("green");
+                  $('#rating').removeClass("red");
+
+                } else if(rating < 0){
+                  $('#rating').html('-'+rating);
+                  $('#rating').addClass("red");
+                  $('#rating').removeClass("green");
+                }
             }
         }
     };
