@@ -33,7 +33,7 @@ while($row = mysqli_fetch_array($result)){
 </div>
 
 <section id="about-video">
-	<div class="container">
+	<div class="container video-info">
     	<div class="row">
 				<div class="span7">
 					<ul id="video-title">

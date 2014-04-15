@@ -491,3 +491,13 @@ section{
     background-color: #addeff;
     border: 1px solid #2185c9;
 }
+
+
+/*-------------------------------
+			VIDEO PLAYER
+--------------------------------*/
+
+.video-info{
+	margin-left: 183px !important;
+	width: 1000px !important;
+}
