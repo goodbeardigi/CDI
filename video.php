@@ -44,6 +44,11 @@ while($row = mysqli_fetch_array($result)){
 						<li style="margin: 0px !important"><a href="#" class="votedown-button"></a></li>
 					</ul>
 				</div>
+				<div id="specific_buttons" class="span4 social-share">
+				  <div id="twitter" data-url="http://www.cdisports.jamescobbett.co.uk<?php echo $_SERVER['REQUEST_URI']?>" data-title="Share on Twitter"></div>
+				  <div id="facebook" data-url="http://www.cdisports.jamescobbett.co.uk<?php echo $_SERVER['REQUEST_URI']?>" data-title="Share on Facebook"></div>
+				  <div id="pinterest" data-url="http://www.cdisports.jamescobbett.co.uk<?php echo $_SERVER['REQUEST_URI']?>" data-title="Share on Google Plus"></div>	
+				</div>
 				<div class="span7" style="margin-top: -10px">
 					<div class="author" id="author"><?php echo $username; ?></div>
 					<div class="date" id="date">Uploaded <?php echo ago($date_added); ?></div>
@@ -57,11 +62,6 @@ while($row = mysqli_fetch_array($result)){
 					<img src="images/facebook-share.png">
 					<img src="images/pinterest-share.png">
 				</div>-->
-				<div id="specific_buttons" class="span4 social-share">
-				  <div id="twitter" data-url="http://www.cdisports.jamescobbett.co.uk<?php echo $_SERVER['REQUEST_URI']?>" data-title="Share on Twitter"></div>
-				  <div id="facebook" data-url="http://www.cdisports.jamescobbett.co.uk<?php echo $_SERVER['REQUEST_URI']?>" data-title="Share on Facebook"></div>
-				  <div id="pinterest" data-url="http://www.cdisports.jamescobbett.co.uk<?php echo $_SERVER['REQUEST_URI']?>" data-title="Share on Google Plus"></div>	
-				</div>
 		</div>
 	</div>
 </section>
