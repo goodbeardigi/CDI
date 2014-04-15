@@ -144,7 +144,65 @@ require_once('inc/functions.inc.php');
   <div class="head navbar-fixed-top">
     <div class="innerHead">
       <div class="container">
-      <ul>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand logo" href="http://cdisports.jamescobbett.co.uk"><img src="images/xtv.png" style="padding-top:3px"/>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a class = "logo" href="http://cdisports.jamescobbett.co.uk"><img src="images/xtv.png" style="padding-top:3px"/></a></li>
+            <li class="active"><div class = "navElement"><a href="category.php?id=0">Skate</a></div></li>
+            <li><div class = "navElement"><a href="category.php?id=1">Surf</a></div></li>
+            <li><div class = "navElement"><a href="category.php?id=2">Sky</a></div></li>
+            <li><div class = "navElement"><a href="category.php?id=3">Snow</a></div></li>
+            <li>
+              <form action="search.php" method="POST">
+                <input type="text"  id = 'searchBar' class="searchBar" name="term" placeholder="Search..." style = "margin-left: 38px;">
+              </form>
+            <li>
+            <li><div class = "navElement" style = "width: 75px"><a href="about-us.php">About</a></div></li>
+            <li><div class = "navElement" style = "width: 75px"><a href="contact-us.php">Contact</a></div></li>
+            <li>
+              <div class="navElement" id="sign" style = "width: 75px">
+                <?php 
+                  if(isset($_SESSION['username'])){
+                    ?><span><a href="#" onclick="signOut()">Sign Out</a></span> <?php
+                  } else {
+                    ?><span><a href="#" onclick="$('#loginModal').modal('show')">Sign In</a></span> <?php
+                  } ?>
+              </div>
+            </li>
+            <li>
+              <div class = "navElement" style = "width: 75px">
+                <span><a href="upload.php">Upload</a></span>
+              </div>
+            </li>
+            <li>
+              <div class = "navElement" id="welcome" style="width:150px;">
+             <?php 
+                if(isset($_SESSION['username'])){
+                  echo "Hello ".$_SESSION['username'];
+                }?>
+                </div>
+            </li>
+            <li class="floatright">
+                <div id="social-links">
+                  <span class="icon twitter"><a href="http://www.twitter.com"><img src="images/twitterMain.png"/></a></span>
+                </div>
+            </li>
+            <li class="floatright" style="padding-left:0px;">
+                <div id="social-links">
+                  <span class="icon facebook"><a href="http://www.facebook.com"><img src="images/facebookMain.png" /></a></span>
+                </div>
+            </li>
+          </ul>
+        </div>
+<!--       <ul>
         <li><a class = "logo" href="http://cdisports.jamescobbett.co.uk"><img src="images/xtv.png" style="padding-top:3px"/></a></li>
         <li class="active"><div class = "navElement"><a href="category.php?id=0">Skate</a></div></li>
         <li><div class = "navElement"><a href="category.php?id=1">Surf</a></div></li>
@@ -189,8 +247,8 @@ require_once('inc/functions.inc.php');
             <div id="social-links">
               <span class="icon facebook"><a href="http://www.facebook.com"><img src="images/facebookMain.png" /></a></span>
             </div>
-        </li>
-      <div>
+        </li> -->
+      </div>
     </div>
   </div>
 
