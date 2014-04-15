@@ -384,12 +384,12 @@ function addrating(id) {
                 $('#dislike').hide();
                 var rating = $('#rating').data().value + 1;
                 if(rating > 0){
-                  $('#rating').html('+'+rating);
+                  $('#rating').html('<h2>+'+rating+"</h2>");
                   $('#rating').addClass("green");
                   $('#rating').removeClass("red");
 
                 } else if(rating < 0){
-                  $('#rating').html('-'+rating);
+                  $('#rating').html('<h2>-'+rating+"</h2>");
                   $('#rating').addClass("red");
                   $('#rating').removeClass("green");
                 }
@@ -431,6 +431,17 @@ function minusrating(id) {
                 console.log(message);
                 $('#like').hide();
                 $('#dislike').html('<div id="rate-feedback"><img src="http://carbon.jamescobbett.co.uk/www/img/complete.png">Video rated</div>');
+                var rating = $('#rating').data().value + 1;
+                if(rating > 0){
+                  $('#rating').html('<h2>+'+rating+"</h2>");
+                  $('#rating').addClass("green");
+                  $('#rating').removeClass("red");
+
+                } else if(rating < 0){
+                  $('#rating').html('<h2>-'+rating+"</h2>");
+                  $('#rating').addClass("red");
+                  $('#rating').removeClass("green");
+                }
             }
         }
     };
