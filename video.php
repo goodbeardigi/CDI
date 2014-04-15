@@ -41,8 +41,8 @@ while($row = mysqli_fetch_array($result)){
 					<ul id="video-title">
 						<li><h1><?php echo $title; ?></h1></li>
 						<li><h4 id="author"><?php echo $username; ?></h4></li>
-						<li><a href="#" class="vote-up-button"></li>
-						<li><a href="#" class="vote-down-button"></li>
+						<li><a href="#" class="vote-up-button"></a></li>
+						<li><a href="#" class="vote-down-button"></a></li>
 					</ul>
 						<div style="clear: both;"></div>
 
