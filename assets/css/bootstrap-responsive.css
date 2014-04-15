@@ -11,7 +11,7 @@
   .navbar-toggle{
     display: block !important;
   }
-  .nav-collapse{
+  .navbar-collapse{
     display: none !important;
   }
 }
