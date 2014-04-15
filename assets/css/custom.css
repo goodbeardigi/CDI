@@ -38,6 +38,9 @@ p{
 .floatleft{
 	float: left;
 }
+.row-video{
+	margin-right: -30px;
+}
 
 /* Forms
 ===========================*/
