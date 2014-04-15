@@ -597,3 +597,9 @@ section{
 	float: left;
 	margin-right: 30px;
 }
+#rate-feedback{
+	padding-top: 16px;
+}
+#rate-feedback img{
+	padding-right: 5px;
+}

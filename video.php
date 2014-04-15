@@ -6,7 +6,7 @@ include('inc/timeago.php');
 
 $id=$_GET["id"];
 
-$result = mysqli_query($con,"SELECT videos.name, videos.image, videos.description, videos.user_id, videos.categories_id, videos.date_added, videos.url, users.username, users.id FROM videos INNER JOIN users ON users.id=videos.user_id WHERE videos.id=$id");
+$result = mysqli_query($con,"SELECT videos.name, videos.image, videos.description, videos.user_id, videos.categories_id, videos.date_added, videos.url, videos.rating, users.username, users.id FROM videos INNER JOIN users ON users.id=videos.user_id WHERE videos.id=$id");
 
 while($row = mysqli_fetch_array($result)){
 	$title = $row['name'];
@@ -17,6 +17,7 @@ while($row = mysqli_fetch_array($result)){
 	$date_added = $row['date_added'];
 	$url = $row['url'];
 	$image = $row['image'];
+	$rating = $row['rating'];
 }
 ?>
 <!-- Main hero unit for a primary marketing message or call to action -->
@@ -40,6 +41,13 @@ while($row = mysqli_fetch_array($result)){
 						<li><h1><?php echo $title; ?></h1></li>
 						<li id="like" style="margin: 0px !important"><a href="#" onclick="addrating(<?php echo $id ?>)" class="voteup-button"></a></li>
 						<li id="dislike" style="margin: 0px !important"><a href="#" onclick="minusrating(<?php echo $id ?>)" class="votedown-button"></a></li>
+						<li id="rating"
+							<?php if($rating > 0){
+								?> class="green" <?php
+							} else {
+								?> class="red" <?php
+							} ?>
+						 style="margin: 0px !important"><?php echo $rating ?></li>
 					</ul>
 				</div>
 				<div id="specific_buttons" class="span4 social-share">
