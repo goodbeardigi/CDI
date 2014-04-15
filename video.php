@@ -45,7 +45,7 @@ while($row = mysqli_fetch_array($result)){
 					</ul>
 				</div>
 				<div class="span7" style="margin-top: -30px">
-					<h4 style="font-weight: bold" id="author"><?php echo $username; ?></h4>
+					<div class="author" id="author"><?php echo $username; ?></div>
 					<h5 id="date">Uploaded: <?php echo ago($date_added); ?></h5>
 					<p id="description"><?php echo $description; ?></p>
 				</div>
