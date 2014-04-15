@@ -30,7 +30,7 @@ $result = mysqli_query($con,"SELECT videos.id, videos.name, videos.description, 
 							?><!--<div class="row-fluid">--><?php
 						}
 						?>
-				        <div class="col-lg-4 video text-center box"> 
+				        <div class="col-xs-12 col-sm-5 col-md-4 col-lg-4 video text-center box"> 
 				        	<a href="/video.php?id=<?php echo $row['id'];?>" class="video-overlay">
 				        		<div>
 				        			<h2><?php echo $row['name'];?></h2>
