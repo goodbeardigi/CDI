@@ -39,8 +39,10 @@ while($row = mysqli_fetch_array($result)){
     	<div class="row">
 				<div class="span7">
 					<ul id="video-title">
-						<li><h2><?php echo $title; ?></h2></li>
+						<li><h1><?php echo $title; ?></h1></li>
 						<li><h4 id="author"><?php echo $username; ?></h4></li>
+						<li><img src="assets/ico/up.png"></li>
+						<li><img src="assets/ico/down.png"></li>
 					</ul>
 						<div style="clear: both;"></div>
 
