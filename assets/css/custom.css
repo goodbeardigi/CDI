@@ -491,12 +491,14 @@ section{
 	margin-left: 0px !important;
 	padding-top: 5px !important;
 	padding-left: 10px !important;
+	width: auto !important;
 }
 .span-length{
 	padding-top: 5px !important;
 	float: right !important;
 	text-align: right !important;
 	padding-right: 20px !important;
+	width: auto !important;
 }
 .margin0{
 	margin-left: 0px !important;
