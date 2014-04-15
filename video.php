@@ -43,14 +43,14 @@ while($row = mysqli_fetch_array($result)){
 						<li style="margin: 0px !important"><a href="#" class="voteup-button"></a></li>
 						<li style="margin: 0px !important"><a href="#" class="votedown-button"></a></li>
 					</ul>
-				
+				</div>
+				<div class="span7">
 					<h4 id="author"><?php echo $username; ?></h4>
 					<h5 id="date">Uploaded: <?php echo ago($date_added); ?></h5>
 					<p id="description"><?php echo $description; ?></p>
-				
-						<div style="clear: both;"></div>
-
 				</div>
+
+
 				<!--<div id="social-share" class="span4">
 					<img src="images/twitter-share.png">
 					<img src="images/facebook-share.png">
