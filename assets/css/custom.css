@@ -466,7 +466,7 @@ section{
 	color: #fff !important;
 }
 #home-carousel{
-	height: 500px !important;
+	height: 500px;
 	margin-bottom: 0px! important;
 }
 
