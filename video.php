@@ -38,8 +38,8 @@ while($row = mysqli_fetch_array($result)){
 				<div class="span7" style="padding-top: 20px">
 					<ul id="video-title">
 						<li><h1><?php echo $title; ?></h1></li>
-						<li style="margin: 0px !important"><a href="#" onclick="addrating(<?php echo $id ?>)" class="voteup-button"></a></li>
-						<li style="margin: 0px !important"><a href="#" onclick="minusrating(<?php echo $id ?>)" class="votedown-button"></a></li>
+						<li id="like" style="margin: 0px !important"><a href="#" onclick="addrating(<?php echo $id ?>)" class="voteup-button"></a></li>
+						<li id="dislike" style="margin: 0px !important"><a href="#" onclick="minusrating(<?php echo $id ?>)" class="votedown-button"></a></li>
 					</ul>
 				</div>
 				<div id="specific_buttons" class="span4 social-share">

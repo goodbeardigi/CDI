@@ -380,6 +380,8 @@ function addrating(id) {
                 var s = "success";
                 var message = response.indexOf("failed:");
                 console.log(message);
+                $('#like').text('Video rated');
+                $('#dislike').hide();
             }
         }
     };
@@ -416,6 +418,8 @@ function minusrating(id) {
                 var s = "success";
                 var message = response.indexOf("failed:");
                 console.log(message);
+                $('#like').hide();
+                $('#dislike').text('Video rated');
             }
         }
     };
