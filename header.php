@@ -145,9 +145,28 @@ require_once('inc/functions.inc.php');
 <div id="sidr">
   <!-- Your content -->
   <ul>
-    <li><a href="#">List 1</a></li>
-    <li class="active"><a href="#">List 2</a></li>
-    <li><a href="#">List 3</a></li>
+    <li>
+              <form action="search.php" method="POST">
+                <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input type="text" id="searchBar" class="searchBar ui-autocomplete-input" name="term" placeholder="Search..." style="margin-left: 38px;" autocomplete="off">
+              </form>
+    </li>
+    <li><a href="category.php?id=0">Skate</a></li>
+    <li><a href="category.php?id=1">Surf</a></li>
+    <li><a href="category.php?id=2">Sky</a></li>
+    <li><a href="category.php?id=3">Snow</a></li>
+    <li><a href="about-us.php">About</a></li>
+    <li><a href="contact-us.php">Contact</a></li>
+    <li>
+                <?php 
+                  if(isset($_SESSION['username'])){
+                    ?><a href="#" onclick="signOut()">Sign Out</a> <?php
+                  } else {
+                    ?><a href="#" onclick="$('#loginModal').modal('show')">Sign In</a> <?php
+                  } ?>
+      </li>
+      <li><a href="upload.php">Upload</a></li>
+      <li><a href="http://www.twitter.com"><img src="images/twitterMain.png"/></a></li>
+      <li><a href="http://www.facebook.com"><img src="images/facebookMain.png" /></a></li>
   </ul>
 </div>
 
