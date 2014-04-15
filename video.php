@@ -44,7 +44,7 @@ while($row = mysqli_fetch_array($result)){
 						<li style="margin: 0px !important"><a href="#" class="votedown-button"></a></li>
 					</ul>
 				</div>
-				<div class="span7" style="margin-top: -30px">
+				<div class="span7" style="margin-top: -10px">
 					<div class="author" id="author"><?php echo $username; ?></div>
 					<div class="date" id="date">Uploaded: <?php echo ago($date_added); ?></div>
 					<p id="description"><?php echo $description; ?></p>
