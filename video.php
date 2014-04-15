@@ -40,14 +40,16 @@ while($row = mysqli_fetch_array($result)){
 				<div class="span7">
 					<ul id="video-title">
 						<li><h1><?php echo $title; ?></h1></li>
-						<li><h4 id="author"><?php echo $username; ?></h4></li>
 						<li style="margin: 0px !important"><a href="#" class="voteup-button"></a></li>
 						<li style="margin: 0px !important"><a href="#" class="votedown-button"></a></li>
 					</ul>
+					<ul>
+						<li><h4 id="author"><?php echo $username; ?></h4></li>
+						<li><h5 id="date">Uploaded: <?php echo ago($date_added); ?></h5></li>
+						<li><p id="description"><?php echo $description; ?></p></li>
+					</ul>
 						<div style="clear: both;"></div>
 
-					<h5 id="date"><?php echo ago($date_added); ?></h5>
-					<p id="description"><?php echo $description; ?></p>
 				</div>
 				<!--<div id="social-share" class="span4">
 					<img src="images/twitter-share.png">
