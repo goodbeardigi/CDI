@@ -9,7 +9,7 @@ include('header.php');
 			<div class="active item">
 				<div class="row" style="padding-bottom: 0px;">
 					<div class="span12 text-left">
-						<img src="images/surf-girl.jpg" alt="" />
+						<img src="images/about-banner.jpg" alt="" />
 					</div>
 				</div>
 			</div>
