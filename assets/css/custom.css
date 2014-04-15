@@ -82,6 +82,23 @@ p{
 .sidr ul li {
 	width: 100%
 }
+.sidr form{
+	margin-left: -16px;
+}
+.sidr input[type="text"]{
+	height: 30px;
+	margin-top: 5px;
+}
+.sidr .searchBar{
+	background: url('../../images/search-icon.png') no-repeat 218px 6px !important;
+}
+#side-social{
+	width: 100px;
+}
+#side-social img{
+	height: 30px;
+	width: 30px;
+}
 /* Forms
 ===========================*/
 input[type="text"]{

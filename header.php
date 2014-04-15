@@ -165,8 +165,10 @@ require_once('inc/functions.inc.php');
                   } ?>
       </li>
       <li><a href="upload.php">Upload</a></li>
-      <li><a href="http://www.twitter.com"><img src="images/twitterMain.png"/></a></li>
-      <li><a href="http://www.facebook.com"><img src="images/facebookMain.png" /></a></li>
+      <div id="side-social">
+        <a class="floatright" href="http://www.twitter.com"><img src="images/twitterMain.png"/></a>
+        <a class="floatleft" href="http://www.facebook.com"><img src="images/facebookMain.png" /></a>
+      </div>
   </ul>
 </div>
 
