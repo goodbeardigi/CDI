@@ -142,6 +142,8 @@ require_once('inc/functions.inc.php');
   </div>
 
   <!-- END LOGOUT MODAL --> 
+  <a id="simple-menu" href="#sidr">Toggle menu</a>
+
 <div id="sidr">
   <!-- Your content -->
   <ul>
