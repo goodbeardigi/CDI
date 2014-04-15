@@ -842,16 +842,13 @@
     width: 100%;
   }
   .featured-video-text{
-    display: none;
+   height: auto !important;
   }
   .featured-description{
     display: none;
   }
-  .featured-description h2{
+  .featured-video-text h2{
     font-size: 16px;
-  }
-  .featured-description{
-    height: auto !important;
   }
   .carousel-control{
     top:44px;
