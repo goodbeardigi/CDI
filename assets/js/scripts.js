@@ -380,7 +380,7 @@ function addrating(id) {
                 var s = "success";
                 var message = response.indexOf("failed:");
                 console.log(message);
-                $('#like').text('<div id="rate-feedback"><img src="http://carbon.jamescobbett.co.uk/www/img/complete.png">Video rated</div>');
+                $('#like').html('<div id="rate-feedback"><img src="http://carbon.jamescobbett.co.uk/www/img/complete.png">Video rated</div>');
                 $('#dislike').hide();
             }
         }
@@ -419,7 +419,7 @@ function minusrating(id) {
                 var message = response.indexOf("failed:");
                 console.log(message);
                 $('#like').hide();
-                $('#dislike').text('<div id="rate-feedback"><img src="http://carbon.jamescobbett.co.uk/www/img/complete.png">Video rated</div>');
+                $('#dislike').html('<div id="rate-feedback"><img src="http://carbon.jamescobbett.co.uk/www/img/complete.png">Video rated</div>');
             }
         }
     };
