@@ -83,21 +83,23 @@ p{
 	width: 100%
 }
 .sidr form{
-	margin-left: -16px;
+	margin-left: -16px !important;
 }
 .sidr input[type="text"]{
 	height: 30px;
-	margin-top: 5px;
+	margin-top: 5px !important;
 }
 .sidr .searchBar{
 	background: url('../../images/search-icon.png') no-repeat 218px 6px !important;
+	background-color: #addeff !important;
 }
 #side-social{
-	width: 100px;
+	width: 70px;
 }
 #side-social img{
 	height: 30px;
 	width: 30px;
+	padding-top: 20px;
 }
 /* Forms
 ===========================*/
