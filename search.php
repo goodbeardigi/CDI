@@ -18,7 +18,7 @@ if($term != ""){
 					<?php
 					while($row = mysqli_fetch_array($result)){
 						//if($i===0){
-						//	?><div class="row-fluid"><?php
+						//
 						//}
 						?>
 				        <div class="col-xs-12 col-sm-5 col-md-4 col-lg-4 video text-center box"> 
