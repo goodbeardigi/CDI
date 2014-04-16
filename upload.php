@@ -69,11 +69,11 @@ if(!isset($_SESSION['username'])){
 <script type="text/javascript">
 $( document ).ready(function() {
   var form = document.getElementById('upload-form');
-  if (form.attachEvent) {
-      form.attachEvent("submit", processUploadForm);
-  } else {
+  // if (form.attachEvent) {
+  //     form.attachEvent("submit", processUploadForm);
+  // } else {
       form.addEventListener("submit", processUploadForm);
-  }
+  //}
 });
 </script>
 
