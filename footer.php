@@ -14,7 +14,6 @@
   <a style="margin-left:8px; display: -webkit-inline-box;" href="upload.php">UPLOAD</a>
 </div>
   
-</div>
 </footer>
 
 <!-- / FOOTER -->
