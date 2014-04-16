@@ -17,9 +17,9 @@ if($term != ""){
 		<h2 id="searchterm">Searching: <?php echo $term; ?></h2>
 					<?php
 					while($row = mysqli_fetch_array($result)){
-						if($i===0){
-							?><div class="row-fluid"><?php
-						}
+						//if($i===0){
+						//	?><div class="row-fluid"><?php
+						//}
 						?>
 				        <div class="col-xs-12 col-sm-5 col-md-4 col-lg-4 video text-center box"> 
 				        	<a href="/video.php?id=<?php echo $row['id'];?>" class="video-overlay">
@@ -30,11 +30,11 @@ if($term != ""){
 				        	</a>    
 				       		<img src="videos/thumbnails/<?php echo $row['image'] ?>">    
 				        </div>
-				        <?php if($i===2){
+				        <!--<?php if($i===2){
 							?></div><?php
 							$i=-1;
-						} ?>
-					<?php $i++; } ?>
+						} ?>-
+					<?php $i++; } ?>-->
 	</div>
 </div>
 <?php
