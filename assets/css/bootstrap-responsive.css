@@ -1149,4 +1149,8 @@
     overflow: visible !important;
   }
 }
-
+@media (min-width: 570px) {
+  .two{
+    display: none;
+  }
+}
