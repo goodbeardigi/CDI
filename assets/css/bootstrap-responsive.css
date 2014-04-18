@@ -1149,8 +1149,8 @@
     overflow: visible !important;
   }
 }
-@media (min-width: 600px) {
+@media (max-width: 600px) {
   .two{
-    display: none;
+    display: none !important;
   }
 }
