@@ -7,13 +7,11 @@ $id = $_POST['cat_id'];
 $offset = is_numeric($_POST['offset']) ? $_POST['offset'] : die();
 $postnumbers = is_numeric($_POST['number']) ? $_POST['number'] : die();
 
-
 $run = mysqli_query($con, "SELECT videos.id, videos.name, videos.description, videos.user_id, videos.categories_id, videos.date_added, videos.url, videos.length, videos.image, categories.category FROM videos INNER JOIN categories ON categories.id=videos.categories_id WHERE videos.categories_id=$id ORDER BY id DESC LIMIT ".$postnumbers." OFFSET ".$offset);
 
 
 while($row = mysqli_fetch_array($run)) {
-	
-	echo '<div class="col-lg-4 video text-center box">';
+	echo '<div class="col-xs-12 col-sm-5 col-md-4 col-lg-4 video text-center box">';
 	echo '<a href="/video.php?id='.$row['id'].'" class="video-overlay">';
 	echo '<div>';
 	echo '<h2>'.$row['name'].'</h2>';

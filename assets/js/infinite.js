@@ -4,8 +4,8 @@
 		
 		var settings = { 
 			cat_id	: 1,
-			nop     : 10, // The number of posts per scroll to be loaded
-			offset  : 0, // Initial offset, begins at 0 in this case
+			nop     : 12, // The number of posts per scroll to be loaded
+			offset  : 12, // Initial offset, begins at 0 in this case
 			error   : 'No More Posts!', // When the user reaches the end this is the message that is
 			                            // displayed. You can change this if you want.
 			delay   : 500, // When you scroll down the posts will load after a delayed amount of time.
