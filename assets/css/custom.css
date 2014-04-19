@@ -562,10 +562,13 @@ section{
 }
 
 .date{
-	font-size: 14px !important;
+	font-size: 12px !important;
 	padding-top: 3px;
 }
-
+.description{
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
 .video-overlay h2{
 	color: #fff !important;
 }

@@ -62,9 +62,8 @@ while($row = mysqli_fetch_array($result)){
 				  <div id="pinterest" data-url="http://www.cdisports.jamescobbett.co.uk<?php echo $_SERVER['REQUEST_URI']?>" data-title="Share on Google Plus"></div>	
 				</div>
 				<div class="span7" style="margin-top: -10px">
-					<div class="author" id="author"><?php echo $username; ?></div>
-					<div class="date" id="date">Uploaded <?php echo ago($date_added); ?></div>
-					<br><br>
+					<div class="author" id="author">Uploaded by <?php echo $username; ?></div>
+					<div class="date" id="date"><?php echo ago($date_added); ?></div>
 					<div class="description" id="description"><?php echo $description; ?></div>
 				</div>
 

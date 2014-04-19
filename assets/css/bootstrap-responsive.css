@@ -821,7 +821,7 @@
 
 @media (max-width: 767px) {
   .row-video {
-    margin-right: 0px; 
+    margin-right: 0px !important; 
   }
   .nav-tabs > li > a, .nav-pills > li > a {
     padding-right: 5px;
