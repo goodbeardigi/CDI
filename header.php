@@ -51,6 +51,7 @@ require_once('inc/functions.inc.php');
 
 <!-- Generic javascript/jquery files -->
 <script src="assets/js/jquery.js" type="text/javascript"></script> 
+<script type="text/javascript" src="assets/js/jquery-ui.js"></script>
 <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="assets/js/responsiveslides.js"></script>
 <script type="text/javascript" src="assets/js/jquery.sharrre.min.js"></script>
@@ -71,7 +72,6 @@ require_once('inc/functions.inc.php');
 <script src="assets/js/modal.js"></script>
 <script src="assets/js/facebook.js"></script>
 <script src="assets/js/popcorn.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery-ui.js"></script>
 
 <script>
 

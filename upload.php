@@ -51,7 +51,7 @@ if(!isset($_SESSION['username'])){
 			</div>
 			<div class="span12">
 				<div id="container">
-					<form class="upload-form" name="upload-form" action="html_form_action.asp" method="post">
+					<form class="upload-form" id="upload-form" name="upload-form" onsubmit="processUploadForm(); return false;" action="#" method="post">
 						<input type="text" class="upload-input" placeholder="Name" name="name"><br />
 						<textarea name="description" style="margin-bottom: 10px" class="upload-input" placeholder="Enter description here..." form="upload-form"></textarea><br />
 						<!-- <input type="text" class="upload-input" placeholder="Categories" name="categories"><br /> -->
@@ -65,7 +65,7 @@ if(!isset($_SESSION['username'])){
 
 						<input type="hidden" name="url" value="" id="url">
 						<input type="hidden" name="id" value="<?php echo $_SESSION['id'] ?>" id="id">
-						<input onclick="processUploadForm()" id="uploadsubmit" style="width: 100%" class="loginButton" type="submit" value="Submit" disabled="disabled">
+						<input id="uploadsubmit" style="width: 100%" class="loginButton" type="submit" value="Submit" disabled="disabled">
 						<!--<br><input type="submit" id="uploadsubmit" class="button" value="Submit" disabled="disabled">-->
 					</form>
 				</div>
