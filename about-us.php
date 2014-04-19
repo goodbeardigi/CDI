@@ -37,7 +37,16 @@ include('header.php');
 								Founded in 2013, Xtv allows people to discover, watch and share extreme sports videos.
 								</td>
 							</tr>
-					
+					<div class="row">
+						<div class="col-xs-1 col-sm-2 col-md-2 col-lg-2">
+							<h3 style="color:#3B5FBD; text-align: center; display: block;">Experience</h3>
+							The site will host a variety of videos from different  extreme sports. Xtv Sports aims to combine thrilling videos with a clean, modern looking interface, providing a friendly user experience.
+						</div>
+						<div class="col-xs-1 col-sm-2 col-md-2 col-lg-2">
+							<h3 style="color:#3B5FBD; text-align: center;display: block;">Social</h3>
+							Videos will have the ability to be rated, commented on, and shared on social media sites via the built in links. These features will allow you to connect and interact with those who love the same sports.
+						</div>
+					</div>
 						
 					<table style="text-align:justify; margin-top:6px;">
 							<tr>

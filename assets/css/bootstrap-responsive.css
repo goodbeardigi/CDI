@@ -823,6 +823,9 @@
   #video-title{
     width: 100%;
   }
+  #rating{
+    margin-right: 10px !important;
+  }
   body {
     padding-right: 20px;
     padding-left: 20px;
