@@ -24,7 +24,7 @@ include('header.php');
 				<span class="separator"><p>Or</p></span>
 
 				<a href="#" onclick="fblogin()"><input id="login-user-fb" class="button" type="submit" value="Connect with Facebook"></a>
-				<a href="account.php"><input onclick="processUploadForm()" id="login-user-fb" class="button" type="submit" value="Register an accoount"></a>
+				<a href="account.php"><input id="login-user-fb" class="button" type="submit" value="Register an accoount"></a>
 
 				<a id="forgotdetails" href="#">Forgotten login details</a>
 			</div>
@@ -65,7 +65,7 @@ if(!isset($_SESSION['username'])){
 
 						<input type="hidden" name="url" value="" id="url">
 						<input type="hidden" name="id" value="<?php echo $_SESSION['id'] ?>" id="id">
-						<input id="uploadsubmit" style="width: 100%" class="loginButton" type="submit" value="Submit" disabled="disabled">
+						<input onclick="processUploadForm()" id="uploadsubmit" style="width: 100%" class="loginButton" type="submit" value="Submit" disabled="disabled">
 						<!--<br><input type="submit" id="uploadsubmit" class="button" value="Submit" disabled="disabled">-->
 					</form>
 				</div>
