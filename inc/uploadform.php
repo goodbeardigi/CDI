@@ -28,9 +28,9 @@ mysqli_query($con,"INSERT INTO videos (name, description, user_id, categories_id
 
 $response = "failure";
 
-$result = mysqli_query($con,"SELECT id FROM videos WHERE name=$name");
+$result = mysqli_query($con,"SELECT id FROM videos WHERE name = '$name'");
 while($row = mysqli_fetch_array($result)){
-	$response = $id;
+	$response = $row['id'];
 }
 
 echo $response;
