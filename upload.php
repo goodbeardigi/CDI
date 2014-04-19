@@ -55,7 +55,7 @@ if(!isset($_SESSION['username'])){
 						<input type="text" class="upload-input" placeholder="Name" name="name"><br />
 						<textarea name="description" style="margin-bottom: 10px" class="upload-input" placeholder="Enter description here..." form="upload-form"></textarea><br />
 						<!-- <input type="text" class="upload-input" placeholder="Categories" name="categories"><br /> -->
-						<p> Categories</p><br>
+						<h3>Select a category</h3>
 						<select name="categories" id="categories" class="upload-input" required>
                                   	<option value="0">SKATE</option>
                                     <option value="1">SURF</option>
