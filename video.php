@@ -40,14 +40,14 @@ while($row = mysqli_fetch_array($result)){
 					<ul id="video-title">
 						<li id="video-title"><h1><?php echo $title; ?></h1></li>
 						<li id="like" style="margin: 0px !important"><a href="#" onclick="addrating(<?php echo $id ?>)" class="voteup-button"></a></li>
-						<li id="dislike"><a href="#" onclick="minusrating(<?php echo $id ?>)" class="votedown-button"></a></li>
+						<li id="dislike" style="margin: 0px !important"><a href="#" onclick="minusrating(<?php echo $id ?>)" class="votedown-button"></a></li>
 						<li data-value="<?php echo $rating ?>" id="rating"
 							<?php if($rating > 0){
 								?> class="green" <?php
 							} elseif ($rating < 0) {
 								?> class="red" <?php
 							} ?>
-						 style="margin: 0px !important"><h2>
+						 ><h2>
 							<?php if($rating > 0){
 								?> + <?php
 							} elseif ($rating < 0) {
