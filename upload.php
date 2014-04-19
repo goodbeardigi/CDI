@@ -54,7 +54,15 @@ if(!isset($_SESSION['username'])){
 					<form class="upload-form" name="upload-form" action="html_form_action.asp" method="post">
 						<input type="text" class="upload-input" placeholder="Name" name="name"><br />
 						<textarea name="description" style="margin-bottom: 10px" class="upload-input" placeholder="Enter description here..." form="upload-form"></textarea><br />
-						<input type="text" class="upload-input" placeholder="Categories" name="categories"><br />
+						<!-- <input type="text" class="upload-input" placeholder="Categories" name="categories"><br /> -->
+						<p> Categories</p><br>
+						<select name="categories" id="categories" class="upload-input" required>
+                                  	<option value="0">SKATE</option>
+                                    <option value="1">SURF</option>
+                                    <option value="2">SKY</option>
+                                    <option value="3">SNOW</option>
+                         </select>
+
 						<input type="hidden" name="url" value="" id="url">
 						<input type="hidden" name="id" value="<?php echo $_SESSION['id'] ?>" id="id">
 						<input id="uploadsubmit" style="width: 100%" class="loginButton" type="submit" value="Submit" disabled="disabled">
