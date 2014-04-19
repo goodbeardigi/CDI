@@ -27,5 +27,5 @@ $length = $matches[1][0];
 mysqli_query($con,"INSERT INTO videos (name, description, user_id, categories_id, date_added, url, image, length) VALUES ('$name', '$description', '$user_id', '$categories_id', '$date_added', '$url', '$image', '$length')");
 
 mysqli_close($con);
-
+echo "Uploaded";
 ?>
