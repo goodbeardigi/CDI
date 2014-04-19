@@ -25,7 +25,10 @@ p{
 	color: #535353;
 	font-size: 13px;
 }
-
+.no-margin{
+	margin-right: 0 !important;
+	margin-left: 0 !important;
+}
 .center {
    margin: 0 auto !important;
    float: none !important;
