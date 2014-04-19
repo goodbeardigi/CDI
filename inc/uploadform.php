@@ -26,12 +26,14 @@ $length = $matches[1][0];
 
 mysqli_query($con,"INSERT INTO videos (name, description, user_id, categories_id, date_added, url, image, length) VALUES ('$name', '$description', '$user_id', '$categories_id', '$date_added', '$url', '$image', '$length')");
 
-if($result = mysqli_query($con,"SELECT id FROM videos WHERE name=$name")){
-	while($row = mysqli_fetch_array($result)){
-		echo $id;
-	}
-} else{
-	echo "failure";
+$response = "failure";
+
+$result = mysqli_query($con,"SELECT id FROM videos WHERE name=$name");
+while($row = mysqli_fetch_array($result)){
+	$response = $id;
 }
+
+echo $response;
+
 mysqli_close($con);
 ?>
