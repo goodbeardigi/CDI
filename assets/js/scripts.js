@@ -476,6 +476,7 @@ function hottestvideos(days){
 
     var data = new FormData();
     data.append('days', days);
+    data.append('limit', 6);
     
     //var form = document.getElementById("loginForm");
     //var data = new FormData(form);
@@ -545,7 +546,7 @@ function hottestvideos(days){
     return false;
 }
 
-function hottestvideos_videopage(days){
+function hottestvideos_videopage(days, limit){
     // declaring variables to be used
     var xhr, target, changeListener, url, data;
     var html = "";
@@ -554,6 +555,8 @@ function hottestvideos_videopage(days){
 
     var data = new FormData();
     data.append('days', days);
+    data.append('limit', limit);
+
     
     //var form = document.getElementById("loginForm");
     //var data = new FormData(form);
