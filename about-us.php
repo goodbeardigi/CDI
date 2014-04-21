@@ -19,7 +19,7 @@ include('header.php');
 	</div>		
 </div>
 
-<section id="aboutus">
+<div id="aboutus">
 	<div class="container">
 		<div class="row">
 			<div class="span12">
