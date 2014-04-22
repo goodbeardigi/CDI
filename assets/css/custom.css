@@ -616,3 +616,8 @@ section{
 .red h2{
 	color: red;
 }
+
+.author a{
+	color: #333;
+	display: inline;
+}
