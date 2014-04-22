@@ -9,18 +9,19 @@ $i=0;
 $result = mysqli_query($con,"SELECT videos.id, videos.name, videos.description, videos.user_id, videos.categories_id, videos.date_added, videos.url, videos.length, videos.image, categories.category FROM videos INNER JOIN categories ON categories.id=videos.categories_id WHERE videos.user_id=$id ORDER BY id DESC LIMIT 12");
 ?>
 <div class="container">
-	<h2 id="searchterm">
+	<?php
+	if($i==0){
+		$result2 = mysqli_query($con,"SELECT * FROM users WHERE id=$id");
+		while($row2 = mysqli_fetch_array($result2)){
+			echo '<h2 id="searchterm">User: '.$row2['username'].'</h2>';
+		}
+		$i++;
+	}
+	?>
 	<div id="cat-videos" class=" tab-pane fade active in video-grid">
 		<div class="row">
 					<?php
 					while($row = mysqli_fetch_array($result)){
-						if($i==0){
-							$result2 = mysqli_query($con,"SELECT videos.id, videos.name, videos.description, videos.user_id, videos.categories_id, videos.date_added, videos.url, videos.length, videos.image, categories.category FROM videos INNER JOIN categories ON categories.id=videos.categories_id WHERE videos.user_id=$id ORDER BY id DESC LIMIT 12");
-							while($row2 = mysqli_fetch_array($result2)){
-								echo '<h2 id="searchterm">User: '.$row2['username'].'</h2>';
-							}
-							$i++;
-						}
 						?>
 				        <div class="col-xs-12 col-sm-5 col-md-4 col-lg-4 video text-center box"> 
 				        	<a href="/video.php?id=<?php echo $row['id'];?>" class="video-overlay">
