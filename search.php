@@ -16,10 +16,8 @@ if($term != ""){
 	<div id="recent-videos" class=" tab-pane fade active in video-grid">
 		<h2 id="searchterm">Searching: <?php echo $term; ?></h2>
 					<?php
+					echo mysqli_num_rows($result);
 					while($row = mysqli_fetch_array($result)){
-						//if($i===0){
-						//
-						//}
 						?>
 				        <div class="col-xs-12 col-sm-5 col-md-4 col-lg-4 video text-center box"> 
 				        	<a href="/video.php?id=<?php echo $row['id'];?>" class="video-overlay">
@@ -29,17 +27,17 @@ if($term != ""){
 				        		</div>
 				        	</a>    
 				       		<img src="videos/thumbnails/<?php echo $row['image'] ?>">    
+				       		<div class="overlay">
+		                      <span class="span-title"><?php echo $row['name'] ?></span>
+		                      <span class="span-length"><?php echo $row['length'] ?></span>
+		                    </div>
 				        </div>
-				        <!--<?php if($i===2){
-							?></div><?php
-							$i=-1;
-						} ?>-
-					<?php $i++; } ?>-->
-	</div>
-</div>
+				     <?php
+				 } ?> 
+				 </div>
 <?php
-}else{
-	?>
+						}else{
+					?>
 	<div class="container">
 		<h1>No search term given</h1>
 	</div>	
