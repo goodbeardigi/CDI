@@ -35,10 +35,7 @@ $result = mysqli_query($con,"SELECT videos.id, videos.name, videos.description, 
 		                      <span class="span-length"><?php echo $row['length'] ?></span>
 		                    </div>
 				        </div>
-				        <?php if($i===2){
-							?><!--</div>--><?php
-							$i=-1;
-						}
+				        <?php
 					} ?>
 		</div>
 	</div>
