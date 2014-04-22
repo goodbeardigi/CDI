@@ -13,7 +13,7 @@ $result = mysqli_query($con,"SELECT videos.id, videos.name, videos.description, 
 	if($i==0){
 		$result2 = mysqli_query($con,"SELECT * FROM users WHERE id=$id");
 		while($row2 = mysqli_fetch_array($result2)){
-			echo '<h2 id="searchterm">User: '.$row2['username'].'</h2>';
+			echo '<h2 id="searchterm">All videos uploaded by'.$row2['username'].'</h2>';
 		}
 		$i++;
 	}
