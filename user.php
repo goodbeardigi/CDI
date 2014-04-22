@@ -38,7 +38,8 @@ $result = mysqli_query($con,"SELECT videos.id, videos.name, videos.description, 
 				        <?php if($i===2){
 							?><!--</div>--><?php
 							$i=-1;
-						} ?>
+						}
+					} ?>
 		</div>
 	</div>
 </div>
