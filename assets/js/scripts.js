@@ -476,7 +476,7 @@ function hottestvideos(days){
 
     var data = new FormData();
     data.append('days', days);
-    data.append('limit', 6);
+    data.append('limit', 12);
     
     //var form = document.getElementById("loginForm");
     //var data = new FormData(form);
