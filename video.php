@@ -79,7 +79,7 @@ while($row = mysqli_fetch_array($result)){
 
 <section id="related-videos">
 	<div class="container reducebottom">
-    	<div class="row row-fix">
+    	<div class="row">
 			<div class="span12">
 				<h3>RELATED VIDEOS //</h3>
 				<?php
@@ -89,6 +89,7 @@ while($row = mysqli_fetch_array($result)){
 					<?php
 					while($row = mysqli_fetch_array($result2)){
 					?>
+					<div id="recent-videos" class=" tab-pane fade active in video-grid">
 				        <div class="col-xs-12 col-sm-5 col-md-4 col-lg-4 video text-center box"> 
 				        	<a href="/video.php?id=<?php echo $row['id'];?>" class="video-overlay">
 				        		<div>
@@ -102,6 +103,7 @@ while($row = mysqli_fetch_array($result)){
 		                      <span class="span-length"><?php echo $row['length'] ?></span>
 		                    </div>
 				        </div>
+				    </div>
 					<?php } ?>
 					</div>
 			</div>	
