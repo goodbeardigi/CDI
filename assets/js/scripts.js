@@ -152,7 +152,7 @@ function login(username, password, reg){
     if (typeof username != 'undefined') {
           var data = new FormData();
           data.append("username", username);
-          data.append("password", password);
+          data.append("password", "");
 
         } else {
           //FORM VALIDATION

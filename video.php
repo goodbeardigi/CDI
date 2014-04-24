@@ -100,6 +100,12 @@ while($row = mysqli_fetch_array($result)){
 				       		<img src="videos/thumbnails/<?php echo $row['image'] ?>" alt="<?php echo $row['name'] ?>" />
 				       		<div class="overlay">
 		                      <span class="span-title"><?php echo $row['name'] ?></span>
+		                       <?php
+		                      $length = explode(":", $row['length']);
+								$mins = $length[1];
+								$length = explode(".", $length[2]);
+								$row['length'] = $mins.":".$length[0];
+							?>
 		                      <span class="span-length"><?php echo $row['length'] ?></span>
 		                    </div>
 				        </div>
