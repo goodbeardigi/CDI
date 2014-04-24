@@ -152,8 +152,11 @@ function login(username, password, reg){
     if (typeof username != 'undefined') {
           var data = new FormData();
           data.append("username", username);
-          data.append("password", "");
-
+          if(reg == 2){
+            data.append("password", "");
+          } else{
+            data.append("password", password);
+          }
         } else {
           //FORM VALIDATION
           var x=document.forms["login-form"]["username"].value;
