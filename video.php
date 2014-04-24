@@ -158,8 +158,8 @@ $('#twitter').sharrre({
 
     $('#facebook').sharrre({
       share: { facebook: true },
-      title: <?php echo $title ?>,
-      text: <?php echo $description ?>,
+      title: <?php echo "'".$title."'" ?>,
+      text: <?php echo "'".$description."'" ?>,
       url: document.URL,
       enableHover: false,
       enableTracking: true,
