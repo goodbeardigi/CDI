@@ -39,13 +39,12 @@ include('header.php');
 					<input type="text" name="name" id="username" placeholder="Username" required="required"><br>
 					<input type="text" name="name" id="email" placeholder="Email" required="required"><br>
 		            <input type="password" name="password" id="Password" placeholder="password" required="required"><br>
-					<input id="submit"  class="button" type="submit" value="Sign-up">
+					<input id="submit"  class="loginButton" type="submit" value="Sign-up">
 					</form>
 				</div>
 				<span class="separator"><p>Or</p></span>
 
-				<input id="login-user-fb" class="button" type="submit" value="Connect with Facebook">
-			</div>
+				<a href="#" onclick="fblogin()" class="fbLoginButton">Sign in with Facebook</a>			</div>
 		</div>											
 </div><!-- /CONTAINER-->
 </section>
