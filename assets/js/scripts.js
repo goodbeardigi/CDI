@@ -586,7 +586,7 @@ function hottestvideos_videopage(days, limit){
                       html += '</div>';
                       html += '</a>';    
                       html +=  '<img src="videos/thumbnails/'+response[i]["image"]+'">';
-                      html += '<div class="overlay">';
+                      html += '<div class="overlay no-pad">';
                       html += '<span class="span-title">'+response[i]["title"]+'</span>';
                       html += '<span class="span-length">'+response[i]["length"]+'</span>';
                       html += '</div>';

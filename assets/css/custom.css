@@ -29,6 +29,9 @@ p{
 	margin-right: 0 !important;
 	margin-left: 0 !important;
 }
+.no-pad{
+	padding-bottom: 0 !important;
+}
 .center {
    margin: 0 auto !important;
    float: none !important;
