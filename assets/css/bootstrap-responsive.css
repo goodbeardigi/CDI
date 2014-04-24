@@ -1169,4 +1169,10 @@
   .two{
     display: none !important;
   }
+  .hide-menu{
+    display: none !important;
+  }
+  #contact-form{
+    width: 310px !important
+  }
 }

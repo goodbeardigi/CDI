@@ -156,7 +156,7 @@ require_once('inc/functions.inc.php');
     <li><a href="category.php?id=3">Snow</a></li>
     <li><a href="about-us.php">About</a></li>
     <li><a href="contact-us.php">Contact</a></li>
-    <li>
+    <li class="hide-menu">
                 <?php 
                   if(isset($_SESSION['username'])){
                     ?><a href="#" onclick="signOut()">Sign Out</a> <?php
@@ -164,7 +164,7 @@ require_once('inc/functions.inc.php');
                     ?><a href="#" onclick="$('#loginModal').modal('show')">Sign In</a> <?php
                   } ?>
       </li>
-      <li><a href="upload.php">Upload</a></li>
+      <li class="hide-menu"><a href="upload.php">Upload</a></li>
       <div id="side-social">
         <a class="floatright" href="http://www.twitter.com"><img src="images/twitterMain.png"/></a>
         <a class="floatleft" href="http://www.facebook.com"><img src="images/facebookMain.png" /></a>
