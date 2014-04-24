@@ -830,6 +830,11 @@
     line-height: 14px;
     font-size: 11px;
     }
+    #twitter.sharrre, #facebook.sharrre, #pinterest.sharrre {
+float: left;
+margin: 0 6px;
+text-align: center;
+}
   #video-title{
     width: 100%;
   }
