@@ -773,21 +773,21 @@
 	}
 
 
-#login-form {
+#login-form, #signForm {
 	padding-top: 15px;
 	text-align: center;
 	margin: 0 auto;
 }
 
 
-#login-form input, #main-form .button  {
+#login-form input,  #signForm input, #main-form .button  {
 	height: 38px;
 	border: 0;
 	border-radius: 4px;
 	width: 95%;
 }
 
-#login-form input {
+#login-form input,  #signForm input {
 	color: black;
 	border: 1px solid #CCC;
 }
