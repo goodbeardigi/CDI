@@ -44,7 +44,7 @@ $result = mysqli_query($con,"SELECT videos.id, videos.name, videos.description, 
 		                      $length = explode(":", $row['length']);
 								$mins = $length[1];
 								$length = explode(".", $length[2]);
-								$recentvideos['length'] = $mins.":".$length[0];
+								$row['length'] = $mins.":".$length[0];
 							?>
 		                      <span class="span-length"><?php echo $row['length'] ?></span>
 		                    </div>
