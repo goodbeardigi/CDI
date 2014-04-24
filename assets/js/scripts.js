@@ -316,10 +316,10 @@ function signup(first_name, last_name, email){
                 console.log(message);
                 if (message == -1){
                   response = JSON.parse(this.responseText);
+                  login(response['username'],response['password']);
                   document.getElementById('main-form').innerHTML = '<h2>Account created</h2><a href="http://cdisports.jamescobbett.co.uk" onclick="#" class="loginButton">Go home</a><div class="orLine">OR</div><a href="/upload.php" class="loginButton">Upload a video</a>';            
                   $('#loginModal').modal('show');
                   window.setTimeout(function(){$('#loginModal').modal('hide');},700);
-                  window.setTimeout(function(){$login(response['username'],response['password']);;},700);
                   document.getElementById('main-form').innerHTML = '<h2>SIGN IN</h2><div id="login-form-container"><form id="login-form" method="post" novalidate="" action=""><input type="text" name="username" id="username" placeholder="Username" required="required" style="width:288px !important"><input type="password" name="password" id="password" placeholder="Password" required="required" style="width:288px"><div class="error" id="failure" style="display: none;"></div><a href="#" onclick="login()" class="loginButton">Sign in</a><div class="orLine">OR</div><a href="#" onclick="fblogin()" class = "fbLoginButton">Sign in with Facebook</a><a id="forgotdetails" href="#">Forgot your password?</a><div class = "signUpLink"><a href="account.php" id="forgotdetails">Sign up</a></div></form></div>';            
                 } else {
 
