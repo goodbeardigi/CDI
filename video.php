@@ -85,7 +85,7 @@ while($row = mysqli_fetch_array($result)){
 				<?php
 					$result2 = mysqli_query($con,"SELECT videos.id, videos.name, videos.description, videos.user_id, videos.categories_id, videos.date_added, videos.url, videos.length, videos.image, categories.category FROM videos INNER JOIN categories ON categories.id=videos.categories_id WHERE videos.categories_id=$categories_id LIMIT 3");
 					?>
-					<div class="row">
+					<div class="row row-fix">
 					<?php
 					while($row = mysqli_fetch_array($result2)){
 					?>
