@@ -191,7 +191,7 @@ function login(username, password, reg){
                 var message = response.indexOf("failure");
                 console.log(message);
                 if (message == -1){
-                  if(reg = 1){
+                  if(reg == 1){
                     document.getElementById('main-form').innerHTML = '<h2>Account created</h2><a href="http://cdisports.jamescobbett.co.uk" onclick="#" class="loginButton">Go home</a><div class="orLine">OR</div><a href="/upload.php" class="loginButton">Upload a video</a>';            
                     $('#loginModal').modal('show');
                     window.setTimeout(function(){$('#loginModal').modal('hide');},700);
