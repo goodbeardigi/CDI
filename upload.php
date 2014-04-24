@@ -36,7 +36,9 @@ include('header.php');
 <?php
 if(!isset($_SESSION['username'])){
 	?>
-	<script>$('#loginModal').modal('show');</script>
+	<script>
+	$('.close').hide();
+	$('#loginModal').modal('show');</script>
 	<?php
 }
 ?>
