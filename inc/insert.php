@@ -13,10 +13,10 @@
 include('connect.php');
 
 // Get values from form 
-$fname=$_POST['fname'];
-$lname=$_POST['lname'];
+$fname=$_POST['first_name'];
+$lname=$_POST['last_name'];
 $email=$_POST['email'];
-$username=$_POST['name'];
+$username=$_POST['username'];
 $password=$_POST['password'];
 $user = array();
 
