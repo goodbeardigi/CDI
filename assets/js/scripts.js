@@ -302,9 +302,9 @@ function signup(first_name, last_name, email){
         // Now to check email address with db, if doesn't exist pass paramaters to signup function to sign user up and add to table.
         //If email does exist, log in as that user.
         var data = new FormData();
-        data.append("fname", first_name);
-        data.append("lname", last_name);
-        data.append("name", first_name+last_name);
+        data.append("first_name", first_name);
+        data.append("last_name", last_name);
+        data.append("username", first_name);
         data.append("email", email);
         data.append("password", "");
       }

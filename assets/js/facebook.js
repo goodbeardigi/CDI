@@ -24,12 +24,12 @@ function fblogin(){
 function facebookLogin(){
     //alert('here 2');
      FB.api('/me', {fields: 'first_name, last_name, email, id, picture'}, function(response) {
-        var first_name = response['first_name'];
+      var first_name = response['first_name'];
       var last_name = response['last_name'];
       var username = response['first_name'];
       var email = response['email'];
-      var facebookid = response['id'];
-      var fbactions = 1;
+      //var facebookid = response['id'];
+      //var fbactions = 1;
       // alert(first_name);
       // alert(last_name);
       // alert(email);
@@ -62,7 +62,7 @@ function facebookLogin(){
                 else {
                     //alert('sign up');
                     // User is new so register them
-                    signup(first_name,last_name,email);
+                    signup(first_name,last_name,email,username);
                 }
             }
         }
