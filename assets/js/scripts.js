@@ -285,18 +285,18 @@ function signup(first_name, last_name, email){
       var xhr, target, changeListener, url, data;
       url = "http://cdisports.jamescobbett.co.uk/inc/insert.php ";
       if (typeof email === 'undefined') {
-
+        var form = document.getElementById("signForm");
+        var data = new FormData(form);
       } else {
-      //GOT FIRST,LAST NAMES AND EMAIL
-      // Now to check email address with db, if doesn't exist pass paramaters to signup function to sign user up and add to table.
-      //If email does exist, log in as that user.
-      var data = new FormData();
-      data.append("fname", first_name);
-      data.append("lname", last_name);
-      data.append("name", first_name+last_name);
-      data.append("email", email);
-      data.append("password", "");
-
+        //GOT FIRST,LAST NAMES AND EMAIL
+        // Now to check email address with db, if doesn't exist pass paramaters to signup function to sign user up and add to table.
+        //If email does exist, log in as that user.
+        var data = new FormData();
+        data.append("fname", first_name);
+        data.append("lname", last_name);
+        data.append("name", first_name+last_name);
+        data.append("email", email);
+        data.append("password", "");
       }
     //var form = document.getElementById("loginForm");
     //var data = new FormData(form);
@@ -316,7 +316,11 @@ function signup(first_name, last_name, email){
                 console.log(message);
                 if (message == -1){
                   response = JSON.parse(this.responseText);
-                  login(response['username'],response['password']);
+                  document.getElementById('main-form').innerHTML = '<h2>VIDEO UPLOADED</h2><a href="/video.php?id='+response+'" onclick="#" class="loginButton">Go to video</a><div class="orLine">OR</div><a href="#" onclick="hide()" class="loginButton">Upload another</a>';            
+                  $('#loginModal').modal('show');
+                  window.setTimeout(function(){$('#loginModal').modal('hide');},700);
+                  window.setTimeout(function(){$login(response['username'],response['password']);;},700);
+                  document.getElementById('main-form').innerHTML = '<h2>SIGN IN</h2><div id="login-form-container"><form id="login-form" method="post" novalidate="" action=""><input type="text" name="username" id="username" placeholder="Username" required="required" style="width:288px !important"><input type="password" name="password" id="password" placeholder="Password" required="required" style="width:288px"><div class="error" id="failure" style="display: none;"></div><a href="#" onclick="login()" class="loginButton">Sign in</a><div class="orLine">OR</div><a href="#" onclick="fblogin()" class = "fbLoginButton">Sign in with Facebook</a><a id="forgotdetails" href="#">Forgot your password?</a><div class = "signUpLink"><a href="account.php" id="forgotdetails">Sign up</a></div></form></div>';            
                 } else {
 
                 }
