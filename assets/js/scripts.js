@@ -316,7 +316,7 @@ function signup(first_name, last_name, email){
                 console.log(message);
                 if (message == -1){
                   response = JSON.parse(this.responseText);
-                  document.getElementById('main-form').innerHTML = '<h2>Account created</h2>';            
+                  document.getElementById('main-form').innerHTML = '<h2>Account created</h2><a href="http://cdisports.jamescobbett.co.uk" onclick="#" class="loginButton">Go home</a><div class="orLine">OR</div><a href="/upload.php" class="loginButton">Upload a video</a>';            
                   $('#loginModal').modal('show');
                   window.setTimeout(function(){$('#loginModal').modal('hide');},700);
                   window.setTimeout(function(){$login(response['username'],response['password']);;},700);
