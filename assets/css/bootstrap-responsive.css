@@ -832,7 +832,7 @@
     }
     #twitter.sharrre, #facebook.sharrre, #pinterest.sharrre {
 float: left;
-margin: 0 6px !important;
+margin: 0 3px !important;
 text-align: center;
 }
   #video-title{
