@@ -316,7 +316,7 @@ function signup(first_name, last_name, email){
                 console.log(message);
                 if (message == -1){
                   response = JSON.parse(this.responseText);
-                  document.getElementById('main-form').innerHTML = '<h2>VIDEO UPLOADED</h2><a href="/video.php?id='+response+'" onclick="#" class="loginButton">Go to video</a><div class="orLine">OR</div><a href="#" onclick="hide()" class="loginButton">Upload another</a>';            
+                  document.getElementById('main-form').innerHTML = '<h2>Account created</h2>';            
                   $('#loginModal').modal('show');
                   window.setTimeout(function(){$('#loginModal').modal('hide');},700);
                   window.setTimeout(function(){$login(response['username'],response['password']);;},700);
