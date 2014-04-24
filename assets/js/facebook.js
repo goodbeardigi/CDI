@@ -16,13 +16,13 @@
 
 function fblogin(){
     FB.login(function(response) {
-        alert('here');
+        //alert('here');
        facebookLogin();
      }, {scope: 'email'});
 }
 
 function facebookLogin(){
-    alert('here 2');
+    //alert('here 2');
      FB.api('/me', {fields: 'first_name, last_name, email, id, picture'}, function(response) {
         var first_name = response['first_name'];
       var last_name = response['last_name'];
@@ -30,10 +30,10 @@ function facebookLogin(){
       var email = response['email'];
       var facebookid = response['id'];
       var fbactions = 1;
-      alert(first_name);
-      alert(last_name);
-      alert(email);
-      alert(facebookid);
+      // alert(first_name);
+      // alert(last_name);
+      // alert(email);
+      // alert(facebookid);
       console.log(first_name + " " + last_name);
       
     var xhr, target, changeListener, url, data;
@@ -56,11 +56,11 @@ function facebookLogin(){
                 var message = response.indexOf("New");
                 console.log(message);
                 if (message == -1){
-                    alert('log in');
+                    //alert('log in');
                     login(username);
                 }
                 else {
-                    alert('sign up');
+                    //alert('sign up');
                     // User is new so register them
                     signup(first_name,last_name,email);
                 }
