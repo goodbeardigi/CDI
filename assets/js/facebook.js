@@ -26,7 +26,7 @@ function facebookLogin(){
      FB.api('/me', {fields: 'first_name, last_name, email, id, picture'}, function(response) {
         var first_name = response['first_name'];
       var last_name = response['last_name'];
-      var username = response['first_name']+response['last_name'];
+      var username = response['first_name'];
       var email = response['email'];
       var facebookid = response['id'];
       var fbactions = 1;

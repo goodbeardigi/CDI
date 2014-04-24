@@ -111,7 +111,7 @@ require_once('inc/functions.inc.php');
                   <div class="orLine">OR</div>
 
                   <a href="#" onclick="fblogin()" class = "fbLoginButton">Sign in with Facebook</a>
-                  <a id="forgotdetails" href="#">Forgot your password?</a>
+                 <!-- <a id="forgotdetails" href="#">Forgot your password?</a>-->
                   <div class = "signUpLink"><a href="account.php" id="forgotdetails">Sign up</a></div>
                 </form>
             </div>
