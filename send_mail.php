@@ -1,5 +1,5 @@
 <?php
-$webmaster_email = "cam00766@myport.ac.uk";
+$webmaster_email = "james.d.cobbett@gmail.com";
 
 $feedback_page = "contact-us.php";
 $error_page = "contact-us.php";
