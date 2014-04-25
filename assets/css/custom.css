@@ -169,6 +169,7 @@ textarea{
 
 #related-videos{
 	margin-top: -85px;
+	padding-bottom: 0px !important;
 }
 #disqus_thread{
 	background-color: #fff;
